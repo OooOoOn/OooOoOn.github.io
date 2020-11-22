@@ -449,7 +449,7 @@ a {
 
 @media only screen and (min-width: 1200px) {
 	body, html {
-		line-height: 250%;
+		line-height: 225%;
 	}
 	#holidayHours {
 		padding-top: 0%;
