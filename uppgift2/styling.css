@@ -304,10 +304,10 @@ a {
 		font-size: 20px;
 	}
 	.logo {
-		display:none
+		display: none
 	}
 	.logo_highlighted {
-		display:none
+		display: none
 	}
 	.arrow {
 		bottom: 15%;
@@ -366,14 +366,12 @@ a {
 	}
 }
 
-
 @media only screen and (min-width: 600px) and (max-width:1200px) {
 	body, html {
 		line-height: 200%;
 	}
 	h2 {
 		font-size: 25px;
-
 	}
 	h3 {
 		font-size: 20px;
@@ -389,13 +387,11 @@ a {
 		font-size: 30px;
 	}
 	.logo {
-		display:none
+		display: none
 	}
-
 	.logo_highlighted {
-		display:none
+		display: none
 	}
-	
 	.arrow {
 		bottom: 15%;
 		left: 50%;
@@ -455,7 +451,6 @@ a {
 	body, html {
 		line-height: 250%;
 	}
-
 	#holidayHours {
 		padding-top: 0%;
 	}

@@ -6,12 +6,11 @@
 	<link href='favicon.ico' rel='icon' type='image/x-icon'>
 	<meta charset="UTF-8">
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title>
-		Halv 8 hos Gert - A la carte
-	</title>
+	<title>Halv 8 hos Gert - Pizza</title>
 </head>
 
 <body>
@@ -39,19 +38,24 @@
 			<h2>Kontakt</h2></a>
 		</div>
 
+
 		<div class="button5">
 			<a href="pizza.html">
 			<h2>Pizza</h2></a>
 		</div>
 
 
-		<div class="logo"><a href="index.html"><img alt="Logo" height="100%" src="images/logo.jpg" width="100%"></a>
-		</div>
-		<div class="logo_highlighted"><a href="index.html"><img alt="Logo" height="100%" src="images/logo_highlighted.jpg" width="100%"></a>
+		<div class="logo">
+			<a href="index.html"><img alt="Logo" height="100%" src="images/logo.jpg" width="100%"></a>
 		</div>
 
-		<div class="arrow">
-			<img alt="arrow" height="10%" src="images/arrow.png" width="10%">
+
+		<div class="logo_highlighted">
+			<a href="index.html"><img alt="Logo" height="100%" src="images/logo_highlighted.jpg" width="100%"></a>
+		</div>
+
+
+		<div class="arrow"><img alt="arrow" height="10%" src="images/arrow.png" width="10%">
 		</div>
 	</nav>
 
@@ -63,21 +67,23 @@
 	<section class="dividerSmallMedium">
 		<h1>Pizza</h1>
 
-			<h3>Glutenfri botten ( 25 kr )</h3>
+
+		<h3>Glutenfri botten ( 25 kr )</h3>
 
 
-			<p>Pizzabröd med vitlöksolja och ost </p>
+		<p>Pizzabröd med vitlöksolja och ost</p>
 
 
-			<h3>Såser ( 15 kr ) </h3>
+		<h3>Såser ( 15 kr )</h3>
 
 
-			<p>Mild, Stark, Bearnaise</p>
+		<p>Mild, Stark, Bearnaise</p>
 
-			<h3>Extra topping/pålägg ( 15 kr ) </h3>
 
-			<p>Kött, skaldjur, mozzarella, pommes, sallad på pizzan (isberg, gurka, tomat)</p>
-	
+		<h3>Extra topping/pålägg ( 15 kr )</h3>
+
+
+		<p>Kött, skaldjur, mozzarella, pommes, sallad på pizzan (isberg, gurka, tomat)</p>
 	</section>
 
 
@@ -92,14 +98,17 @@
 	<section class="dividerMediumLarge">
 		<h1>Standard pizzor</h1>
 
-			<h3></h3>
+
+		<h3>
+		</h3>
 
 
-			<p></p>
+		<p>
+		</p>
 
 
-			<p></p>
-
+		<p>
+		</p>
 	</section>
 
 
@@ -109,8 +118,6 @@
 
 	<div class="parallaxSmallMedium" id="alacarte3">
 	</div>
-
-
 
 
 	<section class="dividerSmall" id="kontakt">
@@ -136,25 +143,24 @@
 	<footer>
 		<p>Rättigheter | Halv 8 Hos Gert © 2020</p>
 	</footer>
+	<script>
+	   //Fades out scroll down arrov on scroll
+	   $(window).scroll(function() {
+	       if ($(this).scrollTop() > 0) {
+	           $('.arrow').fadeOut();                     
+	       }
+	   });
+	   
+	   //gets the current time. 
+	   var d = new Date();
+	   if(d.getDay() > 0 && d.getDay() < 6 && d.getHours() >= 1 && d.getHours() <= 14 ){
+	       $(".button2").show();
+	       $(".button5").hide();
+	   }
+	   else {  
+	        $(".button5").show();
+	       $(".button2").hide();
+	   }
+	</script>
 </body>
 </html>
-
-<script>
-	//Fades out scroll down arrov on scroll
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 0) {
-			$('.arrow').fadeOut();                     
-		}
-	});
-	
-	//gets the current time. 
-	var d = new Date();
-	if(d.getDay() > 0 && d.getDay() < 6 && d.getHours() >= 1 && d.getHours() <= 14 ){
-		$(".button2").show();
-		$(".button5").hide();
-	}
-	else {  
-		 $(".button5").show();
-		$(".button2").hide();
-	}
-</script>
