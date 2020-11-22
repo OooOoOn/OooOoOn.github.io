@@ -10,7 +10,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>
-		Halv 8 hos Gert - Home
+		Halv 8 hos Gert - A la carte
 	</title>
 </head>
 
@@ -56,67 +56,61 @@
 	</nav>
 
 
-	<div class="parallaxLarge" id="homepage1">
+	<div class="parallaxLarge" id="alacarte1">
 	</div>
 
 
-	<section class="dividerSmall">
-		<h1>Lunch</h1>
+	<section class="dividerSmallMedium">
+		<h1>Pizza</h1>
+
+			<h3>Glutenfri botten ( 25 kr )</h3>
 
 
-		<p><b>Dagens rätt ( 85 KR )</b></p>
+			<p>Pizzabröd med vitlöksolja och ost </p>
 
 
-		<p>All vår lunchservering inkluderar sallad, smör, bröd, måltidsdryck och kaffe. Serveras vardagar kl (11:00-14:00).</p>
+			<h3>Såser ( 15 kr ) </h3>
 
 
-		<p>Därefter erbjuder vi både Pizza & À la carte.</p>
+			<p>Mild, Stark, Bearnaise</p>
+
+			<h3>Extra topping/pålägg ( 15 kr ) </h3>
+
+			<p>Kött, skaldjur, mozzarella, pommes, sallad på pizzan (isberg, gurka, tomat)</p>
+	
 	</section>
 
 
-	<div class="parallaxSmall" id="homepage2">
+	<div class="parallaxSmallMedium" id="alacarte2">
 	</div>
 
 
-	<div class="parallaxSmall" id="homepage2">
+	<div class="parallaxSmallMedium" id="alacarte2">
 	</div>
 
 
-	<section class="dividerMedium">
-		<h1>Öppetider</h1>
+	<section class="dividerMediumLarge">
+		<h1>Standard pizzor</h1>
+
+			<h3></h3>
 
 
-		<p><b>Måndag</b> 11:00 - 21:00</p>
+			<p></p>
 
 
-		<p><b>Tisdag</b> 11:00 - 21:00</p>
+			<p></p>
 
-
-		<p><b>Onsdag</b> 11:00 - 21:00</p>
-
-
-		<p><b>Torsdag</b> 11:00 - 21:00</p>
-
-
-		<p><b>Fredag</b> 11:00 - 22:00</p>
-
-
-		<p><b>Lördag</b> 16:00 - 22:00</p>
-
-
-		<p><b>Söndag</b> STÄNGT</p>
-
-
-		<h3 id="holidayHours">OBS!! Vid storhelger kan andra tider förekomma.</h3>
 	</section>
 
 
-	<div class="parallaxMedium" id="homepage3">
+	<div class="parallaxSmallMedium" id="alacarte3">
 	</div>
 
 
-	<div class="parallaxMedium" id="homepage3">
+	<div class="parallaxSmallMedium" id="alacarte3">
 	</div>
+
+
 
 
 	<section class="dividerSmall" id="kontakt">
@@ -135,7 +129,7 @@
 	</section>
 
 
-	<div class="parallaxLarge" id="homepage1">
+	<div class="parallaxLarge" id="alacarte1">
 	</div>
 
 
@@ -146,21 +140,21 @@
 </html>
 
 <script>
-//Fades out scroll down arrov on scroll
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-        $('.arrow').fadeOut();                     
-    }
-});
-
-//gets the current time. 
-var d = new Date();
-if(d.getDay() > 0 && d.getDay() < 6 && d.getHours() >= 1 && d.getHours() <= 14 ){
-    $(".button2").show();
-    $(".button5").hide();
-}
-else {  
-     $(".button5").show();
-    $(".button2").hide();
-}
+	//Fades out scroll down arrov on scroll
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 0) {
+			$('.arrow').fadeOut();                     
+		}
+	});
+	
+	//gets the current time. 
+	var d = new Date();
+	if(d.getDay() > 0 && d.getDay() < 6 && d.getHours() >= 1 && d.getHours() <= 14 ){
+		$(".button2").show();
+		$(".button5").hide();
+	}
+	else {  
+		 $(".button5").show();
+		$(".button2").hide();
+	}
 </script>
