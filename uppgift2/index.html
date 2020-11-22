@@ -7,66 +7,142 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>
+		Halv 8 hos Gert - Home
+	</title>
 </head>
 
 <body>
-	
+	<nav>
 		<div class="button1">
-			<a href="https://www.facebook.com/HosGert/?ref=page_internal"><h2>Boka Bord</h2></a>
+			<a href="https://www.facebook.com/HosGert/?ref=page_internal">
+			<h2>Boka Bord</h2></a>
 		</div>
+
+
 		<div class="button2">
-			<a href="lunch.html"><h2>Lunch</h2></a>
+			<a href="lunch.html">
+			<h2>Lunch</h2></a>
 		</div>
+
+
 		<div class="button3">
-			<a href="alacarte.html"><h2>À la carte</h2></a>
+			<a href="alacarte.html">
+			<h2>À la carte</h2></a>
 		</div>
+
+
 		<div class="button4">
-			<a href="#kontakt"><h2>Kontakt</h2></a>
+			<a href="#kontakt">
+			<h2>Kontakt</h2></a>
 		</div>
-	
 
-	<div class="parallaxLarge" id="homepage1"></div>
 
-	<div class="dividerSmall">
+		<div class="logo"><a href="index.html"><img alt="Logo" height="100%" src="images/logo.jpg" width="100%"></a>
+		</div>
+		<div class="logo_highlighted"><a href="index.html"><img alt="Logo" height="100%" src="images/logo_highlighted.jpg" width="100%"></a>
+		</div>
+
+		<div class="arrow">
+			<img alt="arrow" height="10%" src="images/arrow.png" width="10%">
+		</div>
+	</nav>
+
+
+	<div class="parallaxLarge" id="homepage1">
+	</div>
+
+
+	<section class="dividerSmall">
 		<h1>Lunch</h1>
-		<p>Dagens rätt 85 KR</p>
-		<p>All vår lunchservering inkluderar sallad, smör, bröd, måltidsdryck och kaffe. Serveras vardagar kl (11:00-14:00).</p> 
-		<p>Därefter erbjuder vi både Pizza & À la carte.</p>	
+
+
+		<p><b>Dagens rätt ( 85 KR )</b></p>
+
+
+		<p>All vår lunchservering inkluderar sallad, smör, bröd, måltidsdryck och kaffe. Serveras vardagar kl (11:00-14:00).</p>
+
+
+		<p>Därefter erbjuder vi både Pizza & À la carte.</p>
+	</section>
+
+
+	<div class="parallaxSmall" id="homepage2">
 	</div>
 
-	<div class="parallaxSmall" id="homepage2"></div>
 
-	<div class="parallaxSmall" id="homepage2"></div>
+	<div class="parallaxSmall" id="homepage2">
+	</div>
 
-	<div class="dividerMedium">
+
+	<section class="dividerMedium">
 		<h1>Öppetider</h1>
-			<p>Måndag 11:00 - 21:00</p>
-			<p>Tisdag 11:00 - 21:00</p>
-			<p>Onsdag 11:00 - 21:00</p>
-			<p>Torsdag 11:00 - 21:00</p>
-			<p>Fredag 11:00 - 22:00</p>
-			<p>Lördag 16:00 - 22:00</p>
-			<p>Söndag STÄNGT</p>
+
+
+		<p><b>Måndag</b> 11:00 - 21:00</p>
+
+
+		<p><b>Tisdag</b> 11:00 - 21:00</p>
+
+
+		<p><b>Onsdag</b> 11:00 - 21:00</p>
+
+
+		<p><b>Torsdag</b> 11:00 - 21:00</p>
+
+
+		<p><b>Fredag</b> 11:00 - 22:00</p>
+
+
+		<p><b>Lördag</b> 16:00 - 22:00</p>
+
+
+		<p><b>Söndag</b> STÄNGT</p>
+
+
+		<h3 id="holidayHours">OBS!! Vid storhelger kan andra tider förekomma.</h3>
+	</section>
+
+
+	<div class="parallaxMedium" id="homepage3">
 	</div>
-		
+
+
+	<div class="parallaxMedium" id="homepage3">
 	</div>
 
-	<div class="parallaxMedium" id="homepage3"></div>
 
-	<div class="parallaxMedium" id="homepage3"></div>
-
-	<div class="dividerSmall" id="kontakt">
+	<section class="dividerSmall" id="kontakt">
 		<h1>Kontakt</h1>
-			<p>Adress: Föreningsgatan 37, 211 52 Malmö</p>
-			<p>Mobil: 079 - 306 38 98</p>
-			<p>E-post: info@halv8hosgert.se</p>
+
+
+		<p>Adress: Föreningsgatan 37, 211 52 Malmö</p>
+
+
+		<p>Mobil: 079 - 306 38 98</p>
+
+
+		<p>E-post: info@halv8hosgert.se</p>
+		<a href="https://www.facebook.com/HosGert/" id="facebooklink">
+		<p>Facebook</p></a>
+	</section>
+
+
+	<div class="parallaxLarge" id="homepage1">
 	</div>
 
-	<div class="parallaxLarge" id="homepage1"></div>
 
-
-
-
+	<footer>
+		<p>Rättigheter | Halv 8 Hos Gert © 2020</p>
+	</footer>
 </body>
 </html>
 
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+        $('.arrow').fadeOut();                     
+    }
+});
+</script>
