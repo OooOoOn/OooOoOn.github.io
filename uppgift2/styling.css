@@ -4,7 +4,7 @@
 }
 
 body, html {
-	line-height: 240%;
+	line-height: 225%;
 	height: 100%;
 	background-color: rgb(240, 246, 246);
 	scroll-behavior: smooth;
@@ -185,7 +185,7 @@ a {
 	position: fixed;
 }
 
-.button1, .button2, .button3, .button4 {
+.button1, .button2, .button3, .button4, .button5 {
 	z-index: 1;
 	padding: 1%;
 	text-align: center;
@@ -195,6 +195,8 @@ a {
 	text-shadow: 0 0 3px #FF0000;
 	border-style: solid;
 	border-width: 1px;
+	min-width: 130px;
+	min-height: 35px;
 }
 
 .button1 {
@@ -213,6 +215,10 @@ a {
 	bottom: 15%;
 }
 
+.button5 {
+	bottom: 35%;
+}
+
 .button1:hover {
 	background-color: rgb(65, 39, 14);
 }
@@ -222,6 +228,14 @@ a {
 }
 
 .button3:hover {
+	background-color: rgb(65, 39, 14);
+}
+
+.button4:hover {
+	background-color: rgb(65, 39, 14);
+}
+
+.button5:hover {
 	background-color: rgb(65, 39, 14);
 }
 
@@ -257,11 +271,11 @@ a {
 }
 
 .dividerMediumLarge {
-	height: 45%;
+	height: 50%;
 }
 
 .dividerLarge {
-	height: 55%;
+	height: 60%;
 }
 
 .doubleHeadline {
@@ -290,29 +304,23 @@ a {
 		font-size: 20px;
 	}
 	.logo {
-		z-index: 2;
-		top: 25%;
-		left: 25%;
-		width: 50%;
-		position: absolute;
+		display:none
 	}
 	.logo_highlighted {
-		z-index: 1;
-		top: 25%;
-		left: 25%;
-		width: 50%;
-		position: absolute;
+		display:none
 	}
 	.arrow {
 		bottom: 15%;
 		left: 50%;
 		position: fixed;
 	}
-	.button1, .button2, .button3, .button4 {
+	.button1, .button2, .button3, .button4, .button5 {
 		width: 20%;
 		bottom: 3%;
 		height: 5%;
 		padding-top: 3%;
+		min-width: 75px;
+		min-height: 35px;
 	}
 	.button1 {
 		left: 2%
@@ -325,6 +333,9 @@ a {
 	}
 	.button4 {
 		left: 75%
+	}
+	.button5 {
+		left: 27%;
 	}
 	.dividerSmall {
 		height: 15%;
@@ -378,19 +389,11 @@ a {
 		font-size: 30px;
 	}
 	.logo {
-		z-index: 2;
-		top: 25%;
-		left: 30%;
-		width: 40%;
-		position: absolute;
+		display:none
 	}
 
 	.logo_highlighted {
-		z-index: 1;
-		top: 25%;
-		left: 30%;
-		width: 40%;
-		position: absolute;
+		display:none
 	}
 	
 	.arrow {
@@ -398,7 +401,7 @@ a {
 		left: 50%;
 		position: fixed;
 	}
-	.button1, .button2, .button3, .button4 {
+	.button1, .button2, .button3, .button4, .button5 {
 		width: 20%;
 		bottom: 3%;
 		height: 5%;
@@ -416,6 +419,9 @@ a {
 	.button4 {
 		left: 75%
 	}
+	.button5 {
+		left: 27%;
+	}
 	.dividerSmall {
 		height: 17%;
 	}
@@ -426,21 +432,31 @@ a {
 		height: 30%;
 	}
 	.dividerMediumLarge {
-		height: 35%;
+		height: 40%;
 	}
 	.dividerLarge {
-		height: 60%;
+		height: 50%;
 	}
 	.parallaxLarge {
 		height: 100%;
 	}
 	.parallaxSmall {
-		height: 25%;
-	}
-	.parallaxMedium {
 		height: 35%;
 	}
+	.parallaxMedium {
+		height: 50%;
+	}
 	.parallaxSmallMedium {
-		height: 30%;
+		height: 40%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body, html {
+		line-height: 250%;
+	}
+
+	#holidayHours {
+		padding-top: 0%;
 	}
 }
