@@ -1,0 +1,222 @@
+/* Styles for Smells Like Team Spirit © 2020 */
+
+* {
+	margin: 0;
+	padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.layerbackground_1 {
+  background-color: #FFB7A0;
+  padding: 4rem;
+}
+.layerbackground_1 > h6,h2 {
+  margin-bottom: 1rem;
+}
+
+#layerbackground_2 {
+  background-color: #9B8080;
+}
+
+h1 {
+  font-size: 47px;
+  color: #7A7A7A;
+  font-weight: bold;
+}
+
+h2 {
+    font-size: 38px;
+  color: #7A7A7A;
+  font-weight: bold;
+}
+
+h3 {
+font-size: 32px;
+  color: #7A7A7A;
+  padding-top: 20px;
+}
+
+h4 {
+font-size: 24px;
+  color: #7A7A7A;
+  font-weight: thin;
+}
+
+h5  {
+font-size: 18px;
+  color: #FF6A6A;
+  font-weight: thin;
+letter-spacing: 3px;
+
+}
+
+h6 {
+  color: #EC4D1D;
+}
+
+.welcome {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #FFF9F8;
+  width: 100%;
+  text-align: center;
+}
+
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#logo_2 {
+  display: block;
+  text-align: center;
+}
+
+#frontpage_description_1 {
+  color: white;
+}
+
+.imageblock {
+    padding-bottom: 20px;
+}
+
+.activity {
+    padding-top: 30px;
+  padding-bottom: 30px;
+padding-left: 30%;
+padding-right: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+#activity_button {
+  background-color: #A6B579;
+  border-radius: 25px;
+  margin-bottom: 25%;
+    margin-top: 30px;
+
+  border: none;
+
+}
+
+
+#footer_text {
+  color: #ffffff;
+}
+
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  #alternative {
+      font-style: bold;
+      text-align: center;
+  }
+
+  /*stretches width to move profile right */
+#navbarSupportedContent ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 5px 6px -6px #999;
+    -moz-box-shadow: 0 5px 6px -6px #999;
+    box-shadow: 0 5px 6px -6px #999;
+}
+
+.navbarSupportedContent {
+	max-height: 50px;
+}
+ /*displays profile right in navbar*/
+#profil {
+	width: 300px;
+}
+
+#menulink {
+  color: #9B8080;
+}
+
+.navbarDropdown.nav-link.dropdown-toggle{
+	color:green;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    color: #9B8080;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#browser > .row > .col {
+  max-width: 50%;
+}
+
+  @media (max-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+    #browser {
+      display: none;
+    }
+
+.activity {
+padding-left: 15%;
+padding-right: 15%;
+}
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+    #mobile {
+      display: none;
+    }
+
+
+  }
+
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; 
+    z-index: 20;
+  }
+
+
+
+
+

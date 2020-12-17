@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /home.html
+Disallow: /profile.html
+Disallow: /activities.html
+Disallow: /friendslist.html
+
+
+Sitemap: http://himmelstrutz.github.io/sitemap.xml

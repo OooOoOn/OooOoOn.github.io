@@ -1,0 +1,42 @@
+/* Styles for Smells Like Team Spirit © 2020 */
+/*stretches width to move profile right */
+#navbarSupportedContent ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+/*gives shadow*/
+.navbar {
+    -webkit-box-shadow: 0 5px 6px -6px #999;
+    -moz-box-shadow: 0 5px 6px -6px #999;
+    box-shadow: 0 5px 6px -6px #999;
+}
+
+.navbarSupportedContent {
+	max-height: 50px;
+}
+ /*displays profile right in navbar*/
+#profil {
+	width: 350px;
+}
+
+.navbarDropdown.nav-link.dropdown-toggle{
+	color: green;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    color: #9B8080;
+}
