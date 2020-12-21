@@ -2,7 +2,7 @@ var username;
 
 function validation() {
     var vCode = document.getElementById("inputCodeBrowser").value ? document.getElementById("inputCodeBrowser").value : document.getElementById("inputCodeMobile").value;
-    var vNumber = document.getElementById("inputNumberBrowser") ? document.getElementById("inputNumberBrowser") : document.getElementById("inputNumberMobile");
+    var vNumber = document.getElementById("inputNumberBrowser").value ? document.getElementById("inputNumberBrowser").value : document.getElementById("inputNumberMobile").value;
     
     if(vCode.length < 1 && vNumber.length < 1){
         return "";
