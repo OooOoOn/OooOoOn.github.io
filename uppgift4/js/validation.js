@@ -48,6 +48,5 @@ function setUsername(vNumber) {
 function successfulLogin() {
 
 //Redirecting to other page or webste code or you can set your own html page.
-window.location.replace('home.html');
-//window.open('home.html',"_blank")
+window.location('home.html');
 }
