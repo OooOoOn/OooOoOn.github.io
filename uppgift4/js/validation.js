@@ -7,6 +7,8 @@ function validation() {
     if(vCode.length < 1 && vNumber.length < 1){
         return "";
     }
+
+    alert(vNumber);
     
     switch (vNumber) {
         case "+46766123456":
