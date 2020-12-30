@@ -35,7 +35,7 @@ function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
             localStorage.setItem({ userName: 'Jon' });
-            document.cookie = "username=Jon";
+            document.cookie = "username=Jon; path=/";
             break;    
         default:
             localStorage.setItem({ userName: 'Anonymous' });
@@ -43,8 +43,3 @@ function setUsername(vNumber) {
             break;
     }
 }
-let cookie = document.cookie;
-console.log("cookie 1 is " + localStorage.getItem('userName'));
-console.log("cookie 2 is " + cookie);
-document.getElementById("user").innerHTML = localStorage.getItem('userName');
-document.getElementById("user2").innerHTML = cookie;
