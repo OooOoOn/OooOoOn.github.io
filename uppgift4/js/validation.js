@@ -13,6 +13,7 @@ function validation() {
             if(verifyCode(vCode)) {
                 setUsername(vNumber);
                 cookie = document.cookie;
+                console.log(cookie);
                 return true;
             }
             break;    
