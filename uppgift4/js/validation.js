@@ -1,5 +1,3 @@
-let cookie;
-
 function validation() {
     var vCode = document.getElementById("inputCodeBrowser").value ? document.getElementById("inputCodeBrowser").value : document.getElementById("inputCodeMobile").value;
     var vNumber = document.getElementById("inputNumberBrowser").value ? document.getElementById("inputNumberBrowser").value : document.getElementById("inputNumberMobile").value;
@@ -38,7 +36,6 @@ function setUsername(vNumber) {
         case "+46766123456":
             localStorage.setItem({ userName: 'Jon' });
             document.cookie = "username=Jon";
-            cookie = document.cookie;
             break;    
         default:
             localStorage.setItem({ userName: 'Anonymous' });
@@ -46,6 +43,7 @@ function setUsername(vNumber) {
             break;
     }
 }
+let cookie = document.cookie;
 console.log("cookie 1 is " + localStorage.getItem('userName'));
 console.log("cookie 2 is " + cookie);
 document.getElementById("user").innerHTML = localStorage.getItem('userName');
