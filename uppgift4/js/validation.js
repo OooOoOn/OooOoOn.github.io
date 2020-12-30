@@ -36,17 +36,17 @@ function verifyCode(code) {
 function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
-            window.localStorage.setItem({ userName: 'Jon' });
+            localStorage.setItem({ userName: 'Jon' });
             document.cookie = "username=Jon";
             cookie = document.cookie;
             break;    
         default:
+            localStorage.setItem({ userName: 'Anonymous' });
             document.cookie = "username=Anonymous";
-            window.localStorage.setItem({ userName: 'Anonymous' });
             break;
     }
 }
-console.log("cookie 1 is " + window.localStorage.getItem('userName'));
+console.log("cookie 1 is " + localStorage.getItem('userName'));
 console.log("cookie 2 is " + cookie);
-document.getElementById("user").innerHTML = window.localStorage.getItem('userName');
+document.getElementById("user").innerHTML = localStorage.getItem('userName');
 document.getElementById("user2").innerHTML = cookie;
