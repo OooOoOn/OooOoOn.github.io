@@ -1,4 +1,4 @@
-//let cookie = document.cookie;
+let cookie;
 
 function validation() {
     var vCode = document.getElementById("inputCodeBrowser").value ? document.getElementById("inputCodeBrowser").value : document.getElementById("inputCodeMobile").value;
@@ -37,14 +37,15 @@ function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
             window.localStorage.setItem({ userName: 'Jon' });
-            console.log(window.localStorage.getItem('userName'));
-            // document.cookie = "username=Jon; path=/home";
+            document.cookie = "username=Jon";
+            cookie = document.cookie;
             break;    
         default:
-            // document.cookie = "username=Anonymous";
+            document.cookie = "username=Anonymous";
             window.localStorage.setItem({ userName: 'Anonymous' });
             break;
     }
 }
-
+console.log("cookie 1 is " + window.localStorage.getItem('userName'));
+console.log("cookie 2 is " + cookie);
 document.getElementById("user").innerHTML = window.localStorage.getItem('userName');
