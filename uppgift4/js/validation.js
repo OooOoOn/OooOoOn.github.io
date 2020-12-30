@@ -1,26 +1,26 @@
-var username;
+let cookie;
 
 function validation() {
     var vCode = document.getElementById("inputCodeBrowser").value ? document.getElementById("inputCodeBrowser").value : document.getElementById("inputCodeMobile").value;
     var vNumber = document.getElementById("inputNumberBrowser").value ? document.getElementById("inputNumberBrowser").value : document.getElementById("inputNumberMobile").value;
     
-    if(vCode.length < 1 && vNumber.length < 1){
+    if(vCode.length < 1 && vNumber.length < 1) {
         return "";
     }
-
-    alert(vNumber);
     
     switch (vNumber) {
         case "+46766123456":
             if(verifyCode(vCode)) {
                 setUsername(vNumber);
-                successfulLogin();
+                cookie = document.cookie;
+                return true;
             }
             break;    
         default:
             alert('Incorrect number');
             break;
     }
+    return false;
 }
 
 function verifyCode(code) {
@@ -37,16 +37,13 @@ function verifyCode(code) {
 function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
-            username = "Jon";
+            document.cookie = "username=Jon";
             break;    
         default:
-            username = "Anonymous";
+            document.cookie = "username=Anonymous";
             break;
     }
 }
 
-function successfulLogin() {
+document.getElementById("user").innerHTML = cookie.split("=")[1];
 
-//Redirecting to other page or webste code or you can set your own html page.
-window.location('home.html');
-}

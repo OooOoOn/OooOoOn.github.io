@@ -57,14 +57,14 @@
 				</div>
 			</div>
 			<div class="row" id="signin">
-				<form class="form-signin">
+				<form class="form-signin" action="home.html" onSubmit="return validation()">
 					<p class="h6 mb-3" id="sign_in_text">LOGGA IN</p>
 					<img id="face_recognition_logo" alt="" class="mb-2" height="100" src="img/face_recognition.png" width="100">
 
 					<h5 id="sign_in_text" class="h6 mb-3 ">Identifiera dig själv</h5>
 					<label class="sr-only" for="Telefonnummer">Telefonnummer</label> <input autofocus="" class="form-control" id="inputNumberMobile" placeholder="+46" required="required" type="tel">
 					<label class="sr-only" for="Kod">Kod</label> <input class="form-control" id="inputCodeMobile" placeholder="Bekräftelsekod" required="required" type="password">
-					<button id="sign_in_button" onclick="validation()" class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
+					<button id="sign_in_button" class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
 
 					<p id="sign_in_text">------ ELLER ------</p>
 					<button id="register_button" class="btn btn-lg btn-success btn-block" type="submit">Registrera</button>
@@ -74,14 +74,14 @@
 		<section id="browser">
 			<div class="row">
 				<div class="col" id="signin">
-					<form class="form-signin">
+					<form class="form-signin" action="home.html" onSubmit="return validation()">
 						<p class="h6 mb-3 " id="sign_in_text">LOGGA IN</p>
 						<img id="face_recognition_logo" alt="" class="mb-2" height="100" src="img/face_recognition.png" width="100">
 	
 						<h5 id="sign_in_text" class="h6 mb-3 ">Identifiera dig själv</h5>
 						<label class="sr-only" for="Telefonnummer">Telefonnummer</label> <input autofocus="" class="form-control" id="inputNumberBrowser" placeholder="+46" required="required" type="tel"> 
 						<label class="sr-only" for="Kod">Kod</label> <input class="form-control" id="inputCodeBrowser" placeholder="Bekräftelsekod" required="required" data-error="Please enter your full name." type="password">
-						<button id="sign_in_button" onclick="validation()" class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
+						<button id="sign_in_button" class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
 	
 						<p id="sign_in_text">------ ELLER ------</p>
 						<button id="register_button" class="btn btn-lg btn-success btn-block"  onclick="location.href = '#';" type="submit">Registrera</button>
