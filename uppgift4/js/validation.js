@@ -38,6 +38,7 @@ function verifyCode(code) {
 function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
+            console.log("test test test");
             document.cookie = "username=Jon; path=/home";
             break;    
         default:
