@@ -1,4 +1,4 @@
-let cookie;
+//let cookie = document.cookie;
 
 function validation() {
     var vCode = document.getElementById("inputCodeBrowser").value ? document.getElementById("inputCodeBrowser").value : document.getElementById("inputCodeMobile").value;
@@ -12,8 +12,6 @@ function validation() {
         case "+46766123456":
             if(verifyCode(vCode)) {
                 setUsername(vNumber);
-                cookie = document.cookie;
-                console.log("cooke is " + cookie);
                 return true;
             }
             break;    
@@ -38,14 +36,15 @@ function verifyCode(code) {
 function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
-            console.log("test test test");
-            document.cookie = "username=Jon; path=/home";
+            window.localStorage.setItem({ userName: 'Jon' });
+            console.log(window.localStorage.getItem('userName'));
+            // document.cookie = "username=Jon; path=/home";
             break;    
         default:
-            document.cookie = "username=Anonymous";
+            // document.cookie = "username=Anonymous";
+            window.localStorage.setItem({ userName: 'Anonymous' });
             break;
     }
 }
 
-document.getElementById("user").innerHTML = cookie.split("=")[1];
-
+document.getElementById("user").innerHTML = window.localStorage.getItem('userName');
