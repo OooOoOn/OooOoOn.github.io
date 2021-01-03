@@ -34,8 +34,8 @@ function verifyCode(code) {
 function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
-            localStorage.setItem( 'userName', 'Jon' );
-            localStorage.setItem( 'userAge', '24' );
+            localStorage.setItem( 'userName', 'Knut' );
+            localStorage.setItem( 'userAge', '56' );
             localStorage.setItem( 'userLocation', 'Malmö' );
             localStorage.setItem( 'userImage', 'img/Man1.png' );
             break;    
@@ -46,3 +46,16 @@ function setUsername(vNumber) {
             break;
     }
 }
+
+function facialRecognition() {
+var video = document.getElementById('video');
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+ navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+ video.src = window.URL.createObjectURL(stream);
+ video.play();
+ });
+}
+
+}
+
+

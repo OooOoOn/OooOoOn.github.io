@@ -1,7 +1,8 @@
 document.getElementById("user").innerHTML = localStorage.getItem('userName');
 document.getElementById("age").innerHTML = localStorage.getItem('userAge');
 document.getElementById("location").innerHTML = localStorage.getItem('userLocation');
-document.getElementById("image").src=localStorage.getItem('userImage');
+var userImage = localStorage.getItem('userImage');
+document.getElementById("image").src = userImage;
 
 /* Get chat user info for dynamic chat */
 function chattingWith(user) {
@@ -37,7 +38,7 @@ function chattingWith(user) {
             break;
     }
     document.getElementById("chatUser").innerHTML = localStorage.getItem('chatUser');
-    document.getElementById("chatUserImage").src=localStorage.getItem('chatUserImage');
+    document.getElementById("chatUserImage").src = localStorage.getItem('chatUserImage');
     
     /* Update chat messages time stamp with a 10 sec interval (non dynamic solution for now) */
     var today = new Date();
@@ -52,4 +53,5 @@ function getTime(today) {
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     return time;
 }
+
 

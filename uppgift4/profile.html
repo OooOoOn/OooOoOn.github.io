@@ -56,7 +56,7 @@
           <div class="float right" id="profil">
             <ul class="navbar-nav">
               <li class="nav-item dropdown" >
-                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button"><img alt="meddelanden" height="30" src="img/mail.png" width="40"> Ulrika-Eleonora <img alt="profilbild" height="50" src="img/Woman1.jpg" width="50" class="rounded-circle"></a>
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button"><img class="mr-3" alt="meddelanden" height="30" src="img/mail.png" width="40"><img alt="profilbild" height="50" id="image" width="50" class="rounded-circle"></a>
                 <div aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right">
                   <a class="dropdown-item" href="profile.html">Min Profil</a> <a class="dropdown-item" href="#">Säkerhet</a> <a class="dropdown-item" href="#">Inställningar</a>
                   <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Logga ut</a>
@@ -68,6 +68,7 @@
       </nav>
     </div>
     <!-- Profile card -->
+    <div class="row p-5"></div>
    <div class="card card-custom bg-white border-white border-0">
       <div class="card-custom-img" style="background-image: url(img/profil-bg.jpg);"></div>
       <div class="card-custom-avatar"><img alt="Profilbild" class="img-fluid" src="img/Ulrika.jpg"></div>
@@ -141,24 +142,47 @@
         <a class="btn btn-primary" href="#">Spara</a>
       </div>
     </div>
+    <div class="row p-5"></div>
   </div>
   <footer>
-    <div class="row p-5" id="layerbackground_2">
-      <div class="row justify-content-center text-center"><img alt="Traffpunkten" class="h3 mb-3" id="logo_2" src="./img/logo_inverted.png"></div>
-      <div class="row justify-content-center text-center">
-        <p class="h4 mb-2 font-weight-light" id="footer_text">Om träffpunkten</p>
-      </div>
-      <div class="row justify-content-center text-center">
-        <p class="h4 mb-2 font-weight-light" id="footer_text">Säkerhetspolicy</p>
-      </div>
-      <div class="row justify-content-center text-center">
-        <p class="h4 mb-2 font-weight-light" id="footer_text">FAQ</p>
-      </div>
-      <div class="row justify-content-center text-center">
-        <p class="h4 mb-2 font-weight-light" id="footer_text">Kontakt</p>
-      </div>
-    </div>
-  </footer><!-- Optional JavaScript; choose one of the two! -->
+		<div class="row p-5" id="layerbackground_2">
+			<div class="row justify-content-center text-center"><img alt="Traffpunkten" class="h3 mb-3" id="logo_2" src="./img/logo_inverted.png"></div>
+			<div class="row justify-content-center text-center">
+				<p class="h4 mb-2 font-weight-light" id="footer_text">Om träffpunkten</p>
+			</div>
+			<div class="row justify-content-center text-center">
+				<p class="h4 mb-2 font-weight-light" data-target="#myModal" data-toggle="modal" id="footer_text" style="cursor:pointer;">Säkerhetspolicy</p>
+			</div>
+			<div class="row justify-content-center text-center">
+				<p class="h4 mb-2 font-weight-light" id="footer_text">FAQ</p>
+			</div>
+			<div class="row justify-content-center text-center">
+				<p class="h4 mb-2 font-weight-light" id="footer_text">Kontakt</p>
+			</div>
+		</div>
+	</footer>
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button">&times;</button> <span><i aria-hidden="true" class="fa fa-shield fa-lg"></i></span>
+					<h4 class="icon-heading"><span>Säkerhetspolicy</span></h4>
+				</div><!-- Modal body -->
+				<div class="modal-body">
+					Träffpunkten tar seriöst på den personliga integriteten för besökare på vår webbsida och användare av tjänsterna som vi erbjuder på webbsidan.<br>
+					<br>
+					Vår målsättning är att du ska känna dig säker på att din personliga integritet respekteras och att dina personuppgifter behandlas korrekt. Vi tar ansvar för att personuppgifter som behandlas av Träffpunkten används endast för avsedda ändamål och skyddas mot obehörig åtkomst. All behandling av personuppgifter sker i enlighet med tillämplig personuppgiftslagstiftning. Inom EU/EES gäller från maj 2018 dataskyddsförordningen (GDPR)1. När du besöker/använder vår webbsida,&nbsp; tjänster eller kommunicerar med oss t ex via e-post kan vi komma att samla in uppgifter om dig som t. ex. namn, adress, postadress, e-postadress, telefonnummer, identifikationsuppgifter, information om din användning av våra tjänster och produkter och transaktionshistorik. Vidare kan vi komma att samla in teknisk data om de enheter du använder, däribland IP-adress, unikt enhets-ID, typ av webbläsare och cookieinformation.<br>
+					<br>
+					Personuppgifterna kommer att behandlas av oss endast så länge som det behövs för att uppfylla ändamålen med behandlingen eller för att fullgöra rättsliga skyldigheter.
+				</div><!-- Modal footer -->
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal" type="button">Stäng</button>
+				</div>
+			</div>
+		</div>
+	</div>
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
   </script> 

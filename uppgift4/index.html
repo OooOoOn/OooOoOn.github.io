@@ -59,8 +59,8 @@
 			<div class="row" id="signin">
 				<form class="form-signin" action="home.html" onSubmit="return validation()">
 					<p class="h6 mb-3" id="sign_in_text">LOGGA IN</p>
-					<img id="face_recognition_logo" alt="" class="mb-2" height="100" src="img/face_recognition.png" width="100">
-
+					<img id="face_recognition_logo" alt="" class="mb-2" height="100" src="img/face_recognition.png" width="100" onClick="facialRecognition()" role="button">
+					<video id="video" width="640" height="480" autoplay></video>
 					<h5 id="sign_in_text" class="h6 mb-3 ">Identifiera dig själv</h5>
 					<label class="sr-only" for="Telefonnummer">Telefonnummer</label> <input autofocus="" class="form-control" id="inputNumberMobile" placeholder="+46" required="required" type="tel">
 					<label class="sr-only" for="Kod">Kod</label> <input class="form-control" id="inputCodeMobile" placeholder="Bekräftelsekod" required="required" type="password">
@@ -76,8 +76,8 @@
 				<div class="col" id="signin">
 					<form class="form-signin" action="home.html" onSubmit="return validation()">
 						<p class="h6 mb-3 " id="sign_in_text">LOGGA IN</p>
-						<img id="face_recognition_logo" alt="" class="mb-2" height="100" src="img/face_recognition.png" width="100">
-	
+						<img id="face_recognition_logo" alt="" class="mb-2" height="100" src="img/face_recognition.png" width="100" onClick="facialRecognition()" role="button">
+						<video id="video" width="640" height="480" autoplay></video>
 						<h5 id="sign_in_text" class="h6 mb-3 ">Identifiera dig själv</h5>
 						<label class="sr-only" for="Telefonnummer">Telefonnummer</label> <input autofocus="" class="form-control" id="inputNumberBrowser" placeholder="+46" required="required" type="tel"> 
 						<label class="sr-only" for="Kod">Kod</label> <input class="form-control" id="inputCodeBrowser" placeholder="Bekräftelsekod" required="required" data-error="Please enter your full name." type="password">
@@ -111,7 +111,8 @@
 				<p class="h4 mb-2 font-weight-light" id="footer_text">Kontakt</p>
 			</div>
 		</div>
-	</footer><!-- The Modal -->
+	</footer>
+	<!-- The Modal -->
 	<div class="modal fade" id="myModal">
 		<div class="modal-dialog modal-dialog-centered modal-lg">
 			<div class="modal-content">
@@ -132,7 +133,7 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- Optional JavaScript; choose one of the two! -->
+	</div>
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
 	</script> 
