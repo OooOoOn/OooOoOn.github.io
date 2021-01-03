@@ -34,12 +34,15 @@ function verifyCode(code) {
 function setUsername(vNumber) {
     switch (vNumber) {
         case "+46766123456":
-            localStorage.setItem({ userName: 'Jon' });
-            document.cookie = "username=Jon; expires=Fri, 1 Jan 2021 12:00:00 UTC; path=/;";
+            localStorage.setItem( 'userName', 'Jon' );
+            localStorage.setItem( 'userAge', '24' );
+            localStorage.setItem( 'userLocation', 'Malmö' );
+            localStorage.setItem( 'userImage', 'img/Man1.png' );
             break;    
         default:
-            localStorage.setItem({ userName: 'Anonymous' });
-            document.cookie = "username=Anonymous";
+            localStorage.setItem( 'userName', 'Anonymous' );
+            localStorage.setItem( 'age', 'Unknown' );
+            localStorage.setItem( 'location', 'Unknown' );
             break;
     }
 }

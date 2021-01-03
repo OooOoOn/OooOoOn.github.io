@@ -1,0 +1,210 @@
+/* Styles for Smells Like Team Spirit © 2020 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: "Roboto";
+  background-color: #FFF9F8;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+#logo_2 {
+  display: block;
+  text-align: center;
+}
+#frontpage_description_1 {
+  color: white;
+}
+#sign_in_button {
+  background-color: #A6B579;
+  border-radius: 25px;
+  margin-bottom: 5%;
+}
+#register_button {
+  background-color: #DF8063;
+  border-radius: 25px;
+  margin-bottom: 25%;
+}
+#sign_in_text {
+  color: #7A7A7A;
+}
+#footer_text {
+  color: #ffffff;
+}
+#signin {
+  padding: 2rem
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="tel"] {
+  margin-bottom: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 25px;
+  box-shadow: 2px 2px 6px 0px #dbd7d7 inset;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-radius: 25px;
+  box-shadow: 2px 2px 6px 0px #dbd7d7 inset;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#alternative {
+  font-style: bold;
+  text-align: center;
+}
+/*stretches width to move profile right */
+
+#navbarSupportedContent ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.navbar {
+  -webkit-box-shadow: 0 5px 6px -6px #999;
+  -moz-box-shadow: 0 5px 6px -6px #999;
+  box-shadow: 0 5px 6px -6px #999;
+}
+.navbarSupportedContent {
+  max-height: 50px;
+}
+/*displays profile right in navbar*/
+
+#profil {
+  width: 300px;
+}
+#menulink {
+  color: #9B8080;
+}
+.navbarDropdown.nav-link.dropdown-toggle {
+  color: green;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  color: #9B8080;
+}
+footer>div {
+  display: flex;
+  flex-direction: column;
+}
+#browser>.row>.col {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  #browser {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  #mobile {
+    display: none;
+  }
+}
+/* Security policy popup*/
+
+.modal-dialog {
+  box-shadow: none;
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #A6B579;
+  border-radius: .3rem;
+  outline: 0;
+}
+.modal-header {
+  display: block;
+  /* display: flex; */
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+.form-group {
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.icon-heading {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+  padding-top: 3px;
+}
+.modal-header {
+  background-color: #A6B579;
+}
+
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; 
+  z-index: 20;
+}

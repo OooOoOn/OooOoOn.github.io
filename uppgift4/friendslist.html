@@ -16,6 +16,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="css/styles_friendslist.css" rel="stylesheet">
+	<link href="css/styles_common.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- popper -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
 	</script>
@@ -61,7 +62,7 @@
 					<div class="float right" id="profil">
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
-								<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button"><img alt="meddelanden" height="30" src="img/mail.png" width="40"> Ulrika-Eleonora <img alt="profilbild" height="50" src="img/Woman1.jpg" width="50" class="rounded-circle"></a>
+								<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button"><img class="mr-3" alt="meddelanden" height="30" src="img/mail.png" width="40"><img alt="profilbild" height="50" id="image" width="50" class="rounded-circle"></a>
 								<div aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right">
 									<a class="dropdown-item" href="profile.html">Min Profil</a> <a class="dropdown-item" href="#">Säkerhet</a> <a class="dropdown-item" href="#">Inställningar</a>
 									<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Logga ut</a>
@@ -76,65 +77,91 @@
 		<h1 class="my-4">Mina vänner</h1>
 		<div class="row">
 			<div class="card-columns mx-auto pb-5">
-				<div class="card">
-					<a href="#"><img alt="" class="card-img-top" src="img/Man1.jpg"></a>
-					<div class="card-body text-center">
-						<h4 class="card-title"><a href="#" id="friendName">Kurt Nyberg</a></h4>
-						<p class="card-text">Aged BoBo, Bohemian Borgeouise.</p>
-					</div>
-					<div class="btn-group" >
-						<button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button> <button class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button> <button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
-					</div>
-				</div>
-				<div class="card">
-					<a href="#"><img alt="" class="card-img-top" src="img/Woman1.jpg" ></a>
-					<div class="card-body text-center">
-						<h4 class="card-title"><a href="#" id="friendName">Berit Olsson</a></h4>
-						<p class="card-text">Carpe diem</p>
-					</div>
-					<div class="btn-group">
-						<button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button> <button class="btn btn-sm btn-outline-secondary" id="addClass2" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button> <button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+				<div class="menu">
+					<div class="card">
+						<a href="#"><img alt="" class="card-img-top" src="img/Man1.jpg"></a>
+						<div class="card-body text-center">
+							<div class="label">
+							<h4 class="card-title"><a href="#" id="friendName">Kurt Nyberg</a></h4>
+							</div>
+							<p class="card-text">Aged BoBo, Bohemian Borgeouise.</p>
+						</div>
+						<div class="btn-group" >
+							<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button>
+							<button onClick="chattingWith('user1')" class="item" class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button>
+							<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+						</div>
 					</div>
 				</div>
+				<div class="menu">
+					<div class="card">
+						<a href="#"><img alt="" class="card-img-top" src="img/Woman3.jpg" ></a>
+						<div class="card-body text-center">
+							<h4 class="card-title"><a href="#" id="friendName">Berit Olsson</a></h4>
+							<p class="card-text">Carpe diem</p>
+						</div>
+						<div class="btn-group" >
+							<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button>
+							<button onClick="chattingWith('user2')" class="item" class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button>
+							<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+						</div>
+					</div>
+				</div>
+				<div class="menu">
 				<div class="card">
 					<a href="#"><img alt="" class="card-img-top" src="img/Woman2.jpg"></a>
 					<div class="card-body text-center">
 						<h4 class="card-title"><a href="#" id="friendName">Ingeborg Holmberg</a></h4>
 						<p class="card-text">Mitt hem är min borg.</p>
 					</div>
-					<div class="btn-group">
-						<button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button> <button class="btn btn-sm btn-outline-secondary" id="addClass3" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button> <button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+					<div class="btn-group" >
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button>
+						<button onClick="chattingWith('user3')" class="item" class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button>
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
 					</div>
 				</div>
+				</div>
+				<div class="menu">
 				<div class="card">
 					<a href="#"><img alt="" class="card-img-top" src="img/Woman4.jpg"></a>
 					<div class="card-body text-center">
 						<h4 class="card-title"><a href="#" id="friendName">Märta Blom</a></h4>
 						<p class="card-text">Verkligheten är inte allt här i världen.</p>
 					</div>
-					<div class="btn-group">
-						<button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button> <button class="btn btn-sm btn-outline-secondary" id="addClass4" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button> <button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+					<div class="btn-group" >
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button>
+						<button onClick="chattingWith('user4')" class="item" class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button>
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
 					</div>
 				</div>
+				</div>
+				<div class="menu">
 				<div class="card">
 					<a href="#"><img alt="" class="card-img-top" src="img/Man2.jpg"></a>
 					<div class="card-body text-center">
 						<h4 class="card-title"><a href="#" id="friendName">Rolf Ren</a></h4>
 						<p class="card-text">Jag vill bli tomtens ren.</p>
 					</div>
-					<div class="btn-group">
-						<button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button> <button class="btn btn-sm btn-outline-secondary" id="addClass5" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button> <button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+					<div class="btn-group" >
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button>
+						<button onClick="chattingWith('user5')" class="item" class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button>
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
 					</div>
 				</div>
+				</div>	
+				<div class="menu">
 				<div class="card">
 					<a href="#"><img alt="" class="card-img-top" src="img/Man3.jpg"></a>
 					<div class="card-body text-center">
 						<h4 class="card-title"><a href="#" id="friendName">Håkan Håkansson</a></h4>
 						<p class="card-text">Tro inte på allt du tänker.</p>
 					</div>
-					<div class="btn-group">
-						<button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button> <button class="btn btn-sm btn-outline-secondary" id="addClass6" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button> <button class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
+					<div class="btn-group" >
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-phone"></i>&nbsp;Ring</button>
+						<button onClick="chattingWith('user6')" class="item" class="btn btn-sm btn-outline-secondary" id="addClass" type="button"><i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Chatta</button>
+						<button class="item" class="btn btn-sm btn-outline-secondary" id="option_button" type="button"><i aria-hidden="true" class="fa fa-user"></i>&nbsp;Se profil</button>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -187,19 +214,19 @@
 				</div><!-- Message. Default to the left -->
 				<div class="direct-chat-msg doted-border">
 					<div class="direct-chat-info clearfix">
-						<span class="direct-chat-name pull-left">Jag</span>
+						<span class="direct-chat-name pull-left" id="user"></span>
 					</div><!-- /.direct-chat-info -->
 					<img alt="message user image" class="direct-chat-img" src="img/Woman1.jpg"><!-- /.direct-chat-img -->
 					<div class="direct-chat-text">
 						Hallå din gamle get! Hur är det med dig ?
 					</div>
 					<div class="direct-chat-info clearfix">
-						<span class="direct-chat-timestamp pull-right">3.36 PM</span>
+						<span class="direct-chat-timestamp pull-right" id="currentTime"></span>
 					</div>
 					<div class="direct-chat-info clearfix">
-						<span class="direct-chat-img-reply-small pull-left"></span> <span class="direct-chat-reply-name">Kurt Nyberg</span>
+						<span class="direct-chat-img-reply-small pull-left"></span> <span class="direct-chat-reply-name" id="chatUser"></span>
 					</div>
-					<img alt="message user image" class="direct-chat-img" src="img/Man1.jpg">
+					<img alt="message user image" class="direct-chat-img" id="chatUserImage">
 					<div class="direct-chat-text">
 						Jodå, tackar som frågar. Hur är det själv?
 					</div><!-- /.direct-chat-text -->
@@ -209,18 +236,15 @@
 				</div><!-- Message. Default to the left -->
 				<div class="direct-chat-msg doted-border">
 					<div class="direct-chat-info clearfix">
-						<span class="direct-chat-name pull-left">Jag</span>
+						<span class="direct-chat-name pull-left" id="user"></span>
 					</div><!-- /.direct-chat-info -->
 					<img alt="iamgurdeeposahan" class="direct-chat-img" src="img/Woman1.jpg"><!-- /.direct-chat-img -->
 					<div class="direct-chat-text">
 						Ska vi gå ut och ta en fika nån dag?
 					</div>
 					<div class="direct-chat-info clearfix">
-						<span class="direct-chat-timestamp pull-right">3.36 PM</span>
+						<span class="direct-chat-timestamp pull-right" id="currentTimeDelay"></span>
 					</div>
-					<div class="direct-chat-info clearfix">
-						<img alt="iamgurdeeposahan" class="direct-chat-img big-round" src="img/Man1.jpg"> <span class="direct-chat-reply-name">Kurt Nyberg</span>
-					</div><!-- /.direct-chat-text -->
 				</div><!-- /.direct-chat-msg -->
 			</div>
 		</div>
@@ -235,5 +259,7 @@
 	</script> 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
 	</script>
+	<script src="js/cookies.js"></script>
+	<script src="js/validation.js"></script>
 </body>
 </html>
