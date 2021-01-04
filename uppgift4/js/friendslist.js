@@ -1,8 +1,20 @@
-document.getElementById("user").innerHTML = localStorage.getItem('userName');
-document.getElementById("age").innerHTML = localStorage.getItem('userAge');
-document.getElementById("location").innerHTML = localStorage.getItem('userLocation');
-var userImage = localStorage.getItem('userImage');
-document.getElementById("image").src = userImage;
+/* Fill out dynamic values */
+document.getElementById("image").src = localStorage.getItem('userImage');
+document.getElementById("image2").src = localStorage.getItem('userImage');
+document.getElementById("image3").src = localStorage.getItem('userImage');
+document.getElementById("user").innerHTML = localStorage.getItem('userName').split(" ")[0];
+document.getElementById("user2").innerHTML = localStorage.getItem('userName').split(" ")[0];
+
+$(function(){
+    $("#addClass ,#addClass2, #addClass3, #addClass4, #addClass5, #addClass6").click(function () {
+             $('#qnimate').addClass('popup-box-on');
+               });
+             
+               $("#removeClass").click(function () {
+             $('#qnimate').removeClass('popup-box-on');
+               });
+})
+
 
 /* Get chat user info for dynamic chat */
 function chattingWith(user) {
@@ -37,8 +49,10 @@ function chattingWith(user) {
             localStorage.setItem( 'userName', 'Anonymous' );
             break;
     }
+    document.getElementById("chatUserReply").innerHTML = getReply();
     document.getElementById("chatUser").innerHTML = localStorage.getItem('chatUser');
     document.getElementById("chatUserImage").src = localStorage.getItem('chatUserImage');
+    document.getElementById("chatUserImage2").src = localStorage.getItem('chatUserImage');
     
     /* Update chat messages time stamp with a 10 sec interval (non dynamic solution for now) */
     var today = new Date();
@@ -53,5 +67,26 @@ function getTime(today) {
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     return time;
 }
+/* Random chat replies */
+function sendReply() {
+    localStorage.setItem( 'userReply', document.getElementById( "status_message" ).value );
+    document.getElementById("userReply").innerHTML = localStorage.getItem('userReply');
+    document.getElementById("status_message").value = "";
+}
+
+function getReply() {
+    var userGeneratedReplies = [
+        "Jodå det går bra, sj då? Gratulera Jon till hans VG!",
+        "Helt ok! Du glömmer väl inte Jons VG?",
+        "Jag lever! Hur är det med dig?",
+        "*host* VG *harkel*",
+        "Vi mår alla bra! Du?"
+    ];
+    let userReply = userGeneratedReplies[Math.floor(Math.random() * userGeneratedReplies.length)];
+    return document.getElementById("chatUserReply").innerHTML = userReply;
+}
+
+
+
 
 
