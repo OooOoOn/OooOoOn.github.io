@@ -187,16 +187,17 @@ a {
 
 .button1, .button2, .button3, .button4, .button5 {
 	z-index: 1;
-	padding: 1%;
+	padding: 0.5%;
+	margin-left: 0.5%;
 	text-align: center;
 	width: 7%;
+	height: 0%;
 	position: fixed;
-	background-color: rgb(100, 47, 26);
-	text-shadow: 0 0 3px #FF0000;
-	border-style: solid;
-	border-width: 1px;
+	background-color: rgb(155,128,128,1);
 	min-width: 130px;
-	min-height: 35px;
+	min-height: 15px;
+	padding-bottom: 1.5%;
+	border-radius: 25px;
 }
 
 .button1 {
@@ -333,10 +334,9 @@ a {
 	.button1, .button2, .button3, .button4, .button5 {
 		width: 20%;
 		bottom: 3%;
-		height: 5%;
-		padding-top: 3%;
+		padding-top: 2%;
 		min-width: 75px;
-		min-height: 35px;
+
 	}
 	.button1 {
 		left: 2%
