@@ -99,6 +99,11 @@ abbr[data-original-title] {
 
 #portfolioButton {
   padding: 1rem;
+  font-weight: normal;
+}
+
+#contactMeButton {
+  font-weight: bold;
 }
 
 .btn {
