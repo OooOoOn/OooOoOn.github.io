@@ -38,8 +38,6 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -66,6 +64,12 @@ body {
   outline: 0 !important;
 }
 
+#myBtn:hover {
+  background-color: rgb(41, 36, 36);
+}
+
+
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -91,6 +95,46 @@ abbr[data-original-title] {
   border-bottom: 0;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+
+#portfolioButton {
+  padding: 1rem;
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%, #000000 100%), url("../assets/img/background_0.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead h1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5));
+
+}
+.masthead h2 {
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5));
+  max-width: 20rem;
+  font-size: 2.5rem;
 }
 
 address {
@@ -548,7 +592,7 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
+  
   margin-left: -0.75rem;
 }
 
@@ -3070,6 +3114,9 @@ input[type=button].btn-block {
   }
 }
 @media (min-width: 576px) {
+  #mobile {
+    display: none; 
+   }
   .navbar-expand-sm {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -9151,41 +9198,6 @@ body {
   }
 }
 
-.btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
-.masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%, #000000 100%), url("../assets/img/background_0.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5));
- 
-}
-.masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5));
-}
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
@@ -9201,10 +9213,6 @@ body {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
-  }
-  .masthead h2 {
-    max-width: 30rem;
-    font-size: 2.25rem;
   }
 }
 
@@ -9304,7 +9312,7 @@ Project card animations
 .view {
   width: 100%;
   height: 100%;
-  margin: 10px;
+  margin: 5px;
   float: left;
   border: 10px solid #fff;
   overflow: hidden;
@@ -9399,6 +9407,7 @@ Project card animations
   -o-transition: all 0.3s ease-in-out 0.1s;
   -ms-transition: all 0.3s ease-in-out 0.1s;
   transition: all 0.3s ease-in-out 0.1s;
+  font-size: 2rem;
 }
 .view-sixth p {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -9414,6 +9423,7 @@ Project card animations
   -o-transition: all 0.3s ease-in-out 0.2s;
   -ms-transition: all 0.3s ease-in-out 0.2s;
   transition: all 0.3s ease-in-out 0.2s;
+  font-size: 1rem;
 }
 .view-sixth a.info {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -9521,18 +9531,6 @@ Project card animations
   overflow: hidden;
   margin: 0 auto;
 }
-@media (min-width: 1024px) {
-  .contact {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
 .contact main {
   float: left;
   width: 100%;
@@ -9551,33 +9549,16 @@ Project card animations
   position: relative;
   text-align: center;
 }
-@media (min-width: 414px) {
-  .contact main section .content {
-    text-align: left;
-  }
-}
 .contact main section .content img {
   display: inline-block;
   width: 140px;
-  border-radius: 50%;
-}
-@media (min-width: 414px) {
-  .contact main section .content img {
-    float: left;
-    width: 30%;
-    margin-right: 10%;
-  }
+  border-radius: 10%;
 }
 .contact main section .content aside {
   float: left;
   width: 100%;
   color: #ffffff;
   margin-top: 10px;
-}
-@media (min-width: 414px) {
-  .contact main section .content aside {
-    width: 60%;
-  }
 }
 .contact main section .content aside h1 {
   font-weight: 100;
@@ -9770,11 +9751,6 @@ Project card animations
   transform: translateY(-10px);
   position: relative;
 }
-@media (min-width: 414px) {
-  .contact nav a {
-    padding: 18px 30px;
-  }
-}
 .contact nav a .arrow {
   position: absolute;
   right: 15px;
@@ -9840,7 +9816,6 @@ Project card animations
   overflow: hidden; 
   border-right: .15em solid orange; 
   white-space: nowrap; 
-  font-size: 3rem;
   margin: 0 auto;
   letter-spacing: .15em;
 
@@ -9870,27 +9845,123 @@ Project card animations
 
 /* Scalability */
 
-@media (min-width: 576px) {
+@media (min-width: 414px) {
+  .contact nav a {
+    padding: 18px 30px;
+  }
+  .contact main section .content {
+    text-align: left;
+  }
+  .contact main section .content aside {
+    width: 60%;
+  }
+  .contact main section .content img {
+    float: left;
+    width: 30%;
+    margin-right: 10%;
+  }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+
+  .masthead h2 {
+    max-width: 16rem;
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding-top: 5rem;
+  }
+
+  .projects-section {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    padding-left: 0.75rem;
+  }
+
+  #desktop {
+   display: none; 
+  }
+
+  .previous,
+.next {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+  .view-sixth h2 {
+    font-size: 1.5rem;
+  }
+
+  .table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-responsive-sm > .table-bordered {
+    border: 0;
+  }
+  .dropdown-menu-sm-left {
+    right: auto;
+    left: 0;
+  }
+  .dropdown-menu-sm-right {
+    right: 0;
+    left: auto;
+  }
+  .form-inline label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .form-inline .form-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .form-inline .form-control-plaintext {
+    display: inline-block;
+  }
+  .form-inline .input-group,
+.form-inline .custom-select {
+    width: auto;
+  }
+  .form-inline .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-left: 0;
+  }
+  .form-inline .form-check-input {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 0;
+    margin-right: 0.25rem;
+    margin-left: 0;
+  }
+  .form-inline .custom-control {
+    align-items: center;
+    justify-content: center;
+  }
+  .form-inline .custom-control-label {
+    margin-bottom: 0;
+  }
   .container-sm, .container {
     max-width: 540px;
   }
-}
-@media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -10101,7 +10172,31 @@ Project card animations
     margin-left: 91.6666666667%;
   }
 }
-@media (min-width: 768px) {
+
+
+
+@media (max-width: 768px) {
+  .table-responsive-md {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-responsive-md > .table-bordered {
+    border: 0;
+  }
+  .dropdown-menu-md-left {
+    right: auto;
+    left: 0;
+  }
+
+  .dropdown-menu-md-right {
+    right: 0;
+    left: auto;
+  }
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -10312,7 +10407,29 @@ Project card animations
     margin-left: 91.6666666667%;
   }
 }
-@media (min-width: 992px) {
+
+@media (max-width: 992px) {
+  .table-responsive-lg {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-responsive-lg > .table-bordered {
+    border: 0;
+  }
+  .dropdown-menu-lg-left {
+    right: auto;
+    left: 0;
+  }
+
+  .dropdown-menu-lg-right {
+    right: 0;
+    left: auto;
+  }
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -10523,7 +10640,27 @@ Project card animations
     margin-left: 91.6666666667%;
   }
 }
+
+
+@media (min-width: 1024px) {
+  .contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
 @media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -10733,104 +10870,27 @@ Project card animations
   .offset-xl-11 {
     margin-left: 91.6666666667%;
   }
-}
-@media (max-width: 575.98px) {
-  .table-responsive-sm {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+
+  .dropdown-menu-xl-left {
+    right: auto;
+    left: 0;
   }
-  .table-responsive-sm > .table-bordered {
-    border: 0;
-  }
-}
-@media (max-width: 767.98px) {
-  .table-responsive-md {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive-md > .table-bordered {
-    border: 0;
+
+  .dropdown-menu-xl-right {
+    right: 0;
+    left: auto;
   }
 }
-@media (max-width: 991.98px) {
-  .table-responsive-lg {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive-lg > .table-bordered {
-    border: 0;
-  }
-}
-@media (max-width: 1199.98px) {
-  .table-responsive-xl {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive-xl > .table-bordered {
-    border: 0;
-  }
-}
+
+
+
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
   }
 }
-@media (min-width: 576px) {
-  .form-inline label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-  .form-inline .form-group {
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-bottom: 0;
-  }
-  .form-inline .form-control {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-  }
-  .form-inline .form-control-plaintext {
-    display: inline-block;
-  }
-  .form-inline .input-group,
-.form-inline .custom-select {
-    width: auto;
-  }
-  .form-inline .form-check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    padding-left: 0;
-  }
-  .form-inline .form-check-input {
-    position: relative;
-    flex-shrink: 0;
-    margin-top: 0;
-    margin-right: 0.25rem;
-    margin-left: 0;
-  }
-  .form-inline .custom-control {
-    align-items: center;
-    justify-content: center;
-  }
-  .form-inline .custom-control-label {
-    margin-bottom: 0;
-  }
-}
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
@@ -10846,50 +10906,8 @@ Project card animations
     transition: none;
   }
 }
-@media (min-width: 576px) {
-  .dropdown-menu-sm-left {
-    right: auto;
-    left: 0;
-  }
 
-  .dropdown-menu-sm-right {
-    right: 0;
-    left: auto;
-  }
-}
-@media (min-width: 768px) {
-  .dropdown-menu-md-left {
-    right: auto;
-    left: 0;
-  }
 
-  .dropdown-menu-md-right {
-    right: 0;
-    left: auto;
-  }
-}
-@media (min-width: 992px) {
-  .dropdown-menu-lg-left {
-    right: auto;
-    left: 0;
-  }
-
-  .dropdown-menu-lg-right {
-    right: 0;
-    left: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .dropdown-menu-xl-left {
-    right: auto;
-    left: 0;
-  }
-
-  .dropdown-menu-xl-right {
-    right: 0;
-    left: auto;
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   .custom-switch .custom-control-label::after {
     transition: none;
@@ -11058,6 +11076,7 @@ img.hover-shadow {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  
 }
 
 .next {

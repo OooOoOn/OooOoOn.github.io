@@ -9,8 +9,7 @@
 	<title>Jon Olsson - UX Designer</title>
 	<link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js">
-	</script>
-	<!-- Google fonts-->
+	</script><!-- Google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"><!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/styles.css" rel="stylesheet">
@@ -34,17 +33,16 @@
 				</ul>
 			</div>
 		</div>
-	</nav>
-	<!-- Masthead-->
+	</nav><!-- Masthead-->
 	<header class="masthead">
 		<div class="container d-flex h-100 align-items-center">
 			<div class="mx-auto text-center">
-				<h1 class="mx-auto my-0 text-uppercase">Jon Olsson</h1>
-                <h2 class="mx-auto mt-2 mb-5 typewriter">UX Designer.</h2><a class="btn btn-primary js-scroll-trigger button" href="#projects">Portfolio</a>
+				<h1 class="mx-auto my-4 text-uppercase">Jon Olsson</h1>
+				<h2 class="mx-auto mt-2 mb-5 typewriter">UX Designer.</h2>
+				<a class="btn btn-primary js-scroll-trigger button" id="portfolioButton" href="#projects">Portfolio</a>
 			</div>
 		</div>
-	</header>
-	<!-- About-->
+	</header><!-- About-->
 	<section class="about-section text-center" id="about">
 		<div class="container">
 		<div class="row">
@@ -55,7 +53,7 @@
 		</div><img alt="" class="img-fluid" src="assets/img/background_1.png"></div>
 	</section>
 	<section class="projects-section bg-light" id="projects">
-		<div class="container">
+		<div class="container" id="desktop">
 			<div class="row align-items-center">
 				<div class="col">
 					<div class="featured-text text-center text-lg-left">
@@ -66,14 +64,14 @@
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
 						<div class="mask">
 							<h2>Cleano</h2>
-							<p>A household chores app with a gamified spin.</p><a onclick='projectGallery("cleano")' class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn">Read More</a>
+							<p>A household chores app with a gamified spin.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("cleano")'>Read More</a>
 						</div>
 					</div>
 					<div class="view view-sixth">
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_3.jpg">
 						<div class="mask">
 							<h2>Carbon Footprint</h2>
-							<p>App that calculates individual climate impact. Features co-op and a eco-friendly tamagotchi.</p><a onclick='projectGallery("carbonfootprint")' class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn">Read More</a>
+							<p>App that calculates individual climate impact.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("carbonfootprint")'>Read More</a>
 						</div>
 					</div>
 				</div>
@@ -82,61 +80,80 @@
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_4.jpg">
 						<div class="mask">
 							<h2>Halv Åtta hos Gert</h2>
-							<p>Redesigned website for neighborhood restaurant.</p><a onclick='projectGallery("halvåttahosgert")' class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn">Read More</a>
+							<p>Redesigned website for neighborhood restaurant.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("halvåttahosgert")'>Read More</a>
 						</div>
 					</div>
 					<div class="view view-sixth">
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_1.jpg">
 						<div class="mask">
 							<h2>Träffpunkten</h2>
-							<p>A social media platform for age groups 55+.</p><a onclick='projectGallery("träffpunkten")' class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn">Read More</a>
-                        </div>
-
+							<p>A social media platform for age group 55+.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("träffpunkten")'>Read More</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container" id="mobile">
+			<div class="row align-items-center">
+					<div class="featured-text text-center text-lg-left ml-4">
+						<h4>Portfolio</h4>
+						<p class="text-black-50 mb-0">Scalable, multi-purpose designs.</p>
+					</div><!-- Portfolio animation -->
+					<div class="view view-sixth">
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
+						<div class="mask">
+							<h2>Cleano</h2>
+							<p>A household chores app with a gamified spin.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("cleano")'>Read More</a>
+						</div>
+					</div>
+					<div class="view view-sixth">
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_3.jpg">
+						<div class="mask">
+							<h2>Carbon Footprint</h2>
+							<p>App that calculates individual climate impact.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("carbonfootprint")'>Read More</a>
+						</div>
+					</div>
+					<div class="view view-sixth">
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_4.jpg">
+						<div class="mask">
+							<h2>Halv Åtta hos Gert</h2>
+							<p>Redesigned website for neighborhood restaurant.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("halvåttahosgert")'>Read More</a>
+						</div>
+					</div>
+					<div class="view view-sixth">
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_1.jpg">
+						<div class="mask">
+							<h2>Träffpunkten</h2>
+							<p>A social media platform for age group 55+.</p><a class="info" data-target="#exampleModal" data-toggle="modal" id="myBtn" onclick='projectGallery("träffpunkten")'>Read More</a>
+						</div>
+					</div>
+			</div>
+		</div>
 	</section>
-	                       <!-- Modal -->
-						   <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-
-									<div class="modal-body">
-										<span class="close pointer" onclick="closeLightbox()">&times;</span>
-                                        <div class="modal-content">
-											<div class="row m-1">
-												
-													<div class="slide">
-														<img id="projectImage_1" class="image-slide" alt="Img1" />
-													   </div>
-													   <div class="slide">
-														<img id="projectImage_2"  class="image-slide" alt="Img2." />
-													   </div>
-													   <div class="slide">
-														<img id="projectImage_3"  class="image-slide" alt="Img3." />
-													   </div>
-													 
-													   <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-													   
-												</div>
-												<div class="row m-1">														
-													<div class="featured-text text-center text-lg-center">
-														<h4 id="projectTitle"></h4>
-														<p id="projectFeatures"></p>
-														<p class="text-black-50 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-														<a class="next" onclick="changeSlide(1)">&#10095;</a>
-												</div>
-											</div>
-
-                                       
-                    
-                                        </div>
-                                       </div>
-									</div>
-								</div>
+	<!-- Modal -->
+	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<span class="close pointer" onclick="closeLightbox()">&times;</span>
+					<div class="modal-content">
+						<div class="row m-1">
+							<div class="slide"><img alt="Img1" class="image-slide" id="projectImage_1"></div>
+							<div class="slide"><img alt="Img2." class="image-slide" id="projectImage_2"></div>
+							<div class="slide"><img alt="Img3." class="image-slide" id="projectImage_3"></div><a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+						</div>
+						<div class="row m-1">
+							<div class="featured-text text-center text-lg-center">
+								<h4 id="projectTitle"></h4>
+								<p class="ml-5 mr-5" id="projectFeatures"></p>
+								<p class="text-black-50 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p><a class="next" onclick="changeSlide(1)">&#10095;</a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Contact-->
 	<section class="contact-section" id="contact">
 		<div class="container">
@@ -149,7 +166,8 @@
 									<img alt="Profile Image" src="assets/img/profile.png">
 									<aside>
 										<h1>Jon Olsson</h1>
-										<p>I'm a UX Visual Designer from Sweden, currently residing in Copenhagen.</p><p>Currently I am seeking an internship opportunity for spring 2022, alternatively a part time position.</p>
+										<p>I'm a UX Visual Designer from Sweden, currently residing in Copenhagen.</p>
+										<p>Currently I am seeking an internship opportunity for spring 2022, alternatively a part time position.</p>
 									</aside><button><span>Contact Me</span> <svg height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 									<g class="nc-icon-wrapper" fill="#444444">
 										<path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path>
@@ -163,19 +181,19 @@
 						<nav>
 							<a class="linkedin" href="https://www.linkedin.com/in/jon-aadrian-olsson-b306a338"><i class="fab fa-linkedin"></i>
 							<div class="content">
-								<h1>Linkedin</h1><span>Jon Olsson</span>
+								<h1>Linkedin</h1>
 							</div><svg class="arrow" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 							<g class="nc-icon-wrapper" fill="#444444">
 								<path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>
-							</g></svg></a> <a class="phone" href="tel:123-456-7890"><i class="fas fa-mobile-alt text-primary mb-2"></i>
+							</g></svg></a> <a class="phone" href="tel:0666-666666"><i class="fas fa-mobile-alt text-primary mb-2"></i>
 							<div class="content">
-								<h1>Telephone</h1><span>0666-666666</span>
+								<h1>Telephone</h1>
 							</div><svg class="arrow" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 							<g class="nc-icon-wrapper" fill="#444444">
 								<path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>
-							</g></svg></a> <a class="envelope" href="mailto:contact@test.com"><i class="fas fa-envelope text-primary mb-2"></i>
+							</g></svg></a> <a class="envelope" href="mailto:aadrianswe@gmail.com"><i class="fas fa-envelope text-primary mb-2"></i>
 							<div class="content">
-								<h1>Email</h1><span>aadrianswe@gmail.com</span>
+								<h1>Email</h1>
 							</div><svg class="arrow" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 							<g class="nc-icon-wrapper" fill="#444444">
 								<path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>
@@ -190,7 +208,7 @@
 	<section class="bg-black pt-5">
 		<div class="container">
 			<div class="d-flex justify-content-center">
-				<a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a> <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a> <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+				<a class="mx-2 pt-3" href="#!"><i class="fab fa-twitter mr-3"></i></a> <a class="mx-2 pt-3" href="#!"><i class="fab fa-facebook-f mr-3"></i></a> <a class="mx-2 pt-3" href="#!"><i class="fab fa-github"></i></a>
 			</div>
 		</div>
 	</section>
@@ -204,12 +222,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 	</script> 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js">
-	</script>
+	</script> 
 	<!-- Third party plugin JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js">
 	</script> 
 	<!-- My own JS-->
-	<script src="js/scripts.js">
+	 <script src="js/scripts.js">
 	</script>
 </body>
 </html>
