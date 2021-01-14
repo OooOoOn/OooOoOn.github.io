@@ -54,9 +54,14 @@ $(function()
                     $.ajax({
                 type: "POST",
                 url: 'handler.php',
+                cors: true ,
+                secure: true,
+                headers: {
+                  'Access-Control-Allow-Origin': '*',
+                },
                 data: $form.serialize(),
                 success: after_form_submitted,
-                dataType: 'json' 
+                dataType: 'jsonp' 
             });        
         
       });	
