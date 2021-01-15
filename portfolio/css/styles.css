@@ -7980,7 +7980,9 @@ Project card animations
 		-o-transition-delay: 0.1s;
 		-ms-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    font-size: 1rem !important;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.25rem !important;
 	}
 	.view-sixth p {
 		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
