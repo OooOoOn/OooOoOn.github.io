@@ -7978,7 +7978,8 @@ Project card animations
 		-moz-transition-delay: 0.1s;
 		-o-transition-delay: 0.1s;
 		-ms-transition-delay: 0.1s;
-		transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    font-size: 1.25rem !important;
 	}
 	.view-sixth p {
 		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -7993,7 +7994,9 @@ Project card animations
 		-moz-transition-delay: 0.1s;
 		-o-transition-delay: 0.1s;
 		-ms-transition-delay: 0.1s;
-		transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    padding-bottom: 0rem;
+    margin-bottom: 1rem;
 	}
 	.view-sixth a.info {
 		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
