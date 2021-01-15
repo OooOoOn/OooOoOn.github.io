@@ -7949,6 +7949,7 @@ Project card animations
 		margin-right: 10%;
 	}
 }
+
 @media (max-width: 576px) {
 	.view-sixth .mask {
 		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -7979,7 +7980,7 @@ Project card animations
 		-o-transition-delay: 0.1s;
 		-ms-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
 	}
 	.view-sixth p {
 		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
