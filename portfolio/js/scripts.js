@@ -46,8 +46,29 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
     modalPreviews[slideIndex - 1].className += ' active';
   }
 
+    function showGroup(n) {
+  
+    const groups = document.getElementsByClassName('group');
+  
+    if (n > groups.length) {
+      groupIndex = 1;	
+    }
+    
+    if (n < 1) {
+        groupIndex = groups.length;
+    }
+  
+    for (let i = 0; i < groups.length; i++) {
+        groups[i].style.display = "none";
+    }
+    groups[groupIndex - 1].style.display = 'flex';
+  }
+
   var slideIndex = 1;
   showSlide(slideIndex);
+
+  var groupIndex = 1;
+  showGroup(groupIndex)
   
   function openLightbox() {
     document.getElementById('Lightbox').style.display = 'block';
@@ -59,6 +80,10 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   
   function changeSlide(n) {
       showSlide(slideIndex += n);
+  }
+
+  function changeGroup(n) {
+      showGroup(groupIndex += n);
   }
   
   function toSlide(n) {

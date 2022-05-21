@@ -10190,6 +10190,7 @@ body {
 
 .projects-section .featured-text {
 	padding: 2rem;
+	margin-bottom: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -12276,13 +12277,13 @@ img.hover-shadow {
 .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	width: auto;
 	padding: 16px;
 	margin-top: -50px;
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.7rem;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
@@ -12296,5 +12297,32 @@ img.hover-shadow {
 
 .previous:hover,
 .next:hover {
-	transform: scale(2);
+	transform: scale(1.5);
+}
+
+.group>.col-1:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.group>.col-1:last-child {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.previousGroup,
+.nextGroup {
+	font-size: 2rem;
+	transition: 0.6s ease;
+	user-select: none;
+	;
+}
+
+.previousGroup:hover,
+.nextGroup:hover {
+	text-decoration: none !important;
+	cursor: pointer;
+	transform: scale(1.2);
 }
