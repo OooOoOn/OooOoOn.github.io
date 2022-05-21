@@ -10177,7 +10177,8 @@ body {
 
 .about-section {
 	padding-top: 10rem;
-	background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+	background: linear-gradient(to bottom, rgba(1, 1, 1, 1) 0%, rgba(1, 1, 1, 0.8) 20%,
+			rgba(1, 1, 1, 0.6) 35%, #4E4E4E 75%, #4E4E4E 100%);
 }
 
 .about-section p {
@@ -12325,4 +12326,57 @@ img.hover-shadow {
 	text-decoration: none !important;
 	cursor: pointer;
 	transform: scale(1.2);
+}
+
+.cv-illustration {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.cv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	padding: 5rem 0;
+}
+
+.cv>.footer {
+	width: 350px;
+	background: transparent linear-gradient(180deg, #5B5B5B 0%, #363636 100%) 0% 0% no-repeat padding-box;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	position: absolute;
+	bottom: 50px;
+	color: white;
+	font-size: 2rem;
+	height: 100px;
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.downloadCV {
+	all: unset;
+	display: flex;
+	border-radius: 360px;
+	background-color: #FCDD95;
+	width: 75px;
+	color: #DE2E00;
+	position: absolute;
+	height: 75px;
+	z-index: 100;
+	font-size: 24px;
+	bottom: 20%;
+	left: 250px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.downloadCV:hover>.fas {
+	color: #DE2E00 !important;
 }
