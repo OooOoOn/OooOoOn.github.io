@@ -55,13 +55,14 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-7 cv-illustration mx-auto">
+		<div class="col-8 col-lg-9 cv-illustration mx-auto">
 			<img alt="" class="img-fluid" src="assets/img/background_1.png">
 		</div>
-		<div class="col-5 cv mx-auto">
-			<img alt="" width="450px" src="assets/docs/CV.png"/>
+		<div class="col-4 col-lg-3 cv mx-auto">
+			<img alt="" width="300px" src="assets/docs/CV.png"/>
 			<a href="assets/docs/Jon_Olsson_CV.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="downloadCV">
-				<i class="fas fa-search"></i>			</a>
+				<i class="fas fa-search"></i>			
+			</a>
 			<div class="footer">
 				CV
 			</div>
@@ -206,16 +207,52 @@
 			<div class="modal-body">
 				<span class="close pointer" onclick="closeLightbox()">&times;</span>
 				<div class="modal-content">
-					<div class="row m-1">
+					<div class="row m-1"><a class="next" onclick="changeSlide(1)">&#10095;</a>
 						<div class="slide"><img alt="Img1" class="image-slide" id="projectImage_1"></div>
 						<div class="slide"><img alt="Img2." class="image-slide" id="projectImage_2"></div>
 						<div class="slide"><img alt="Img3." class="image-slide" id="projectImage_3"></div><a class="previous" onclick="changeSlide(-1)">&#10094;</a>
 					</div>
 					<div class="row m-1">
 						<div class="featured-text text-center text-lg-center">
-							<h4 id="projectTitle"></h4>
 							<p class="ml-5 mr-5" id="projectFeatures"></p>
-							<p class="text-black-50 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p><a class="next" onclick="changeSlide(1)">&#10095;</a>
+						</div>
+						<div class="description">
+							<div class="description__column">
+								<div class="description__column--header">
+									<!-- All the values for the below tags can be deleted and 
+										populated via Javascript and styles should adapt to the 
+										dynamically inserted content -->
+									<h4>UX Design</h4>
+									<p class="text-black-50">Overview of how the project was developed</a>
+								</div>
+								<div class="description__column--timeline">
+									<div class="timeline__line"></div>
+									<div class="timeline__items">
+										<div class="timeline__items--item">
+											Empathize
+										</div>
+										<div class="timeline__items--item">
+											Define
+										</div>
+										<div class="timeline__items--item">
+											Ideate
+										</div>
+										<div class="timeline__items--item">
+											Prototype
+										</div>
+										<div class="timeline__items--item">
+											Deliver
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="description__column">
+								<h4 class="description__column--title" id="projectTitle"></h4>
+								<a href="assets/docs/Jon_Olsson_CV.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="downloadProject">
+									<i class="fas fa-search"></i>			
+								</a>
+								<!--insert link to download-->
+							</div>
 						</div>
 					</div>
 				</div>
