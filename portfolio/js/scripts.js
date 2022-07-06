@@ -1,4 +1,4 @@
- 
+
     //Contact me animation*
    $('button').click(function(){
     $('button').toggleClass('active');
@@ -11,27 +11,27 @@
   });
 
   const items = document.querySelectorAll(".accordion a");
- 
+
 function toggleAccordion(){
   this.classList.toggle('active');
   this.nextElementSibling.classList.toggle('active');
 }
- 
+
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-  
+
   function showSlide(n) {
-  
+
     const slides = document.getElementsByClassName('slide');
     let modalPreviews = document.getElementsByClassName('modal-preview');
-  
+
     if (n > slides.length) {
-      slideIndex = 1;	
+      slideIndex = 1;
     }
-    
+
     if (n < 1) {
         slideIndex = slides.length;
     }
-  
+
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -47,17 +47,17 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   }
 
     function showGroup(n) {
-  
+
     const groups = document.getElementsByClassName('group');
-  
+
     if (n > groups.length) {
-      groupIndex = 1;	
+      groupIndex = 1;
     }
-    
+
     if (n < 1) {
         groupIndex = groups.length;
     }
-  
+
     for (let i = 0; i < groups.length; i++) {
         groups[i].style.display = "none";
     }
@@ -69,15 +69,15 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
   var groupIndex = 1;
   showGroup(groupIndex)
-  
+
   function openLightbox() {
     document.getElementById('Lightbox').style.display = 'block';
   }
-  
+
   function closeLightbox() {
     document.getElementById('Lightbox').style.display = 'none';
   }
-  
+
   function changeSlide(n) {
       showSlide(slideIndex += n);
   }
@@ -85,12 +85,12 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   function changeGroup(n) {
       showGroup(groupIndex += n);
   }
-  
+
   function toSlide(n) {
       showSlide(slideIndex = n);
   }
 
-  
+
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -146,7 +146,7 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 $(window).load(function(){
     $('#wrapper').addClass('loaded');
   });
-  
+
   $('.more-info').click(function(){
     $("#card").toggleClass('flip');
     $('#arrow').remove();
@@ -155,48 +155,70 @@ $(window).load(function(){
     $('#card').removeClass('flip');
   });
 
-  /* Get chat user info for dynamic chat */
+function addTimelineItem(text) {
+        var div = document.createElement('div')
+        div.classList.add('timeline__items--item')
+        var p = document.createElement('p')
+        p.id = `designprocess_${1}`
+        p.innerHTML = text
+        div.appendChild(p)
+        document.getElementsByClassName('timeline__items')[0].appendChild(div)
+}
+
+  /* Project overview */
 function projectGallery(project) {
     localStorage.removeItem('projectTitle');
-    localStorage.removeItem('projectFeatures');
+    localStorage.removeItem('designprocess_1');
+    localStorage.removeItem('designprocess_2');
+    localStorage.removeItem('designprocess_3');
+    localStorage.removeItem('designprocess_4');
+    localStorage.removeItem('designprocess_5');
+    localStorage.removeItem('designprocess_6');
+    localStorage.removeItem('designprocess_7');
+    document.getElementsByClassName('timeline__items')[0].innerHTML = ''
     switch (project) {
         case "träffpunkten":
             localStorage.setItem( 'projectTitle_storage', 'Träffpunkten' );
-            var tags = ["#Social", "#Chatt", "#Activities", "#CSS", "#Bootstrap", "#JS", "#JQuery"];
-            localStorage.setItem( 'projectFeatures_storage', JSON.stringify(tags).replaceAll("[", " ").replaceAll(",", " ").replaceAll("]", " ").replaceAll("\"", " "));
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/träffpunkten_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/träffpunkten_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/träffpunkten_3.jpg' );
-            break;   
+
+            addTimelineItem('Define')
+            addTimelineItem('Research')
+            addTimelineItem('Persona')
+            addTimelineItem('Ideate')
+            addTimelineItem('Vote')
+            addTimelineItem('Prototype')
+            addTimelineItem('Test')
+            break;
         case "cleano":
             localStorage.setItem( 'projectTitle_storage', 'Cleano' );
-            var tags = ["#Tasks", "#Games", "#Family", "#Bootstrap", "#JS", "#JQuery"];
-            localStorage.setItem( 'projectFeatures_storage', JSON.stringify(tags).replaceAll("[", " ").replaceAll(",", " ").replaceAll("]", " ").replaceAll("\"", " "));
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/cleano_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/cleano_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/cleano_3.jpg' );
-            break;    
+            break;
         case "carbonfootprint":
             localStorage.setItem( 'projectTitle_storage', 'Carbon Footprint' );
-            var tags = ["#Challenges", "#Multiplayer", "#Tamagotchi", "#JQuery", "#CSS", "#Bootstrap", "#JS"];
-            localStorage.setItem( 'projectFeatures_storage', JSON.stringify(tags).replaceAll("[", " ").replaceAll(",", " ").replaceAll("]", " ").replaceAll("\"", " "));
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/carbonfootprint_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/carbonfootprint_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/carbonfootprint_3.jpg' );
-            break;    
+            break;
         case "halvåttahosgert":
             localStorage.setItem( 'projectTitle_storage', 'Halv Åtta hos Gert' );
-            var tags = ["#JS", "#Parallax Background", "#Restaurant", "#CSS"];
-            localStorage.setItem( 'projectFeatures_storage', JSON.stringify(tags).replaceAll("[", " ").replaceAll(",", " ").replaceAll("]", " ").replaceAll("\"", " "));
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/halvåttahosgert_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/halvåttahosgert_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/halvåttahosgert_3.jpg' );
-            break;       
+            break;
+        case "gotohub":
+            localStorage.setItem( 'projectTitle_storage', 'Goto Hub' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/gotohub_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/gotohub_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/gotohub_3.jpg' );
+            break;
         default:
             break;
     }
     document.getElementById("projectTitle").innerHTML = localStorage.getItem('projectTitle_storage');
-    document.getElementById("projectFeatures").innerHTML = localStorage.getItem('projectFeatures_storage');
     document.getElementById("projectImage_1").src = localStorage.getItem('projectImage_1_storage');
     document.getElementById("projectImage_2").src = localStorage.getItem('projectImage_2_storage');
     document.getElementById("projectImage_3").src = localStorage.getItem('projectImage_3_storage');

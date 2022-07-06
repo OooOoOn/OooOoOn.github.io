@@ -79,12 +79,12 @@
 				<p class="text-black-50 mb-0">Scalable, multi-purpose designs.</p>
 			</div>
 		</div>
+		<!-- Desktop view page 1 -->
 		<div class="row align-items-center group" id="1">
 			<div class="col-1">
 				<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
 			</div>
 			<div class="col-5">
-				<!-- Portfolio animation -->
 				<div class="view view-sixth">
 					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
 					<div class="mask">
@@ -120,6 +120,7 @@
 				<a class="nextGroup" onclick="changeGroup(1)">&#10095;</a>
 			</div>
 		</div>
+		<!-- Desktop view page 2 -->
 		<div class="row align-items-center group" id="2">
 			<div class="col-1">
 				<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
@@ -135,40 +136,32 @@
 				<div class="view view-sixth">
 					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_1.jpg">
 					<div class="mask">
-						<h2>Träffpunkten</h2>
-						<p>A social media platform for age group 55+.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("träffpunkten")'>Read More</a>
+						<h2>Test</h2>
+						<p>A social media platform for age group 55+.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("test")'>Read More</a>
 					</div>
 				</div>
 			</div>
-		<div class="col-5">
-			<!-- Portfolio animation -->
-			<div class="view view-sixth">
-				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
-				<div class="mask">
-					<h2>Cleano</h2>
-					<p>A household chores app with a gamified spin.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("cleano")'>Read More</a>
+			<div class="col-5">
+				<div class="view view-sixth">
+					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_5.jpg">
+					<div class="mask">
+						<h2>Goto Hub</h2>
+						<p>A booking system for the ultimate Norwegian travel experience.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("gotohub")'>Read More</a>
+					</div>
 				</div>
 			</div>
-			<div class="view view-sixth">
-				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_3.jpg">
-				<div class="mask">
-					<h2>Carbon Footprint</h2>
-					<p>App that calculates individual climate impact.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("carbonfootprint")'>Read More</a>
-				</div>
-			</div>
-		</div>
-					<div class="col-1">
+			<div class="col-1">
 				<a class="nextGroup" onclick="changeGroup(1)">&#10095;</a>
 			</div>
 	</div>
 	</div>
+	<!-- Mobile view -->
 	<div class="container" id="mobile">
 		<div class="row align-items-center">
 			<div class="featured-text text-center text-lg-left ml-4">
 				<h4>Portfolio</h4>
 				<p class="text-black-50 mb-0">Scalable, multi-purpose designs.</p>
 			</div>
-			<!-- Portfolio animation -->
 			<div class="view view-sixth">
 				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
 				<div class="mask">
@@ -200,7 +193,7 @@
 		</div>
 	</div>
 </section>
-<!-- Modal gallery -->
+<!-- Project overview -->
 <div aria-hidden="true" aria-labelledby="galleryModalLabel" class="modal fade" id="galleryModal" role="dialog" tabindex="-1">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
@@ -213,36 +206,18 @@
 						<div class="slide"><img alt="Img3." class="image-slide" id="projectImage_3"></div><a class="previous" onclick="changeSlide(-1)">&#10094;</a>
 					</div>
 					<div class="row m-1">
-						<div class="featured-text text-center text-lg-center">
-							<p class="ml-5 mr-5" id="projectFeatures"></p>
-						</div>
 						<div class="description">
 							<div class="description__column">
-								<div class="description__column--header">
+								<div class="description__column--header mb-3">
 									<!-- All the values for the below tags can be deleted and 
 										populated via Javascript and styles should adapt to the 
 										dynamically inserted content -->
-									<h4>UX Design</h4>
-									<p class="text-black-50">Overview of how the project was developed</a>
+									<h4 class="description__column--title" id="projectTitle"></h4>
+									<p class="text-black-50">UX Design Process</a>
 								</div>
 								<div class="description__column--timeline">
 									<div class="timeline__line"></div>
 									<div class="timeline__items">
-										<div class="timeline__items--item">
-											Empathize
-										</div>
-										<div class="timeline__items--item">
-											Define
-										</div>
-										<div class="timeline__items--item">
-											Ideate
-										</div>
-										<div class="timeline__items--item">
-											Prototype
-										</div>
-										<div class="timeline__items--item">
-											Deliver
-										</div>
 									</div>
 								</div>
 							</div>
@@ -260,12 +235,12 @@
 		</div>
 	</div>
 </div>
-<!-- Modal contact me -->
+<!-- contact me -->
 <div class="container">
 	<div aria-hidden="true" aria-labelledby="contactModalLabel" class="modal fade" id="contactModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-dialog">
-				<!-- Modal content-->
+				<!-- Methods-->
 				<div class="modal-content">
 					<div class="modal-header">
 						<button class="close" data-dismiss="modal" type="button">&times;</button>
@@ -291,12 +266,12 @@
 		</div>
 	</div>
 </div>
-<!-- Modal FAQ -->
+<!-- FAQ -->
 <div class="container">
 	<div aria-hidden="true" aria-labelledby="contactModalLabel" class="modal fade" id="faqModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-dialog">
-				<!-- Modal content-->
+				<!-- Questions -->
 				<div class="modal-content">
 					<div class="modal-header">
 						<button class="close" data-dismiss="modal" type="button">&times;</button>
@@ -313,7 +288,7 @@
 							<div class="accordion-item">
 								<a>Where have you worked with UX?</a>
 								<div class="content">
-									<p>I did an internship at a consultancy in Copenhagen called Purple Scout.</p>
+									<p>I did two internships at a consultancy in Copenhagen called Purple Scout / adesso Denmark.</p>
 								</div>
 							</div>
 							<div class="accordion-item">
@@ -331,7 +306,7 @@
 							<div class="accordion-item">
 								<a>Would you be open to freelance work?</a>
 								<div class="content">
-									<p>Absolutely.</p>
+									<p>Absolutely!</p>
 								</div>
 							</div>
 						</div>
@@ -342,8 +317,8 @@
 	</div>
 </div>
 <!-- Contact-->
-<section class="contact-section pb-5" id="contact">
-	<div class="container pb-5">
+<section class="contact-section pb-1" id="contact">
+	<div class="container pb-1">
 		<div class="row">
 			<div class="contact-area">
 				<div class="contact">
@@ -353,8 +328,8 @@
 								<img alt="Profile Image" src="assets/img/profile_1.png">
 								<aside>
 									<h1 id="title">Jon Olsson</h1>
-									<p>I'm a UX Visual Designer from Sweden residing in Copenhagen.</p>
-									<p>I am presently seeking an internship opportunity for spring 2022, alternatively a part time position.</p>
+									<p>I'm a UX Visual Designer from Sweden residing in Malmö.</p>
+									<p>I am presently seeking an full time position in Malmö or Copenhagen. I am able to start ASAP.</p>
 								</aside><button class="contactMe__btn"><span id="contactMe__btn--text">Contact Me</span> <svg height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 								<g class="nc-icon-wrapper" fill="#444444">
 									<path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path>
@@ -374,10 +349,6 @@
 						</div><svg class="arrow" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 						<g class="nc-icon-wrapper" fill="#444444">
 							<path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>
-						</g></svg></a> <a class="phone" href="https://discordapp.com/users/#OooOoOn#7628"><i class="fab fa-discord"></i>
-						<div class="content">
-							<h1>Discord</h1>
-						</div><svg class="arrow" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
 						<g class="nc-icon-wrapper" fill="#444444">
 							<path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>
 						</g></svg></a> <a class="envelope" data-target="#contactModal" data-toggle="modal" href="mailto:aadrianswe@gmail.com"><i class="fas fa-envelope text-primary mb-2"></i>
