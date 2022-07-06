@@ -155,6 +155,13 @@ $(window).load(function(){
     $('#card').removeClass('flip');
   });
 
+   /* Downloadable project */
+function addDownloadableItem(project) {
+    var div = document.getElementById('downloadable_project');
+    div.href += '/assets/docs/Träffpunkten.pdf';
+}
+
+  /* UX design process */
 function addTimelineItem(text) {
         var div = document.createElement('div')
         div.classList.add('timeline__items--item')
@@ -182,7 +189,19 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/träffpunkten_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/träffpunkten_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/träffpunkten_3.jpg' );
-
+            addTimelineItem('Define')
+            addTimelineItem('Research')
+            addTimelineItem('Ideate')
+            addTimelineItem('Sketch')
+            addTimelineItem('Vote')
+            addTimelineItem('Prototype')
+            addDownloadableItem('assets/docs/Träffpunkten.pdf')
+            break;
+        case "cleano":
+            localStorage.setItem( 'projectTitle_storage', 'Cleano' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/cleano_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/cleano_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/cleano_3.jpg' );
             addTimelineItem('Define')
             addTimelineItem('Research')
             addTimelineItem('Persona')
@@ -190,12 +209,6 @@ function projectGallery(project) {
             addTimelineItem('Vote')
             addTimelineItem('Prototype')
             addTimelineItem('Test')
-            break;
-        case "cleano":
-            localStorage.setItem( 'projectTitle_storage', 'Cleano' );
-            localStorage.setItem( 'projectImage_1_storage', 'assets/img/cleano_1.jpg' );
-            localStorage.setItem( 'projectImage_2_storage', 'assets/img/cleano_2.jpg' );
-            localStorage.setItem( 'projectImage_3_storage', 'assets/img/cleano_3.jpg' );
             break;
         case "carbonfootprint":
             localStorage.setItem( 'projectTitle_storage', 'Carbon Footprint' );
