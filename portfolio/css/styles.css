@@ -12373,6 +12373,7 @@ img.hover-shadow {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	margin-right: 25%;
 }
 
 .downloadCV {
@@ -12389,7 +12390,7 @@ img.hover-shadow {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	width: 100%;
 }
 
@@ -12435,7 +12436,12 @@ img.hover-shadow {
 	margin-left:2rem;
 }
 
-.timeline__items {
+.timeline__items1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.timeline__items2 {
 	display: flex;
 	flex-direction: row;
 }
@@ -12447,6 +12453,8 @@ img.hover-shadow {
 	position: relative;
 	margin-right: 2rem;
 	padding-top: 1rem;
+	text-align: center;
+	letter-spacing: 0cm;
 }
 
 .timeline__items--item:last-child {
@@ -12472,6 +12480,11 @@ img.hover-shadow {
 	top: -8px;
 	right: 0;
 }
+.timeline__items--item:last-child:before {
+	position: absolute;
+	top: -8px;
+}
+
 
 /* If you want the arrow at the end of the horizontal timeline component,
  uncomment class below: */
@@ -12483,28 +12496,4 @@ img.hover-shadow {
 	position: absolute;
 	top: -15px;
 	right: -15px;
-} */
-
-
-/* Two classes below correspond to the starting and ending elements
- of the horizontal timeline component: */
-
-/* .timeline__items--item:first-child::after {
-	content: '';
-	height: 15px;
-	width: 2px;
-	background-color: #FCDD95;
-	position: absolute;
-	left: 0;
-	top: -8px;
-}
-
-.timeline__items--item:last-child::after {
-	content: '';
-	height: 15px;
-	width: 2px;
-	background-color: #FCDD95;
-	position: absolute;
-	right: 0;
-	top: -8px;
 } */

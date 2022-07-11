@@ -158,18 +158,18 @@ $(window).load(function(){
    /* Downloadable project */
 function addDownloadableItem(project) {
     var div = document.getElementById('downloadable_project');
-    div.href += '/assets/docs/Träffpunkten.pdf';
+    div.href = project;
 }
 
   /* UX design process */
-function addTimelineItem(text) {
-        var div = document.createElement('div')
-        div.classList.add('timeline__items--item')
-        var p = document.createElement('p')
-        p.id = `designprocess_${1}`
-        p.innerHTML = text
-        div.appendChild(p)
-        document.getElementsByClassName('timeline__items')[0].appendChild(div)
+function addTimelineItem(text, row) {
+    var div = document.createElement('div')
+    div.classList.add('timeline__items--item')
+    var p = document.createElement('p')
+    p.id = `designprocess_${1}`
+    p.innerHTML = text
+    div.appendChild(p)
+    document.getElementsByClassName('timeline__items' + row)[0].appendChild(div)
 }
 
   /* Project overview */
@@ -182,19 +182,24 @@ function projectGallery(project) {
     localStorage.removeItem('designprocess_5');
     localStorage.removeItem('designprocess_6');
     localStorage.removeItem('designprocess_7');
-    document.getElementsByClassName('timeline__items')[0].innerHTML = ''
+    localStorage.removeItem('secondIteration');
+    document.getElementsByClassName('timeline__items1')[0].innerHTML = ''
+    document.getElementsByClassName('timeline__items2')[0].innerHTML = ''
+    
     switch (project) {
         case "träffpunkten":
             localStorage.setItem( 'projectTitle_storage', 'Träffpunkten' );
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/träffpunkten_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/träffpunkten_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/träffpunkten_3.jpg' );
-            addTimelineItem('Define')
-            addTimelineItem('Research')
-            addTimelineItem('Ideate')
-            addTimelineItem('Sketch')
-            addTimelineItem('Vote')
-            addTimelineItem('Prototype')
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Emphatize\n(<i>Research</i>)\n(<i>Assumptions</i>)\n(<i>Survey</i>)', 1);
+            addTimelineItem('Define\n(<i>Persona</i>)\n(<i>Requirements</i>)', 1);
+            addTimelineItem('Ideate\n(<i>Concept</i>)\n(<i>Features</i>)\n(<i>Sketch</i>)', 1);
+            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)', 1);
+            addTimelineItem('Test\n(<i>Explorative</i>)\n(<i>Think Aloud</i>)', 1);
+            addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/Träffpunkten.pdf')
             break;
         case "cleano":
@@ -202,25 +207,58 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/cleano_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/cleano_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/cleano_3.jpg' );
-            addTimelineItem('Define')
-            addTimelineItem('Research')
-            addTimelineItem('Persona')
-            addTimelineItem('Ideate')
-            addTimelineItem('Vote')
-            addTimelineItem('Prototype')
-            addTimelineItem('Test')
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Emphatize\n(<i>Goal</i>)\n(<i>Assumptions</i>)\n(<i>Research</i>)', 1);
+            addTimelineItem('Define\n(<i>Persona</i>)\n(<i>Requirements</i>)\n(<i>Problem</i>)', 1);
+            addTimelineItem('Ideate\n(<i>Research</i>)\n(<i>Features</i>)\n(<i>Sketch</i>)', 1);
+            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)', 1);
+            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>Interview</i>)', 1);
+            addTimelineItem('End', 1);
+            addDownloadableItem('assets/docs/Cleano.pdf')
             break;
         case "carbonfootprint":
             localStorage.setItem( 'projectTitle_storage', 'Carbon Footprint' );
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/carbonfootprint_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/carbonfootprint_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/carbonfootprint_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Map\n(<i>Research</i>)\n(<i>Assumptions</i>)\n(<i>Interview</i>)\n(<i>Expectations</i>)', 1);
+            addTimelineItem('Sketch\n(<i>Inspiration</i>)\n(<i>Features</i>)', 1);
+            addTimelineItem('Decide\n(<i>Heatmap</i>)\n(<i>User flow</i>)\n(<i>Storyboard</i>)', 1);
+            addTimelineItem('Prototype\n(<i>Low-Fi</i>)\n(<i>Hypothesis</i>)', 1);
+            addTimelineItem('Test\n(<i>Talk aloud</i>)(<i>Moderated</i>)', 1);
+            addTimelineItem('End', 1);
+            addTimelineItem('Start', 2);
+            addTimelineItem('Empathize\n(<i>Goal</i>)\n(<i>Persona</i>)', 2);
+            addTimelineItem('Define\n(<i>Key</i>)\n(<i>Aspiration</i>)\n(<i>Requirements</i>)', 2);
+            addTimelineItem('Ideate\n(<i>Features</i>)\n(<i>Wireframe</i>)', 2);
+            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)\n(<i>Focus areas</i>)', 2);
+            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>A/B</i>)\n(<i>Moderated</i>)', 2);
+            addTimelineItem('End', 2);
+            addDownloadableItem('assets/docs/carbon_footprint.pdf')
             break;
-        case "halvåttahosgert":
-            localStorage.setItem( 'projectTitle_storage', 'Halv Åtta hos Gert' );
-            localStorage.setItem( 'projectImage_1_storage', 'assets/img/halvåttahosgert_1.jpg' );
-            localStorage.setItem( 'projectImage_2_storage', 'assets/img/halvåttahosgert_2.jpg' );
-            localStorage.setItem( 'projectImage_3_storage', 'assets/img/halvåttahosgert_3.jpg' );
+        case "emergencychecklists":
+            localStorage.setItem( 'projectTitle_storage', 'Emergency Checklists' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/emergencychecklists_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/emergencychecklists_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/emergencychecklists_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Emphatize\n(<i>Problem</i>)\n(<i>Goal</i>)\n(<i>Survey</i>)', 1);
+            addTimelineItem('Define\n(<i>Persona</i>)\n(<i>Key</i>)\n(<i>Interviews</i>)', 1);
+            addTimelineItem('Ideate\n(<i>Storyboard</i>)\n(<i>Challenges</i>)\n(<i>Concept</i>)', 1);
+            addTimelineItem('Prototype\n(<i>Low-Fi</i>)', 1);
+            addTimelineItem('Test\n(<i>Explorative</i>)\n(<i>A/B</i>)(<i>Unmoderated</i>)', 1);
+            addTimelineItem('End', 1);
+            addTimelineItem('Start', 2);
+            addTimelineItem('Revise', 2);
+            addTimelineItem('Define\n(<i>Interviews</i>)', 2);
+            addTimelineItem('Prototype\n(<i>Low-Fi</i>)', 2);
+            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>A/B</i>)\n(<i>Unmoderated</i>)', 2);
+            addTimelineItem('End', 2);
+            addDownloadableItem('assets/docs/emergency_checklists.pdf')
             break;
         case "gotohub":
             localStorage.setItem( 'projectTitle_storage', 'Goto Hub' );
@@ -235,4 +273,5 @@ function projectGallery(project) {
     document.getElementById("projectImage_1").src = localStorage.getItem('projectImage_1_storage');
     document.getElementById("projectImage_2").src = localStorage.getItem('projectImage_2_storage');
     document.getElementById("projectImage_3").src = localStorage.getItem('projectImage_3_storage');
+    document.getElementById("secondIteration").innerHTML = localStorage.getItem('secondIteration_storage');
 }
