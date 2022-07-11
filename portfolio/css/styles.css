@@ -231,13 +231,13 @@ sup {
 }
 
 a {
-	color: #64a19d;
+	color: #e9dd90;
 	text-decoration: none;
 	background-color: transparent;
 }
 
 a:hover:not(.next):not(.previous) {
-	color: #467370;
+	color: #e9dd90;
 	text-decoration: underline;
 }
 

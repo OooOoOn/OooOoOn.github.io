@@ -265,6 +265,58 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/gotohub_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/gotohub_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/gotohub_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Emphatize\n(<i>Problem</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Assumption</i>)', 1);
+            addTimelineItem('Define\n(<i>How might we</i>)\n(<i>Key</i>)\n(<i>Need</i>)', 1);
+            addTimelineItem('Ideate\n(<i>Concept</i>)\n(<i>User flow</i>)', 1);
+            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)\n(<i>IA</i>)\n(<i>Principles</i>)\n(<i>Future</i>)', 1);
+            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>Think aloud</i>)(<i>5 second</i>)', 1);
+            addTimelineItem('End', 1);
+            addDownloadableItem('assets/docs/gotohub.pdf')
+            break;
+        case "wolt":
+            localStorage.setItem( 'projectTitle_storage', 'WOLT' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/projects_6.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/projects_6.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_6.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Emphatize\n(<i>Purpose</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Competitor analysis</i>)', 1);
+            addTimelineItem('Test\n(<i>Interview</i>)\n(<i>Criteria</i>)\n(<i>Insights</i>)', 1);
+            addTimelineItem('Evaluate\n(<i>Sweet spot</i>)\n(<i>Priorities</i>)\n(<i>User journey</i>)', 1);
+            addTimelineItem('Ideate\n(<i>How might we</i>)\n(<i>Action points</i>)', 1);
+            addTimelineItem('Future\n(<i>Reexamine</i>)\n(<i>Additional Testing</i>)', 1);
+            addTimelineItem('End', 1);
+            addDownloadableItem('assets/docs/gotohub.pdf')
+            break;
+        case "urbanfarming":
+            localStorage.setItem( 'projectTitle_storage', 'Urban Farming Project' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/urban_farming_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/urban_farming_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/urban_farming_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Emphatize\n(<i>Purpose</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Competitor analysis</i>)', 1);
+            addTimelineItem('Test\n(<i>Interview</i>)\n(<i>Criteria</i>)\n(<i>Insights</i>)', 1);
+            addTimelineItem('Evaluate\n(<i>Sweet spot</i>)\n(<i>Priorities</i>)\n(<i>User journey</i>)', 1);
+            addTimelineItem('Ideate\n(<i>How might we</i>)\n(<i>Action points</i>)', 1);
+            addTimelineItem('Future\n(<i>Reexamine</i>)\n(<i>Additional Testing</i>)', 1);
+            addTimelineItem('End', 1);
+            addDownloadableItem('assets/docs/gotohub.pdf')
+            break;
+        case "swedisharmedforces":
+            localStorage.setItem( 'projectTitle_storage', 'Swedish Armed Forces' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/projects_8.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/projects_8.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_8.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Components\n(<i>Purpose</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Competitor analysis</i>)', 1);
+            addTimelineItem('Prototype\n(<i>Interview</i>)\n(<i>Criteria</i>)\n(<i>Insights</i>)', 1);
+            addTimelineItem('Layout\n(<i>Sweet spot</i>)\n(<i>Priorities</i>)\n(<i>User journey</i>)', 1);
+            addTimelineItem('End', 1);
+            addDownloadableItem('assets/docs/swedish_armed_forces_80s.pdf')
             break;
         default:
             break;
