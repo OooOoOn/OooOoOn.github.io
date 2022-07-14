@@ -194,11 +194,11 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/träffpunkten_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Emphatize\n(<i>Research</i>)\n(<i>Assumptions</i>)\n(<i>Survey</i>)', 1);
-            addTimelineItem('Define\n(<i>Persona</i>)\n(<i>Requirements</i>)', 1);
-            addTimelineItem('Ideate\n(<i>Concept</i>)\n(<i>Features</i>)\n(<i>Sketch</i>)', 1);
-            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)', 1);
-            addTimelineItem('Test\n(<i>Explorative</i>)\n(<i>Think Aloud</i>)', 1);
+            addTimelineItem('Empathize<br/>(<i>Research</i>)<br/>(<i>Assumptions</i>)<br/>(<i>Survey</i>)', 1);
+            addTimelineItem('Define<br/>(<i>Persona</i>)<br/>(<i>Requirements</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Concept</i>)<br/>(<i>Features</i>)<br/>(<i>Sketch</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Explorative</i>)<br/>(<i>Think Aloud</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/Träffpunkten.pdf')
             break;
@@ -209,11 +209,11 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/cleano_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Emphatize\n(<i>Goal</i>)\n(<i>Assumptions</i>)\n(<i>Research</i>)', 1);
-            addTimelineItem('Define\n(<i>Persona</i>)\n(<i>Requirements</i>)\n(<i>Problem</i>)', 1);
-            addTimelineItem('Ideate\n(<i>Research</i>)\n(<i>Features</i>)\n(<i>Sketch</i>)', 1);
-            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)', 1);
-            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>Interview</i>)', 1);
+            addTimelineItem('Empathize<br/>(<i>Goal</i>)<br/>(<i>Assumptions</i>)<br/>(<i>Research</i>)', 1);
+            addTimelineItem('Define<br/>(<i>Persona</i>)<br/>(<i>Requirements</i>)<br/>(<i>Problem</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Research</i>)<br/>(<i>Features</i>)<br/>(<i>Sketch</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Assessment</i>)<br/>(<i>Interview</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/Cleano.pdf')
             break;
@@ -224,18 +224,18 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/carbonfootprint_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Map\n(<i>Research</i>)\n(<i>Assumptions</i>)\n(<i>Interview</i>)\n(<i>Expectations</i>)', 1);
-            addTimelineItem('Sketch\n(<i>Inspiration</i>)\n(<i>Features</i>)', 1);
-            addTimelineItem('Decide\n(<i>Heatmap</i>)\n(<i>User flow</i>)\n(<i>Storyboard</i>)', 1);
-            addTimelineItem('Prototype\n(<i>Low-Fi</i>)\n(<i>Hypothesis</i>)', 1);
-            addTimelineItem('Test\n(<i>Talk aloud</i>)(<i>Moderated</i>)', 1);
+            addTimelineItem('Map<br/>(<i>Research</i>)<br/>(<i>Assumptions</i>)<br/>(<i>Interview</i>)<br/>(<i>Expectations</i>)', 1);
+            addTimelineItem('Sketch<br/>(<i>Inspiration</i>)<br/>(<i>Features</i>)', 1);
+            addTimelineItem('Decide<br/>(<i>Heatmap</i>)<br/>(<i>User flow</i>)<br/>(<i>Storyboard</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Low-Fi</i>)<br/>(<i>Hypothesis</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Talk aloud</i>)(<i>Moderated</i>)', 1);
             addTimelineItem('End', 1);
             addTimelineItem('Start', 2);
-            addTimelineItem('Empathize\n(<i>Goal</i>)\n(<i>Persona</i>)', 2);
-            addTimelineItem('Define\n(<i>Key</i>)\n(<i>Aspiration</i>)\n(<i>Requirements</i>)', 2);
-            addTimelineItem('Ideate\n(<i>Features</i>)\n(<i>Wireframe</i>)', 2);
-            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)\n(<i>Focus areas</i>)', 2);
-            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>A/B</i>)\n(<i>Moderated</i>)', 2);
+            addTimelineItem('Empathize<br/>(<i>Goal</i>)<br/>(<i>Persona</i>)', 2);
+            addTimelineItem('Define<br/>(<i>Key</i>)<br/>(<i>Aspiration</i>)<br/>(<i>Requirements</i>)', 2);
+            addTimelineItem('Ideate<br/>(<i>Features</i>)<br/>(<i>Wireframe</i>)', 2);
+            addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)<br/>(<i>Focus areas</i>)', 2);
+            addTimelineItem('Test<br/>(<i>Assessment</i>)<br/>(<i>A/B</i>)<br/>(<i>Moderated</i>)', 2);
             addTimelineItem('End', 2);
             addDownloadableItem('assets/docs/carbon_footprint.pdf')
             break;
@@ -246,17 +246,17 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/emergencychecklists_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Emphatize\n(<i>Problem</i>)\n(<i>Goal</i>)\n(<i>Survey</i>)', 1);
-            addTimelineItem('Define\n(<i>Persona</i>)\n(<i>Key</i>)\n(<i>Interviews</i>)', 1);
-            addTimelineItem('Ideate\n(<i>Storyboard</i>)\n(<i>Challenges</i>)\n(<i>Concept</i>)', 1);
-            addTimelineItem('Prototype\n(<i>Low-Fi</i>)', 1);
-            addTimelineItem('Test\n(<i>Explorative</i>)\n(<i>A/B</i>)(<i>Unmoderated</i>)', 1);
+            addTimelineItem('Empathize<br/>(<i>Problem</i>)<br/>(<i>Goal</i>)<br/>(<i>Survey</i>)', 1);
+            addTimelineItem('Define<br/>(<i>Persona</i>)<br/>(<i>Key</i>)<br/>(<i>Interviews</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Storyboard</i>)<br/>(<i>Challenges</i>)<br/>(<i>Concept</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Low-Fi</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Explorative</i>)<br/>(<i>A/B</i>)(<i>Unmoderated</i>)', 1);
             addTimelineItem('End', 1);
             addTimelineItem('Start', 2);
             addTimelineItem('Revise', 2);
-            addTimelineItem('Define\n(<i>Interviews</i>)', 2);
-            addTimelineItem('Prototype\n(<i>Low-Fi</i>)', 2);
-            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>A/B</i>)\n(<i>Unmoderated</i>)', 2);
+            addTimelineItem('Define<br/>(<i>Interviews</i>)', 2);
+            addTimelineItem('Prototype<br/>(<i>Low-Fi</i>)', 2);
+            addTimelineItem('Test<br/>(<i>Assessment</i>)<br/>(<i>A/B</i>)<br/>(<i>Unmoderated</i>)', 2);
             addTimelineItem('End', 2);
             addDownloadableItem('assets/docs/emergency_checklists.pdf')
             break;
@@ -267,11 +267,11 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/gotohub_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Emphatize\n(<i>Problem</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Assumption</i>)', 1);
-            addTimelineItem('Define\n(<i>How might we</i>)\n(<i>Key</i>)\n(<i>Need</i>)', 1);
-            addTimelineItem('Ideate\n(<i>Concept</i>)\n(<i>User flow</i>)', 1);
-            addTimelineItem('Prototype\n(<i>Mid-Fi</i>)\n(<i>IA</i>)\n(<i>Principles</i>)\n(<i>Future</i>)', 1);
-            addTimelineItem('Test\n(<i>Assessment</i>)\n(<i>Think aloud</i>)(<i>5 second</i>)', 1);
+            addTimelineItem('Empathize<br/>(<i>Problem</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Assumption</i>)', 1);
+            addTimelineItem('Define<br/>(<i>HMW</i>)<br/>(<i>Key</i>)<br/>(<i>Need</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Concept</i>)<br/>(<i>User flow</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)<br/>(<i>IA</i>)<br/>(<i>Principles</i>)<br/>(<i>Future</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Assessment</i>)<br/>(<i>Think aloud</i>)(<i>5 second</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/gotohub.pdf')
             break;
@@ -282,11 +282,11 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_6.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Emphatize\n(<i>Purpose</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Competitor analysis</i>)', 1);
-            addTimelineItem('Test\n(<i>Interview</i>)\n(<i>Criteria</i>)\n(<i>Insights</i>)', 1);
-            addTimelineItem('Evaluate\n(<i>Sweet spot</i>)\n(<i>Priorities</i>)\n(<i>User journey</i>)', 1);
-            addTimelineItem('Ideate\n(<i>How might we</i>)\n(<i>Action points</i>)', 1);
-            addTimelineItem('Future\n(<i>Reexamine</i>)\n(<i>Additional Testing</i>)', 1);
+            addTimelineItem('Empathize<br/>(<i>Purpose</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Competitor analysis</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Interview</i>)<br/>(<i>Criteria</i>)<br/>(<i>Insights</i>)', 1);
+            addTimelineItem('Evaluate<br/>(<i>Sweet spot</i>)<br/>(<i>Priorities</i>)<br/>(<i>User journey</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>HMW</i>)<br/>(<i>Action points</i>)', 1);
+            addTimelineItem('Future<br/>(<i>Reexamine</i>)<br/>(<i>Additional Testing</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/gotohub.pdf')
             break;
@@ -297,11 +297,11 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/urban_farming_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Emphatize\n(<i>Purpose</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Competitor analysis</i>)', 1);
-            addTimelineItem('Test\n(<i>Interview</i>)\n(<i>Criteria</i>)\n(<i>Insights</i>)', 1);
-            addTimelineItem('Evaluate\n(<i>Sweet spot</i>)\n(<i>Priorities</i>)\n(<i>User journey</i>)', 1);
-            addTimelineItem('Ideate\n(<i>How might we</i>)\n(<i>Action points</i>)', 1);
-            addTimelineItem('Future\n(<i>Reexamine</i>)\n(<i>Additional Testing</i>)', 1);
+            addTimelineItem('Empathize<br/>(<i>Purpose</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Competitor analysis</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Interview</i>)<br/>(<i>Criteria</i>)<br/>(<i>Insights</i>)', 1);
+            addTimelineItem('Evaluate<br/>(<i>Sweet spot</i>)<br/>(<i>Priorities</i>)<br/>(<i>User journey</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>HMW</i>)<br/>(<i>Action points</i>)', 1);
+            addTimelineItem('Future<br/>(<i>Reexamine</i>)<br/>(<i>Additional Testing</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/gotohub.pdf')
             break;
@@ -312,11 +312,25 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_8.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             addTimelineItem('Start', 1);
-            addTimelineItem('Components\n(<i>Purpose</i>)\n(<i>Goal</i>)\n(<i>Research</i>)\n(<i>Competitor analysis</i>)', 1);
-            addTimelineItem('Prototype\n(<i>Interview</i>)\n(<i>Criteria</i>)\n(<i>Insights</i>)', 1);
-            addTimelineItem('Layout\n(<i>Sweet spot</i>)\n(<i>Priorities</i>)\n(<i>User journey</i>)', 1);
+            addTimelineItem('Components<br/>(<i>Purpose</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Competitor analysis</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Interview</i>)<br/>(<i>Criteria</i>)<br/>(<i>Insights</i>)', 1);
+            addTimelineItem('Layout<br/>(<i>Sweet spot</i>)<br/>(<i>Priorities</i>)<br/>(<i>User journey</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/swedish_armed_forces_80s.pdf')
+            break;
+        case "luminaireslocalizator":
+            localStorage.setItem( 'projectTitle_storage', 'Luminaires Localizator' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/luminaireslocalizator_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/luminaireslocalizator_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/luminaireslocalizator_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Empathize<br/>(<i>Problem</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Assumptions</i>)', 1);
+            addTimelineItem('Define<br/>(<i>Persona</i>)<br/>(<i>HMW</i>)<br/>(<i>Key</i>)<br/>(<i>Need</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Features</i>)<br/>(<i>Principles</i>)<br/>(<i>User flow</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)', 1);
+            addTimelineItem('End', 1);
+            addDownloadableItem('assets/docs/Luminaire_localizator.pdf')
             break;
         default:
             break;
