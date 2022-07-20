@@ -237,7 +237,7 @@ a {
 }
 
 a:hover:not(.next):not(.previous) {
-	color: #e9dd90;
+	color: #64a19d;
 	text-decoration: underline;
 }
 

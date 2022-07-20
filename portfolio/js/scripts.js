@@ -269,9 +269,9 @@ function projectGallery(project) {
             addTimelineItem('Start', 1);
             addTimelineItem('Empathize<br/>(<i>Problem</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Assumption</i>)', 1);
             addTimelineItem('Define<br/>(<i>HMW</i>)<br/>(<i>Key</i>)<br/>(<i>Need</i>)', 1);
-            addTimelineItem('Ideate<br/>(<i>Concept</i>)<br/>(<i>User flow</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Concept</i>)<br/>(<i>User Flow</i>)', 1);
             addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)<br/>(<i>IA</i>)<br/>(<i>Principles</i>)<br/>(<i>Future</i>)', 1);
-            addTimelineItem('Test<br/>(<i>Assessment</i>)<br/>(<i>Think aloud</i>)(<i>5 second</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Assessment</i>)<br/>(<i>Think Aloud</i>)(<i>5 second</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/gotohub.pdf')
             break;
@@ -327,10 +327,30 @@ function projectGallery(project) {
             addTimelineItem('Start', 1);
             addTimelineItem('Empathize<br/>(<i>Problem</i>)<br/>(<i>Goal</i>)<br/>(<i>Research</i>)<br/>(<i>Assumptions</i>)', 1);
             addTimelineItem('Define<br/>(<i>Persona</i>)<br/>(<i>HMW</i>)<br/>(<i>Key</i>)<br/>(<i>Need</i>)', 1);
-            addTimelineItem('Ideate<br/>(<i>Features</i>)<br/>(<i>Principles</i>)<br/>(<i>User flow</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Features</i>)<br/>(<i>Principles</i>)<br/>(<i>User Flow</i>)', 1);
             addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)', 1);
             addTimelineItem('End', 1);
             addDownloadableItem('assets/docs/Luminaire_localizator.pdf')
+            break;
+        case "kangerluk":
+            localStorage.setItem( 'projectTitle_storage', 'Kangerluk' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/kangerluk_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/kangerluk_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
+            addTimelineItem('Start', 1);
+            addTimelineItem('Empathize<br/>(<i>Assumptions</i>)<br/>(<i>Research</i>)<br/>(<i>Goal</i>)<br/>(<i>problem</i>)', 1);
+            addTimelineItem('Define<br/>(<i>HMW</i>)<br/>(<i>Need</i>)<br/>(<i>Key</i>)<br/>(<i>Persona</i>)', 1);
+            addTimelineItem('Ideate<br/>(<i>Sketch</i>)<br/>(<i>Mood Board</i>)<br/>(<i>Features</i>)<br/>(<i>Design focus</i>)', 1);
+            addTimelineItem('Prototype<br/>(<i>Mid-Fi</i>)', 1);
+            addTimelineItem('Test<br/>(<i>Explorative</i>)<br/>(<i>Interview</i>)<br/>(<i>Survey</i>)', 1);
+            addTimelineItem('End', 1);
+            addTimelineItem('Start', 2);
+            addTimelineItem('Define<br/>(<i>Pain points</i>)<br/>(<i>Preferences</i>)<br/>(<i>Misconceptions</i>)', 2);
+            addTimelineItem('Prototype<br/>(<i>Hi-Fi</i>)', 2);
+            addTimelineItem('Test<br/>(<i>Heuristic</i>)<br/>(<i>Talk Aloud</i>)<br/>(<i>Click</i>)<br/>(<i>Moderated</i>)', 2);
+            addTimelineItem('End', 2);
+            addDownloadableItem('assets/docs/kangerluk.pdf')
             break;
         default:
             break;
