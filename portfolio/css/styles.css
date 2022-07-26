@@ -98,7 +98,6 @@ h6 {
 
 p {
 	margin-top: 0;
-	margin-bottom: 1rem;
 }
 
 #title {
@@ -12425,6 +12424,10 @@ img.hover-shadow {
 	overflow-x: hidden;
 }
 
+#secondIteration {
+	padding-top: 2rem;
+}
+
 .timeline__line {
 	background-image: linear-gradient(to right, white 50%, #DE2E00 0%);
 	background-position: bottom;
@@ -12439,11 +12442,13 @@ img.hover-shadow {
 .timeline__items1 {
 	display: flex;
 	flex-direction: row;
+	margin-top: 2rem;
 }
 
 .timeline__items2 {
 	display: flex;
 	flex-direction: row;
+	margin-top: 2rem;
 }
 
 .timeline__items--item {
@@ -12451,10 +12456,10 @@ img.hover-shadow {
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	margin-right: 2rem;
+	margin-right: 3rem;
 	padding-top: 1rem;
 	text-align: center;
-	letter-spacing: 0cm;
+	white-space: nowrap;
 }
 
 .timeline__items--item:last-child {
@@ -12470,7 +12475,7 @@ img.hover-shadow {
 	height: 15px;
 	width: 15px;
 	background-color: #FCDD95;
-	border-radius: 100%;
+
 	position: absolute;
 	top: -8px;
 }
