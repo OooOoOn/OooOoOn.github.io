@@ -287,7 +287,7 @@ function projectGallery(project) {
             addTimelineItem('<b>Ideate</b><br/>▪<br/><i>HMW</<i><br/><i>Action Points</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Future</b><br/>▪<br/><i>Reexamine</<i><br/><i>Test</<i><br/>▪<br/>', 1);
             addTimelineItem('', 1);
-            addDownloadableItem('assets/docs/gotohub.pdf')
+            addDownloadableItem('assets/docs/WOLT.pdf')
             break;
         case "urbanfarming":
             localStorage.setItem( 'projectTitle_storage', 'Urban Farming Project' );
@@ -298,7 +298,7 @@ function projectGallery(project) {
             
             addTimelineItem('<b>Components</b><br/>▪<br/><i>Textfields</<i><br/><i>Buttons</<i><br/><i>Icons</<i><br/><i>Cards</<i><br/><i>menus</<i><br/><i>Indicators</<i><br/><i>Lists</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Prototype</b><br/>▪<br/><i>Hi-Fi</<i><br/>▪<br/>', 1);
-            addTimelineItem('<b>Layout</b><br/>▪<br/><i>Design system</<i><br/>▪<br/>', 1);
+            addTimelineItem('<b>Layout</b><br/>▪<br/><i>Design System</<i><br/>▪<br/>', 1);
             addTimelineItem('', 1);
             addDownloadableItem('assets/docs/urban_farming_project.pdf')
             break;
