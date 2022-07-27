@@ -56,10 +56,12 @@
 	</div>
 	<div class="row">
 		<div class="col-8 col-lg-9 cv-illustration mx-auto">
-			<img alt="" class="img-fluid" src="assets/img/background_1.png">
+			<img alt="" width="800px" class="img-fluid" src="assets/img/background_1.png">
 		</div>
+		
 		<div class="col-4 col-lg-3 cv mx-auto">
-			<img alt="" width="300px" src="assets/docs/CV.png"/>
+			<div class="folder"></div>
+			<img alt="" width="400px" src="assets/docs/CV.png" id="cv_image"/>
 			<a href="assets/docs/Jon_Olsson_-_UX_Designer.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="downloadCV">
 				<i class="fas fa-search"></i>			
 			</a>
@@ -209,10 +211,31 @@
 				<p class="text-black-50 mb-0">Scalable, multi-purpose designs.</p>
 			</div>
 			<div class="view view-sixth">
-				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_9.jpg">
 				<div class="mask">
-					<h2>Cleano</h2>
-					<p>A household chores app with a gamified spin.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("cleano")'>Read More</a>
+					<h2>Luminaires localizator</h2>
+					<p>3D scan mapping software to manage tunnel lighting systems.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("luminaireslocalizator")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_5.jpg">
+				<div class="mask">
+					<h2>Goto Hub</h2>
+					<p>A booking system for the ultimate Norwegian travel experience.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("gotohub")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_10.jpg">
+				<div class="mask">
+					<h2>Kangerluk</h2>
+					<p>AR educational tool for the Greenlandic flora and fauna.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("kangerluk")'>Read More</a>
+				</div>
+			</div>	
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_4.jpg">
+				<div class="mask">
+					<h2>E-Checklists</h2>
+					<p>A collaboration with Lund university hospital to improve upon emergency care.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("emergencychecklists")'>Read More</a>
 				</div>
 			</div>
 			<div class="view view-sixth">
@@ -223,17 +246,50 @@
 				</div>
 			</div>
 			<div class="view view-sixth">
-				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_4.jpg">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_6.jpg">
 				<div class="mask">
-					<h2>Emergency Checklists</h2>
-					<p>A collaboration with Lund university hospital to improve upon emergency care.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("emergencychecklists")'>Read More</a>
+					<h2>WOLT</h2>
+					<p>UX analysis to evaluate and improve upon the current design.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("wolt")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_7.jpg">
+				<div class="mask">
+					<h2>Urban Farming Project</h2>
+					<p>App to facilitate a subscription service for locally grown vegetables.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("urbanfarming")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_2.jpg">
+				<div class="mask">
+					<h2>Cleano</h2>
+					<p>A household chores app with a gamified spin.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("cleano")'>Read More</a>
 				</div>
 			</div>
 			<div class="view view-sixth">
 				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_1.jpg">
 				<div class="mask">
 					<h2>Träffpunkten</h2>
-					<p>A social media platform for age group 55+.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("träffpunkten")'>Read More</a>
+					<p>Social media platform for age group 55+.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("träffpunkten")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/emptyproject.jpg">
+				<div class="mask">
+					<h2>MORE PROJECTS COMING SOON!</h2>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_8.jpg">
+				<div class="mask">
+					<h2>Swedish Armed Forces</h2>
+					<p>Design system used for retro redesign.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("swedisharmedforces")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/emptyproject.jpg">
+				<div class="mask">
+					<h2>MORE PROJECTS COMING SOON!</h2>
 				</div>
 			</div>
 		</div>
