@@ -12279,10 +12279,9 @@ img.hover-shadow {
 .next {
 	cursor: pointer;
 	position: absolute;
-	top: 40%;
+	top: 25%;
 	width: auto;
 	padding: 16px;
-	margin-top: -50px;
 	color: white;
 	font-weight: bold;
 	font-size: 1.7rem;
@@ -12324,9 +12323,9 @@ img.hover-shadow {
 	display: flex;
 	border-radius: 360px;
 	background-color: #FCDD95;
-	width: 40px;
+	width: 50px;
 	color: #DE2E00;
-	height: 40px;
+	height: 50px;
 	z-index: 100;
 	font-size: 20px;
 	flex-direction: column;
@@ -12341,7 +12340,7 @@ img.hover-shadow {
 .nextGroup:hover {
 	text-decoration: none !important;
 	cursor: pointer;
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .cv-illustration {
@@ -12400,11 +12399,11 @@ img.hover-shadow {
 	display: flex;
 	border-radius: 360px;
 	background-color: #FCDD95;
-	width: 50px;
+	width: 60px;
 	color: #DE2E00;
-	height: 50px;
+	height: 60px;
 	z-index: 100;
-	font-size: 17px;
+	font-size: 20px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -12417,7 +12416,7 @@ img.hover-shadow {
 .downloadCV:hover, .downloadProject:hover {
 	text-decoration: none !important;
 	cursor: pointer;
-	transform: scale(1.2)
+	transform: scale(1.1)
 }
 
 
