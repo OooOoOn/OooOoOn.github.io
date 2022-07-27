@@ -9823,7 +9823,7 @@ button.bg-black:focus {
 }
 
 .text-primary {
-	color: #64a19d !important;
+	color: #e9dd90 !important;
 }
 
 a.text-primary:hover,
@@ -12312,6 +12312,7 @@ img.hover-shadow {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding-left: 1.25rem;
 }
 
 .previousGroup,
@@ -12319,7 +12320,21 @@ img.hover-shadow {
 	font-size: 2rem;
 	transition: 0.6s ease;
 	user-select: none;
-	;
+	all: unset;
+	display: flex;
+	border-radius: 360px;
+	background-color: #FCDD95;
+	width: 40px;
+	color: #DE2E00;
+	height: 40px;
+	z-index: 100;
+	font-size: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 0px 1px 4px 2px #00000088 !important;
+
 }
 
 .previousGroup:hover,
@@ -12385,11 +12400,11 @@ img.hover-shadow {
 	display: flex;
 	border-radius: 360px;
 	background-color: #FCDD95;
-	width: 60px;
+	width: 50px;
 	color: #DE2E00;
-	height: 60px;
+	height: 50px;
 	z-index: 100;
-	font-size: 20px;
+	font-size: 17px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -12399,10 +12414,17 @@ img.hover-shadow {
 
 }
 
+.downloadCV:hover, .downloadProject:hover {
+	text-decoration: none !important;
+	cursor: pointer;
+	transform: scale(1.2)
+}
+
+
 .downloadCV {
 	position: absolute;
 	bottom: 50%;
-	left: 100px;
+	left: 115px;
 	box-shadow: 0px 1px 4px 2px #00000088 !important;
 
 }
