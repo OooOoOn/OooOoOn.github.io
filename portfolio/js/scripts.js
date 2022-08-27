@@ -222,7 +222,7 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/carbonfootprint_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/carbonfootprint_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/carbonfootprint_3.jpg' );
-            localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
+            localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
 
             addTimelineItem('<b>Map</b><br/>▪<br/><i>Research</<i><br/><i>Assumptions</<i><br/><i>Interview</<i><br/><i>Expectations</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Sketch</b><br/>▪<br/><i>Inspiration</<i><br/><i>Features</<i><br/>▪<br/>', 1);
@@ -244,7 +244,7 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/emergencychecklists_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/emergencychecklists_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/emergencychecklists_3.jpg' );
-            localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
+            localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
 
             addTimelineItem('<b>Empathize</b><br/>▪<br/><i>Problem</<i><br/><i>Goal</<i><br/><i>Survey</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Define</b><br/>▪<br/><i>Persona</<i><br/><i>Key</<i><br/><i>Interviews</<i><br/>▪<br/>', 1);
@@ -334,7 +334,7 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_1_storage', 'assets/img/kangerluk_1.jpg' );
             localStorage.setItem( 'projectImage_2_storage', 'assets/img/kangerluk_2.jpg' );
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_3.jpg' );
-            localStorage.setItem( 'secondIteration_storage', '2nd Iteration' );
+            localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
 
             addTimelineItem('<b>Empathize</b><br/>▪<br/><i>Assumptions</<i><br/><i>Research</<i><br/><i>Goal</<i><br/><i>Problem</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Define</b><br/>▪<br/><i>HMW</<i><br/><i>Need</<i><br/><i>Key</<i><br/><i>Persona</<i><br/>▪<br/>', 1);
@@ -347,7 +347,22 @@ function projectGallery(project) {
             addTimelineItem('<b>Prototype</b><br/>▪<br/><i>Hi-Fi</<i><br/>▪<br/>', 2);
             addTimelineItem('<b>Test</b><br/>▪<br/><i>Heuristic</<i><br/><i>Talk Aloud</<i><br/><i>Click</<i><br/><i>Moderated</<i><br/>▪<br/>', 2);
             addTimelineItem('', 2);
-            addDownloadableItem('assets/docs/kangerluk.pdf')
+            addDownloadableItem('assets/docs/Kangerluk.pdf')
+            break;
+        case "mirtual":
+            localStorage.setItem( 'projectTitle_storage', 'Mirtual' );
+            localStorage.setItem( 'projectImage_1_storage', 'assets/img/mirtual_1.jpg' );
+            localStorage.setItem( 'projectImage_2_storage', 'assets/img/mirtual_2.jpg' );
+            localStorage.setItem( 'projectImage_3_storage', 'assets/img/mirtual_3.jpg' );
+            localStorage.setItem( 'secondIteration_storage', '' );
+            
+            addTimelineItem('<b>Empathize</b><br/>▪<br/><i>Stakeholder In.</<i><br/><i>Competitor An.</<i><br/><i>Focus Group</<i><br/><i>Purpose</<i><br/>▪<br/>', 1);
+            addTimelineItem('<b>Define</b><br/>▪<br/><i>Mood Board</<i><br/><i>Focus Group</<i><Persona/><br/<i>Scenario</<i><br/>▪<br/>', 1);
+            addTimelineItem('<b>Ideate</b><br/>▪<br/><i>Task Flow</<i><br/><i>Focus Group</<i><br/>▪<br/>', 1);
+            addTimelineItem('<b>Prototype</b><br/>▪<br/><i>Hi-Fi</<i><br/><i>IA</<i><br/><i>Principles</<i><br/>▪<br/>', 1);
+            addTimelineItem('<b>Test</b><br/>▪<br/><i>Interview</<i><br/>▪<br/>', 1);
+            addTimelineItem('', 1);
+            addDownloadableItem('assets/docs/Mirtual.pdf')
             break;
         default:
             break;
