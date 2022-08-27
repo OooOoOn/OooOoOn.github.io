@@ -3656,6 +3656,7 @@ input[type=button].btn-block {
 		padding-right: 0;
 		padding-left: 0;
 	}
+	
 }
 
 @media (min-width: 576px) {
@@ -12361,14 +12362,13 @@ img.hover-shadow {
 
 .cv {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	padding: 5rem 0;
 }
 
 .cv>.footer {
-	width: 270px;
+	width: 275px;
 	background: transparent linear-gradient(180deg, #5B5B5B 0%, #363636 100%) 0% 0% no-repeat padding-box;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -12391,7 +12391,7 @@ img.hover-shadow {
 	position: absolute;
 	bottom: 20%;
 	z-index: 0;
-	height: 360px;
+	height: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12400,7 +12400,6 @@ img.hover-shadow {
 
 #cv_image {
 	z-index: 0;
-	padding-left: 0.75rem;
 }
 
 .downloadCV,
@@ -12432,10 +12431,9 @@ img.hover-shadow {
 
 .downloadCV {
 	position: absolute;
-	left: 25%;
+	top: 40%;
 	margin-left: auto; 
 	margin-right: auto; 
-	transform: translate(-50%, -50%);
 	box-shadow: 0px 1px 4px 2px #00000088 !important;
 
 }
