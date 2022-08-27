@@ -356,7 +356,7 @@ function projectGallery(project) {
             localStorage.setItem( 'projectImage_3_storage', 'assets/img/mirtual_3.jpg' );
             localStorage.setItem( 'secondIteration_storage', '' );
             
-            addTimelineItem('<b>Empathize</b><br/>▪<br/><i>Stakeholder In.</<i><br/><i>Competitor An.</<i><br/><i>Focus Group</<i><br/><i>Purpose</<i><br/>▪<br/>', 1);
+            addTimelineItem('<b>Empathize</b><br/>▪<br/><i>Stakeholders</<i><br/><i>Competitors</<i><br/><i>Focus Group</<i><br/><i>Purpose</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Define</b><br/>▪<br/><i>Mood Board</<i><br/><i>Focus Group</<i><Persona/><br/<i>Scenario</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Ideate</b><br/>▪<br/><i>Task Flow</<i><br/><i>Focus Group</<i><br/>▪<br/>', 1);
             addTimelineItem('<b>Prototype</b><br/>▪<br/><i>Hi-Fi</<i><br/><i>IA</<i><br/><i>Principles</<i><br/>▪<br/>', 1);
