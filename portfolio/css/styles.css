@@ -235,10 +235,7 @@ a {
 	background-color: transparent;
 }
 
-a:hover:not(.next):not(.previous) {
-	color: #64a19d;
-	text-decoration: underline;
-}
+
 
 a:not([href]):not([class]) {
 	color: inherit;
@@ -12401,6 +12398,11 @@ img.hover-shadow {
 #cv_image {
 	z-index: 0;
 }
+
+#downloadable_project {
+	font-weight: normal;
+}
+
 
 .downloadCV,
 .downloadProject {
