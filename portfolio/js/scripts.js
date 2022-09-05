@@ -340,7 +340,7 @@
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_6.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
-                addTimelineItem('<b>Empathize</b><br/><i>Purpose</i><br/><i>Goal</i><br/><i>Research</i><br/><i>Comp. Analysis</i><br/>', 1);
+                addTimelineItem('<b>Empathize</b><br/><i>Purpose</i><br/><i>Goal</i><br/><i>Research</i><br/><i>Competitors</i><br/>', 1);
                 addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Criteria</i><br/><i>Insights</i><br/>', 1);
                 addTimelineItem('<b>Evaluate</b><br/><i>Sweet Spot</i><br/><i>Priorities</i><br/><i>User Journey</i><br/>', 1);
                 addTimelineItem('<b>Ideate</b><br/><i>HMW</i><br/><i>Action Points</i><br/>', 1);
