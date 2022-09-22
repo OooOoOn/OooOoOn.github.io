@@ -423,6 +423,19 @@
                 addTimelineItem('', 1);
                 addDownloadableItem('assets/docs/Mirtual.pdf')
                 break;
+            case "carelyo":
+                localStorage.setItem( 'projectTitle_storage', 'Carelyo' );
+                localStorage.setItem( 'projectImage_1_storage', 'assets/img/carelyo_1.jpg' );
+                localStorage.setItem( 'projectImage_2_storage', 'assets/img/carelyo_2.jpg' );
+                localStorage.setItem( 'projectImage_3_storage', 'assets/img/carelyo_3.jpg' );
+                localStorage.setItem( 'secondIteration_storage', '' );
+                
+                addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>User Story</i><br/><i>Focus Group</i><br/>', 1);
+                addTimelineItem('<b>Define</b><br/><i>Requirements</i><br/><i>Design System</i><br/>', 1);
+                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
+                addTimelineItem('', 1);
+                addDownloadableItem('assets/docs/Carelyo.pdf')
+                break;
             default:
                 break;
         }
