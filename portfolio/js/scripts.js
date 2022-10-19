@@ -393,6 +393,9 @@
                 break;
             case "kangerluk":
                 localStorage.setItem( 'projectTitle_storage', 'Kangerluk' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_kangerluk.jpg' );
+                localStorage.setItem( 'expectations_storage', 'assets/img/expectations_kangerluk.jpg' );
+                localStorage.setItem( 'challenges_storage', 'assets/img/challenges_kangerluk.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/kangerluk_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/kangerluk_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_3.jpg' );
