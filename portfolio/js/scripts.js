@@ -376,6 +376,9 @@
                 break;
             case "luminaireslocalizator":
                 localStorage.setItem( 'projectTitle_storage', 'Luminaires Localizator' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_luminaireslocalizator.jpg' );
+                localStorage.setItem( 'expectations_storage', 'assets/img/expectations_luminaireslocalizator.jpg' );
+                localStorage.setItem( 'challenges_storage', 'assets/img/challenges_luminaireslocalizator.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/luminaireslocalizator_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/luminaireslocalizator_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/luminaireslocalizator_3.jpg' );
@@ -440,6 +443,9 @@
                 break;
         }
         document.getElementById("projectTitle").innerHTML = localStorage.getItem('projectTitle_storage');
+        document.getElementById("introduction").src = localStorage.getItem('introduction_storage');
+        document.getElementById("expectations").src = localStorage.getItem('expectations_storage');
+        document.getElementById("challenges").src = localStorage.getItem('challenges_storage');
         document.getElementById("projectImage_1").src = localStorage.getItem('projectImage_1_storage');
         document.getElementById("projectImage_2").src = localStorage.getItem('projectImage_2_storage');
         document.getElementById("projectImage_3").src = localStorage.getItem('projectImage_3_storage');
