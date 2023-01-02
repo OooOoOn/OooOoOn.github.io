@@ -171,6 +171,11 @@ abbr[data-original-title] {
 	padding-left: 0.5rem;
 }
 
+.masthead h4 {
+	background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5));
+	max-width: 17rem;
+}
+
 address {
 	margin-bottom: 1rem;
 	font-style: normal;
