@@ -248,81 +248,15 @@
         document.getElementsByClassName('timeline__items2')[0].innerHTML = ''
         
         switch (project) {
-            case "träffpunkten":
-                localStorage.setItem( 'projectTitle_storage', 'Träffpunkten' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/träffpunkten_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/träffpunkten_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/träffpunkten_3.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '' );
-                addTimelineItem('<b>Empathize</b><br/><i>Research</i><br/><i>Assumptions</i><br/><i>Survey</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>Persona</i><br/><i>Requirements</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>Concept</i><br/><i>Features</i><br/><i>Sketch</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Mid-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Think Aloud</i><br/>', 1);
-                addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/Träffpunkten.pdf')
-                break;
-            case "cleano":
-                localStorage.setItem( 'projectTitle_storage', 'Cleano' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/cleano_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/cleano_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/cleano_3.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '' );
-                addTimelineItem('<b>Empathize</b><br/><i>Goal</i><br/><i>Assumptions</i><br/><i>Research</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>Persona</i><br/><i>Requirements</i><br/><i>Problem</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>Research</i><br/><i>Features</i><br/><i>Sketch</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Mid-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Assessment</i><br/><i>Interview</i><br/>', 1);
-                addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/Cleano.pdf')
-                break;
-            case "carbonfootprint":
-                localStorage.setItem( 'projectTitle_storage', 'Carbon Footprint' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/carbonfootprint_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/carbonfootprint_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/carbonfootprint_3.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
-
-                addTimelineItem('<b>Map</b><br/><i>Research</i><br/><i>Assumptions</i><br/><i>Interview</i><br/><i>Expectations</i><br/>', 1);
-                addTimelineItem('<b>Sketch</b><br/><i>Inspiration</i><br/><i>Features</i><br/>', 1);
-                addTimelineItem('<b>Decide</b><br/><i>Heatmap</i><br/><i>User flow</i><br/><i>Storyboard</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/><i>Hypothesis</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Talk aloud</i><br/><i>Moderated</i><br/>', 1);
-                addTimelineItem('', 1);
-
-                addTimelineItem('<b>Empathize</b><br/><i>Goal</i><br/><i>Persona</i><br/>', 2);
-                addTimelineItem('<b>Define</b><br/><i>Key</i><br/><i>Aspiration</i><br/><i>Requirements</i><br/>', 2);
-                addTimelineItem('<b>Ideate</b><br/><i>Features</i><br/><i>Wireframe</i><br/>', 2);
-                addTimelineItem('<b>Prototype</b><br/><i>Mid-Fi</i><br/><i>Focus areas</i><br/>', 2);
-                addTimelineItem('<b>Test</b><br/><i>Assessment</i><br/><i>A/B</i><br/><i>Moderated</i><br/>', 2);
-                addTimelineItem('', 2);
-                addDownloadableItem('assets/docs/carbon_footprint.pdf')
-                break;
-            case "emergencychecklists":
-                localStorage.setItem( 'projectTitle_storage', 'Emergency Checklists' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/emergencychecklists_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/emergencychecklists_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/emergencychecklists_3.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
-
-                addTimelineItem('<b>Empathize</b><br/><i>Problem</i><br/><i>Goal</i><br/><i>Survey</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>Persona</i><br/><i>Key</i><br/><i>Interviews</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>Storyboard</i><br/><i>Challenges</i><br/><i>Concept</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>A/B</i><br/><i>Unmoderated</i><br/>', 1);
-                addTimelineItem('', 1);
-                
-                addTimelineItem('<b>Define</b><br/><i>Interviews</i><br/>', 2);
-                addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 2);
-                addTimelineItem('<b>Test</b><br/><i>Assessment</i><br/><i>A/B</i><br/><i>Unmoderated</i><br/>', 2);
-                addTimelineItem('', 2);
-                addDownloadableItem('assets/docs/emergency_checklists.pdf')
-                break;
             case "gotohub":
                 localStorage.setItem( 'projectTitle_storage', 'Goto Hub' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/gotohub_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/gotohub_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/gotohub_3.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/gotohub_4.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/gotohub_5.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/gotohub_6.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/gotohub_7.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Problem</i><br/><i>Goal</i><br/><i>Research</i><br/><i>Assumption</i><br/>', 1);
@@ -333,55 +267,16 @@
                 addTimelineItem('', 1);
                 addDownloadableItem('assets/docs/gotohub.pdf')
                 break;
-            case "wolt":
-                localStorage.setItem( 'projectTitle_storage', 'WOLT' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/projects_6.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/projects_6.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_6.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '' );
-                
-                addTimelineItem('<b>Empathize</b><br/><i>Purpose</i><br/><i>Goal</i><br/><i>Research</i><br/><i>Competitors</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Criteria</i><br/><i>Insights</i><br/>', 1);
-                addTimelineItem('<b>Evaluate</b><br/><i>Sweet Spot</i><br/><i>Priorities</i><br/><i>User Journey</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>HMW</i><br/><i>Action Points</i><br/>', 1);
-                addTimelineItem('<b>Future</b><br/><i>Reexamine</i><br/><i>Test</i><br/>', 1);
-                addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/WOLT.pdf')
-                break;
-            case "urbanfarming":
-                localStorage.setItem( 'projectTitle_storage', 'Urban Farming Project' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/urban_farming_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/urban_farming_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/urban_farming_3.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '' );
-                
-                addTimelineItem('<b>Components</b><br/><i>Textfields</i><br/><i>Buttons</i><br/><i>Icons</i><br/><i>Cards</i><br/><i>Menus</i><br/><i>Indicators</i><br/><i>Lists</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
-                addTimelineItem('<b>Layout</b><br/><i>Design System</i><br/>', 1);
-                addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/urban_farming_project.pdf')
-                break;
-            case "swedisharmedforces":
-                localStorage.setItem( 'projectTitle_storage', 'Swedish Armed Forces' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/projects_8.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/projects_8.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/projects_8.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '' );
-                
-                addTimelineItem('<b>Components</b><br/><i>Logotype</i><br/><i>Buttons</i><br/><i>Labels</i><br/><i>Colors</i><br/><i>Typography</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
-                addTimelineItem('<b>Layout</b><br/><i>Grid</i><br/><i>Platforms</i><br/>', 1);
-                addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/swedish_armed_forces_80s.pdf')
-                break;
             case "luminaireslocalizator":
                 localStorage.setItem( 'projectTitle_storage', 'Luminaires Localizator' );
                 localStorage.setItem( 'introduction_storage', 'assets/img/introduction_luminaireslocalizator.jpg' );
-                localStorage.setItem( 'expectations_storage', 'assets/img/expectations_luminaireslocalizator.jpg' );
-                localStorage.setItem( 'challenges_storage', 'assets/img/challenges_luminaireslocalizator.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/luminaireslocalizator_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/luminaireslocalizator_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/luminaireslocalizator_3.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/luminaireslocalizator_4.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/luminaireslocalizator_5.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/luminaireslocalizator_6.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/luminaireslocalizator_7.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Problem</i><br/><i>Goal</i><br/><i>Research</i><br/><i>Assumptions</i><br/>', 1);
@@ -394,11 +289,13 @@
             case "kangerluk":
                 localStorage.setItem( 'projectTitle_storage', 'Kangerluk' );
                 localStorage.setItem( 'introduction_storage', 'assets/img/introduction_kangerluk.jpg' );
-                localStorage.setItem( 'expectations_storage', 'assets/img/expectations_kangerluk.jpg' );
-                localStorage.setItem( 'challenges_storage', 'assets/img/challenges_kangerluk.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/kangerluk_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/kangerluk_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_3.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/kangerluk_4.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/kangerluk_5.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/kangerluk_6.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/kangerluk_7.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
 
                 addTimelineItem('<b>Empathize</b><br/><i>Assumptions</i><br/><i>Research</i><br/><i>Goal</i><br/><i>Problem</i><br/>', 1);
@@ -419,6 +316,10 @@
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/mirtual_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/mirtual_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/mirtual_3.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/mirtual_4.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/mirtual_5.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/mirtual_6.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/mirtual_7.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>Focus Group</i><br/><i>Purpose</i><br/>', 1);
@@ -434,6 +335,10 @@
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/carelyo_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/carelyo_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/carelyo_3.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/carelyo_4.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/carelyo_5.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/carelyo_6.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/carelyo_7.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>User Story</i><br/><i>Focus Group</i><br/>', 1);
@@ -442,15 +347,37 @@
                 addTimelineItem('', 1);
                 addDownloadableItem('assets/docs/Carelyo.pdf')
                 break;
+                case "myhouse":
+                    localStorage.setItem( 'projectTitle_storage', 'My House' );
+                    localStorage.setItem( 'introduction_storage', 'assets/img/MyHouse_Mockup_sketch-1.png' );
+                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/myhouse_edit_selected.png' );
+                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/myhouse_share_project.png' );
+                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/myhouse_mapping.png' );
+                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/myhouse_projects_overview.png' );
+                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/myhouse_select_type.png' );
+                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/myhouse_visitshowrooms.png' );
+                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_home.png' );
+                    localStorage.setItem( 'secondIteration_storage', '' );
+    
+                    addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/><i>Problem</i><br/>', 1);
+                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
+                    addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mindmap</i><br/><i>Features</i><br/><i>Sitemap</i><br/>', 1);
+                    addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Task Analysis</i><br/>', 1);
+                    addTimelineItem('', 1);
+                    addDownloadableItem('assets/docs/myhouse.pdf')
+                break;
             default:
                 break;
         }
         document.getElementById("projectTitle").innerHTML = localStorage.getItem('projectTitle_storage');
         document.getElementById("introduction").src = localStorage.getItem('introduction_storage');
-        document.getElementById("expectations").src = localStorage.getItem('expectations_storage');
-        document.getElementById("challenges").src = localStorage.getItem('challenges_storage');
         document.getElementById("projectImage_1").src = localStorage.getItem('projectImage_1_storage');
         document.getElementById("projectImage_2").src = localStorage.getItem('projectImage_2_storage');
         document.getElementById("projectImage_3").src = localStorage.getItem('projectImage_3_storage');
+        document.getElementById("projectImage_4").src = localStorage.getItem('projectImage_4_storage');
+        document.getElementById("projectImage_5").src = localStorage.getItem('projectImage_5_storage');
+        document.getElementById("projectImage_6").src = localStorage.getItem('projectImage_6_storage');
+        document.getElementById("projectImage_7").src = localStorage.getItem('projectImage_7_storage');
         document.getElementById("secondIteration").innerHTML = localStorage.getItem('secondIteration_storage');
     }
