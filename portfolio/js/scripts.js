@@ -250,6 +250,7 @@
         switch (project) {
             case "gotohub":
                 localStorage.setItem( 'projectTitle_storage', 'Goto Hub' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_gotohub.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/gotohub_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/gotohub_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/gotohub_3.jpg' );
@@ -313,6 +314,7 @@
                 break;
             case "mirtual":
                 localStorage.setItem( 'projectTitle_storage', 'Mirtual' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_mirtual.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/mirtual_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/mirtual_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/mirtual_3.jpg' );
@@ -332,6 +334,7 @@
                 break;
             case "carelyo":
                 localStorage.setItem( 'projectTitle_storage', 'Carelyo' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_carelyo.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/carelyo_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/carelyo_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/carelyo_3.jpg' );
