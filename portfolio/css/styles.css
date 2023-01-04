@@ -9934,6 +9934,10 @@ a.text-black:focus {
 
 }
 
+.text-white-50 b {
+	color:#64a19d;
+}
+
 .text-hide {
 	font: 0/0 a;
 	color: transparent;
@@ -10385,7 +10389,7 @@ Project card animations
 
 .view {
 	width: 100%;
-	height: 100%;
+	height: 20rem;
 	margin: 5px;
 	float: left;
 	border: 10px solid #fff;
@@ -10410,6 +10414,9 @@ Project card animations
 }
 
 .view img {
+	height: 100%;
+    width: 100%;
+    object-fit: cover;
 	display: block;
 	position: relative;
 }

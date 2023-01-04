@@ -362,13 +362,33 @@
                     localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_home.png' );
                     localStorage.setItem( 'secondIteration_storage', '' );
     
-                    addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/><i>Problem</i><br/>', 1);
+                    addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
                     addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
                     addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mindmap</i><br/><i>Features</i><br/><i>Sitemap</i><br/>', 1);
                     addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Task Analysis</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/>', 1);
                     addTimelineItem('', 1);
                     addDownloadableItem('assets/docs/myhouse.pdf')
+                break;
+                case "rentestate":
+                    localStorage.setItem( 'projectTitle_storage', 'RentEstate' );
+                    localStorage.setItem( 'introduction_storage', 'assets/img/rentestate_1.jpg' );
+                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/rentestate_2.jpg' );
+                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/rentestate_3.jpg' );
+                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/rentestate_4.jpg' );
+                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/rentestate_5.jpg' );
+                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/rentestate_6.jpg' );
+                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/rentestate_7.jpg' );
+                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/rentestate_8.jpg' );
+                    localStorage.setItem( 'secondIteration_storage', '' );
+    
+                    addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
+                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
+                    addTimelineItem('<b>Ideate</b><br/><i>Wireframe</i><br/><i>Sitemap</i><br/><i>Features</i><br/><i>Task Flow</i><br/>', 1);
+                    addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Tree Test</i><br/><i>Interview</i><br/><i>Task Analysis</i><br/>', 1);
+                    addTimelineItem('', 1);
+                    addDownloadableItem('assets/docs/rentestate.pdf')
                 break;
             default:
                 break;
