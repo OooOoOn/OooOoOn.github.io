@@ -10246,7 +10246,7 @@ body {
 }
 
 .contact-section {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, #000000 100%), url("../assets/img/background_4.jpg");
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, #000000 100%), url("../assets/img/background.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -10639,6 +10639,8 @@ Project card animations
 	padding: 20px 30px 50px 30px;
 	position: relative;
 	text-align: center;
+	background-color: #f1efef;
+	border-radius: 5px;
 }
 
 .contact main section .content img {
@@ -10666,6 +10668,7 @@ Project card animations
 	letter-spacing: 0.5px;
 	line-height: 160%;
 	padding-bottom: 20px;
+	opacity: 1;
 }
 
 .contact main .title {
