@@ -368,7 +368,7 @@
                     addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
                     addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/>', 1);
                     addTimelineItem('', 1);
-                    addDownloadableItem('assets/docs/myhouse.pdf')
+                    addDownloadableItem('assets/docs/MyHouse.pdf')
                 break;
                 case "rentestate":
                     localStorage.setItem( 'projectTitle_storage', 'RentEstate' );
@@ -386,9 +386,9 @@
                     addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
                     addTimelineItem('<b>Ideate</b><br/><i>Wireframe</i><br/><i>Sitemap</i><br/><i>Features</i><br/><i>Task Flow</i><br/>', 1);
                     addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Tree Test</i><br/><i>Interview</i><br/><i>Task Analysis</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Tree Test</i><br/><i>Interview</i><br/>', 1);
                     addTimelineItem('', 1);
-                    addDownloadableItem('assets/docs/rentestate.pdf')
+                    addDownloadableItem('assets/docs/RentEstate.pdf')
                 break;
             default:
                 break;
