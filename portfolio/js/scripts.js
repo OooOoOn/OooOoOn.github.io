@@ -318,10 +318,10 @@
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/mirtual_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/mirtual_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/mirtual_3.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/mirtual_4.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/mirtual_5.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/mirtual_6.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/mirtual_7.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/mirtual_1.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/mirtual_2.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/mirtual_3.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/mirtual_1.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>Focus Group</i><br/><i>Purpose</i><br/>', 1);
@@ -338,10 +338,10 @@
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/carelyo_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/carelyo_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/carelyo_3.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/carelyo_4.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/carelyo_5.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/carelyo_6.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/carelyo_7.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/carelyo_1.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/carelyo_2.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/carelyo_3.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/carelyo_1.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>User Story</i><br/><i>Focus Group</i><br/>', 1);
