@@ -334,14 +334,14 @@
                 break;
             case "carelyo":
                 localStorage.setItem( 'projectTitle_storage', 'Carelyo' );
-                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_carelyo.jpg' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/carelyo_8.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/carelyo_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/carelyo_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/carelyo_3.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/carelyo_1.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/carelyo_2.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/carelyo_3.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/carelyo_1.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/projects_12.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/carelyo_4.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/carelyo_6.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/carelyo_9.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>User Story</i><br/><i>Focus Group</i><br/>', 1);
