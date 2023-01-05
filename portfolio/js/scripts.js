@@ -289,26 +289,26 @@
                 break;
             case "kangerluk":
                 localStorage.setItem( 'projectTitle_storage', 'Kangerluk' );
-                localStorage.setItem( 'introduction_storage', 'assets/img/introduction_kangerluk.jpg' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/kangerluk_8.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/kangerluk_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/kangerluk_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_3.jpg' );
+                localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_10.jpg' );
                 localStorage.setItem( 'projectImage_4_storage', 'assets/img/kangerluk_4.jpg' );
                 localStorage.setItem( 'projectImage_5_storage', 'assets/img/kangerluk_5.jpg' );
                 localStorage.setItem( 'projectImage_6_storage', 'assets/img/kangerluk_6.jpg' );
                 localStorage.setItem( 'projectImage_7_storage', 'assets/img/kangerluk_7.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
 
-                addTimelineItem('<b>Empathize</b><br/><i>Assumptions</i><br/><i>Research</i><br/><i>Goal</i><br/><i>Problem</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>HMW</i><br/><i>Need</i><br/><i>Key</i><br/><i>Persona</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mood Board</i><br/><i>Features</i><br/><i>Design Focus</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Mid-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Interview</i><br/><i>Survey</i><br/>', 1);
+                addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
+                addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Persona</i><br/>', 1);
+                addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mood Board</i><br/><i>Features</i><br/>', 1);
+                addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
+                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Talk Aloud</i><br/><i>Click Test</i><br/><i>Heuristic</i><br/>', 1);
                 addTimelineItem('', 1);
                 
-                addTimelineItem('<b>Define</b><br/><i>Pain points</i><br/><i>Preferences</i><br/><i>Misconceptions</i><br/>', 2);
+                addTimelineItem('<b>Define</b><br/><i>Pain Points</i><br/><i>Preferences</i><br/><i>Misconceptions</i><br/>', 2);
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Talk Aloud</i><br/><i>Click</i><br/><i>Moderated</i><br/>', 2);
+                addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
                 addTimelineItem('', 2);
                 addDownloadableItem('assets/docs/Kangerluk.pdf')
                 break;
