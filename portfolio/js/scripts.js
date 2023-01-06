@@ -354,7 +354,7 @@
                 case "myhouse":
                     localStorage.setItem( 'projectTitle_storage', 'My House' );
                     localStorage.setItem( 'introduction_storage', 'assets/img/MyHouse_Mockup_sketch-1.png' );
-                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/myhouse_edit_selected.png' );
+                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/myhouse_2.jpg' );
                     localStorage.setItem( 'projectImage_2_storage', 'assets/img/myhouse_share_project.png' );
                     localStorage.setItem( 'projectImage_3_storage', 'assets/img/myhouse_mapping.png' );
                     localStorage.setItem( 'projectImage_4_storage', 'assets/img/myhouse_projects_overview.png' );
