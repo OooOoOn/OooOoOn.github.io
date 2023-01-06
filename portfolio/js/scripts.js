@@ -274,10 +274,10 @@
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/luminaireslocalizator_1.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/luminaireslocalizator_2.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/luminaireslocalizator_3.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/luminaireslocalizator_4.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/luminaireslocalizator_5.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/luminaireslocalizator_6.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/luminaireslocalizator_7.jpg' );
+                localStorage.setItem( 'projectImage_4_storage', 'assets/img/luminaireslocalizator_1.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/luminaireslocalizator_2.jpg' );
+                localStorage.setItem( 'projectImage_6_storage', 'assets/img/luminaireslocalizator_3.jpg' );
+                localStorage.setItem( 'projectImage_7_storage', 'assets/img/luminaireslocalizator_1.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
                 
                 addTimelineItem('<b>Empathize</b><br/><i>Problem</i><br/><i>Goal</i><br/><i>Research</i><br/><i>Assumptions</i><br/>', 1);
