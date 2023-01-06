@@ -347,6 +347,7 @@
                 addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>User Story</i><br/><i>Focus Group</i><br/>', 1);
                 addTimelineItem('<b>Define</b><br/><i>Requirements</i><br/><i>Design System</i><br/>', 1);
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
+                addTimelineItem('<b>Test</b><br/><i>A/B Test</i><br/><i>Talk Aloud</i><br/>', 1);
                 addTimelineItem('', 1);
                 addDownloadableItem('assets/docs/Carelyo.pdf')
                 break;
