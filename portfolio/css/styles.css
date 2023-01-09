@@ -11021,6 +11021,27 @@ Project card animations
 }
 
 @media (max-width: 576px) {
+
+	.timeline__items1 {
+		display:block !important; 
+	}
+
+	.timeline__items2 {
+		display:block !important; 
+	}
+
+	.previous, .next {
+		top: 10% !important;
+	}
+
+	.modal {
+		width:86% !important;
+	}
+
+	.mr-4, .mx-4 {
+		margin-right: 0rem !important;
+	}
+
 	.view-sixth .mask {
 		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		filter: alpha(opacity=100);
