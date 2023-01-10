@@ -356,9 +356,9 @@
                     localStorage.setItem( 'introduction_storage', 'assets/img/MyHouse_Mockup_sketch-1.png' );
                     localStorage.setItem( 'projectImage_1_storage', 'assets/img/myhouse_2.jpg' );
                     localStorage.setItem( 'projectImage_2_storage', 'assets/img/myhouse_3.jpg' );
-                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/myhouse_mapping.png' );
-                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/myhouse_projects_overview.png' );
-                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/myhouse_select_type.png' );
+                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/myhouse_4.jpg' );
+                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/myhouse_5.jpg' );
+                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/myhouse_6.jpg' );
                     localStorage.setItem( 'projectImage_6_storage', 'assets/img/myhouse_visitshowrooms.png' );
                     localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_home.png' );
                     localStorage.setItem( 'secondIteration_storage', '' );
