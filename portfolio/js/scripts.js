@@ -359,8 +359,8 @@
                     localStorage.setItem( 'projectImage_3_storage', 'assets/img/myhouse_4.jpg' );
                     localStorage.setItem( 'projectImage_4_storage', 'assets/img/myhouse_5.jpg' );
                     localStorage.setItem( 'projectImage_5_storage', 'assets/img/myhouse_6.jpg' );
-                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/myhouse_visitshowrooms.png' );
-                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_home.png' );
+                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/myhouse_7.jpg' );
+                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_8.jpg' );
                     localStorage.setItem( 'secondIteration_storage', '' );
     
                     addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
