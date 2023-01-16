@@ -270,12 +270,12 @@
                 break;
             case "luminaireslocalizator":
                 localStorage.setItem( 'projectTitle_storage', 'Signify Luminaires Localizator' );
-                localStorage.setItem( 'introduction_storage', 'assets/img/signify_6.jpg' );
+                localStorage.setItem( 'introduction_storage', 'assets/img/signify_1.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/signify_2.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/signify_3.jpg' );
                 localStorage.setItem( 'projectImage_3_storage', 'assets/img/signify_4.jpg' );
                 localStorage.setItem( 'projectImage_4_storage', 'assets/img/signify_5.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/signify_1.jpg' );
+                localStorage.setItem( 'projectImage_5_storage', 'assets/img/signify_6.jpg' );
                 localStorage.setItem( 'projectImage_6_storage', 'assets/img/signify_7.jpg' );
                 localStorage.setItem( 'projectImage_7_storage', 'assets/img/signify_8.jpg' );
                 localStorage.setItem( 'secondIteration_storage', '' );
