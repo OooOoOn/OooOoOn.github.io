@@ -284,7 +284,12 @@
                 addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/>', 1);
                 addTimelineItem('<b>Ideate</b><br/><i>Task Flow</i><br/><i>Features</i><br/>', 1);
                 addTimelineItem('<b>Prototype</b><br/><i>Mid-Fi</i><br/>', 1);
+                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Unmoderated</i><br/>', 1);
                 addTimelineItem('', 1);
+
+                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
+                addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
+                addTimelineItem('', 2);
                 addDownloadableItem('assets/docs/Signify.pdf')
                 break;
             case "kangerluk":
@@ -305,8 +310,7 @@
                 addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
                 addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Talk Aloud</i><br/><i>Click Test</i><br/><i>Heuristic</i><br/>', 1);
                 addTimelineItem('', 1);
-                
-                addTimelineItem('<b>Define</b><br/><i>Pain Points</i><br/><i>Preferences</i><br/><i>Misconceptions</i><br/>', 2);
+            
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
                 addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
                 addTimelineItem('', 2);
@@ -388,14 +392,14 @@
                     localStorage.setItem( 'secondIteration_storage', '' );
     
                     addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
-                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
+                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/><i>User Story</i><br/>', 1);
                     addTimelineItem('<b>Ideate</b><br/><i>Wireframe</i><br/><i>Sitemap</i><br/><i>Features</i><br/><i>Task Flow</i><br/>', 1);
                     addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Tree Test</i><br/><i>Interview</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Tree Test</i><br/><i>Interview</i><br/><i>Moderated</i><br/>', 1);
                     addTimelineItem('', 1);
 
                     addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                    addTimelineItem('<b>Test</b><br/><i>Interview</i><br/>', 2);
+                    addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
                     addTimelineItem('', 2);
                     addDownloadableItem('assets/docs/RentEstate.pdf')
                 break;
