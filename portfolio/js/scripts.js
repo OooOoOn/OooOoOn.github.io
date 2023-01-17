@@ -361,14 +361,19 @@
                     localStorage.setItem( 'projectImage_5_storage', 'assets/img/myhouse_6.jpg' );
                     localStorage.setItem( 'projectImage_6_storage', 'assets/img/myhouse_7.jpg' );
                     localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_8.jpg' );
-                    localStorage.setItem( 'secondIteration_storage', '' );
+                    localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
     
                     addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
                     addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
                     addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mindmap</i><br/><i>Features</i><br/><i>Sitemap</i><br/>', 1);
-                    addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/><i>Click Test</i><br/>', 1);
+                    addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/>', 1);
                     addTimelineItem('', 1);
+                    
+                    addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
+                    addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Click Test</i><br/>', 2);
+                    addTimelineItem('', 2);
+
                     addDownloadableItem('assets/docs/MyHouse.pdf')
                 break;
                 case "rentestate":
