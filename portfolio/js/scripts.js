@@ -288,7 +288,7 @@
                 addTimelineItem('', 1);
 
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
+                addTimelineItem('<b>Test</b><br/><i>Lab Test</i><br/><i>Moderated</i><br/>', 2);
                 addTimelineItem('', 2);
                 addDownloadableItem('assets/docs/Signify.pdf')
                 break;
