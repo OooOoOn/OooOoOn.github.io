@@ -367,7 +367,7 @@
                     addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
                     addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mindmap</i><br/><i>Features</i><br/><i>Sitemap</i><br/>', 1);
                     addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/>', 1);
+                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/><i>Click Test</i><br/>', 1);
                     addTimelineItem('', 1);
                     addDownloadableItem('assets/docs/MyHouse.pdf')
                 break;
