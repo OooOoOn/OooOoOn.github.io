@@ -9815,7 +9815,7 @@ button.bg-black:focus {
 }
 
 .font-weight-bold {
-	font-weight: 700 !important;
+	font-weight: 900 !important;
 }
 
 .font-weight-bolder {
@@ -11030,8 +11030,12 @@ Project card animations
 		display:block !important; 
 	}
 
+	.timeline__items--item {
+		margin-top: 2rem !important;
+	}
+
 	.previous, .next {
-		top: 10% !important;
+		top: 6% !important;
 	}
 
 	.modal {
