@@ -12579,6 +12579,10 @@ img.hover-shadow {
 	overflow: hidden;
 }
 
+.timeline__items--item b {
+	text-transform: uppercase;
+}
+
 i {
 	background-color: #fcdd958c;
 	font-weight:600;
