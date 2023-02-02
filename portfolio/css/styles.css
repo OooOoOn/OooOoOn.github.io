@@ -12456,7 +12456,11 @@ img.hover-shadow {
 }
 
 #downloadable_project {
-	font-weight: normal;
+	font-weight:600;
+	padding-top: 0.75rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1.5rem;
+	padding-right:1.5rem;
 	box-shadow: 0px 1px 4px 2px #00000088 !important;
 }
 
