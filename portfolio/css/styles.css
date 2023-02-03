@@ -12625,7 +12625,7 @@ i {
 	top: -8px;
 }
 
-.FadeInSegment1 {
+.FadeInSegment {
 	-webkit-transition: all 0.8s;
 	transition: all 1s;
 	opacity: 0;
@@ -12633,31 +12633,13 @@ i {
 			transform: translateY(40px);
   }
   
-  .FadeInSegment1.inview {
+.FadeInSegment.inview {
 	opacity: 1;
 	-webkit-transform: none;
 			transform: none;
 	-webkit-transition-delay: 0.3s;
 			transition-delay: 0.3s;
   }
-
-  .FadeInSegment2 {
-	-webkit-transition: all 0.8s;
-	transition: all 1s;
-	opacity: 0;
-	-webkit-transform: translateY(40px);
-			transform: translateY(40px);
-  }
-  
-  .FadeInSegment2.inview {
-	opacity: 1;
-	-webkit-transform: none;
-			transform: none;
-	-webkit-transition-delay: 0.3s;
-			transition-delay: 0.3s;
-  }
-
-
 
 /* If you want the arrow at the end of the horizontal timeline component,
  uncomment class below: */

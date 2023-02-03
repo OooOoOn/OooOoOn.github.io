@@ -17,32 +17,23 @@
     this.nextElementSibling.classList.toggle('active');
     }
 
-    //fade in animation
-    const appear1 = document.querySelector('.FadeInSegment1'); 
-    const appear2 = document.querySelector('.FadeInSegment2'); 
-
-    const cb1 = function(entries){
+    const intersectAnimation = function(entries, observer){
         entries.forEach(entry => {
           if(entry.isIntersecting){
             entry.target.classList.add('inview');
-            entry.unobserve(entry.target)
+            observer.unobserve(entry.target);
           }
         });
       }
-    const io1 = new IntersectionObserver(cb1);
-    io1.observe(appear1);
 
-    const cb2 = function(entries){
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            entry.target.classList.add('inview');
-            entry.unobserve(entry.target)
-          }
-        });
-      }
-    const io2 = new IntersectionObserver(cb2);
-    io1.observe(appear2);
-
+    const segments = document.getElementsByClassName('FadeInSegment')
+    Array.prototype.forEach.call(
+        segments,
+        (segment) => {
+            const io = new IntersectionObserver(intersectAnimation);
+            io.observe(segment);
+        }
+      );
 
     //Typewriter animation*
     var TxtType = function(el, toRotate, period) {
