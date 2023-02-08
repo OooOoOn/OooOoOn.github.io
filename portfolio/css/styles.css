@@ -10107,7 +10107,7 @@ body {
 @media (min-width: 992px) {
 	#mainNav {
 		padding-top: 0;
-		padding-bottom: 0;
+		padding-bottom: 1rem;
 		border-bottom: none;
 		background-color: transparent;
 		transition: background-color 0.3s ease-in-out;
