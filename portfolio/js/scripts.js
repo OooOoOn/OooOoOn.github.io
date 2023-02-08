@@ -17,6 +17,7 @@
     this.nextElementSibling.classList.toggle('active');
     }
 
+    //Fade in text animation*
     const intersectAnimation = function(entries, observer){
         entries.forEach(entry => {
           if(entry.isIntersecting){
