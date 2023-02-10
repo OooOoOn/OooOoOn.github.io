@@ -7827,7 +7827,7 @@ button.bg-black:focus {
 
 .pt-5,
 .py-5 {
-	padding-top: 3rem !important;
+	/*padding-top: 3rem !important;*/
 }
 
 .pr-5,
@@ -10232,8 +10232,8 @@ body {
 .about-section {
 	padding-top: 10rem;
 	background: 
-			linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0 / 80%) 20%,
-   rgb(0 0 0 / 80%) 35%, #000000 75%, #4E4E4E 100%)
+			linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0 / 100%) 20%,
+   rgb(0 0 0 / 100%) 35%, #000000 75%, #4E4E4E 100%)
 }
 
 .about-section p {
@@ -10282,7 +10282,7 @@ body {
 }
 
 .contact-section {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, #000000 100%), url("../assets/img/background.jpg");
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.0) 100%, #000000 100%), url("../assets/img/background_5.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -10682,7 +10682,7 @@ Project card animations
 .contact main section .content img {
 	display: inline-block;
 	width: 140px;
-	border-radius: 10%;
+	/*border-radius: 10%;*/
 }
 
 .contact main section .content aside {
