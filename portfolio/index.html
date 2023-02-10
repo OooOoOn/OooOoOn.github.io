@@ -50,17 +50,40 @@
 <!-- Masthead-->
 <header class="masthead">
 	<div class="container d-flex h-100 align-items-center">
-		<div class="mx-auto text-center">
-			<span class="name"><h1>Jon Olsson</h1></span>
-			<h2 class="mx-auto mt-2 mb-4 typewriter">UX Designer.</h2>
-			<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>
-			<h4 class="mx-auto mt-2 mb-1 typewriter">Highlighted skills: </h4>
-			<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>
-			<br>
-			<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5" href="#projects" id="portfolioButton">Portfolio</a>
-			
+		<div class="row">
+			<div class="col-xl mr-5">
+		<video id="background-video" autoplay loop muted>
+			<source src="assets/video/intro2.mp4" type="video/mp4">
+		</video>
+			<div class="mx-auto text-center">
+				<span class="name mb-3"><h1>Jon Olsson</h1></span>
+				<h2 class="mx-auto mt-2 mb-5 typewriter">UX Designer.</h2>
+				<!--<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>-->
+				<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
+				<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>
+				<br>
+				<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5" href="#projects" id="portfolioButton">Portfolio</a>
+			</div>
+		</div>
 	</div>
+	<div class="row ml-5 d-none d-xl-block">
+		<div class="col-xl ml-5">
+			<div class="mx-auto text-center">
+				<h4 class="mx-auto mt-2 mb-1 typewriter"></h4>
+			</div>
+		</div>
 	</div>
+	<div class="row ml-5 d-none d-md-block current-project">
+		<div class="col-sm ml-5">
+			<div class="mx-auto text-center">
+				<a href="" class="mx-auto mt-2 mb-1 ml-1 typewrite">Current project</a>
+			</div>
+			<div class="mx-auto text-center">
+				<h5 class="mx-auto mt-2 mb-1 typewriter">Online retailer for clinical products.</h5>
+			</div>
+		</div>
+	</div>
+</div>
 </header>
 <!-- About-->
 <section class="about-section text-center" id="about">
@@ -72,7 +95,7 @@
 		</div>
 		<div class="col-2 col-lg-9 cv mx-auto">
 			<div class="folder mr-2"></div>
-			<img alt="" class="pl-5 ml-5 mt-3" width="500px" src="assets/docs/CV.png" id="cv_image"/>
+			<img alt="" class="pl-5" background-size="cover" width="500rem" src="assets/docs/CV.png" id="cv_image"/>
 			<a href="assets/docs/Jon_Olsson_-_UX_Designer.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="downloadCV">
 				<i class="fas fa-search"></i>			
 			</a>
@@ -209,6 +232,13 @@
 				<div class="mask">
 					<h2>RentEstate</h2>
 					<p>A user management application for tenants.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("rentestate")'>Read More</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_12.jpg">
+				<div class="mask">
+					<h2>Carelyo</h2>
+					<p>Healthcare application intended for Sub-Saharan Africa.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("carelyo")'>Read More</a>
 				</div>
 			</div>
 			<div class="view view-sixth">
