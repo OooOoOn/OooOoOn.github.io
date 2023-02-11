@@ -6406,6 +6406,7 @@ button.bg-black:focus {
 
 	.d-sm-block {
 		display: block !important;
+		display: flex !important;
 	}
 
 	.d-sm-table {
@@ -9968,7 +9969,7 @@ a.text-black:focus {
 	color: rgba(255, 255, 255, 0.75) !important;
 	text-align: left;
 	font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
+	text-align: justify;
 }
 
 .text-white-50 b {
@@ -10705,6 +10706,7 @@ Project card animations
 	line-height: 160%;
 	padding-bottom: 20px;
 	opacity: 1;
+	text-align: justify;
 }
 
 .contact main .title {
@@ -11052,7 +11054,7 @@ Project card animations
 	.contact main section .content img {
 		float: left;
 		width: 40%;
-		margin-right: 10%;
+		margin-right: 7%;
 	}
 }
 
@@ -12703,3 +12705,79 @@ i {
   .current-project {
 	padding-top: 45rem;
 }
+
+
+  
+
+  
+  @keyframes carouselAnim{
+	0%{
+	  transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+	  transform-origin: center center;
+	  z-index: 10;
+	}
+	27%{
+	  transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+	  transform-origin: center center;
+	  z-index: 10;
+	}
+	33.33333%{
+	  transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+	  transform-origin: left center;
+	  z-index: 5;
+	}
+	60%{
+	  transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+	  transform-origin: left center;
+	  z-index: 5;
+	}
+	66.666666%{
+	  transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+	  transform-origin: right center;
+	  z-index: 5;
+	}
+	93%{
+	  transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+	  transform-origin: right center;
+	  z-index: 5;
+	}
+	100%{
+	  transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+	  transform-origin: center center;
+	  z-index: 10;
+	}
+  }
+  
+  .carousel__container{
+	width: 30%;
+	max-width: 960px;
+	perspective: 300px;
+	perspective-origin: 50% 60%;
+	min-height: 30em;
+	display: -webkit-inline-box;
+
+  }
+  
+  .carousel__item{
+	position: absolute;
+	width: 70%; 
+
+	animation-name: carouselAnim;
+	/* transform: translateX(0) rotatey(50deg); */
+	transform-origin: left center;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+  }
+  
+  .carousel__item:first-child{
+	animation-delay: -4s;
+  }
+  .carousel__item:last-child{
+	animation-delay: -8s;
+  }
+  
+  .carousel__image{
+	position: relative;
+	width: 100%;
+	border-radius: 2px;
+  }
