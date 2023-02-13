@@ -193,7 +193,7 @@ abbr[data-original-title] {
 .masthead h2 {
 	background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5));
 	max-width: 20rem;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	padding-left: 0.5rem;
 }
 
@@ -12780,4 +12780,10 @@ i {
 	position: relative;
 	width: 100%;
 	border-radius: 2px;
+  }
+
+  #hint-arrow {
+	transform: scaleY(-1);
+	rotate: 300deg;
+	top: 50%;
   }
