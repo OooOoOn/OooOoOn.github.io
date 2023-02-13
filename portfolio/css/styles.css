@@ -12787,3 +12787,10 @@ i {
 	rotate: 300deg;
 	top: 50%;
   }
+
+  .current-project-label {
+	position: fixed;
+    right: -18%;
+    bottom: 8%;
+    z-index: -1;
+  }
