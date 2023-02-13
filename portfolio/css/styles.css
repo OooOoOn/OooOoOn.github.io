@@ -10232,6 +10232,7 @@ body {
 
 .about-section {
 	padding-top: 10rem;
+	padding-bottom: 5rem;
 	background: 
 			linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0 / 100%) 20%,
    rgb(0 0 0 / 100%) 35%, #000000 75%, #4E4E4E 100%)
