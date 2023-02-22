@@ -309,7 +309,7 @@
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
                 addTimelineItem('<b>Test</b><br/><i>Lab Test</i><br/><i>Moderated</i><br/>', 2);
                 addTimelineItem('', 2);
-                addDownloadableItem('assets/docs/Signify.pdf')
+                addDownloadableItem('assets/docs/Signify_Encrypted.pdf')
                 break;
             case "kangerluk":
                 localStorage.setItem( 'projectTitle_storage', 'Kangerluk' );
@@ -333,7 +333,7 @@
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
                 addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
                 addTimelineItem('', 2);
-                addDownloadableItem('assets/docs/Kangerluk.pdf')
+                addDownloadableItem('assets/docs/Kangerluk_Encrypted.pdf')
                 break;
             case "mirtual":
                 localStorage.setItem( 'projectTitle_storage', 'Mirtual' );
@@ -353,7 +353,7 @@
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/><i>IA</i><br/><i>Principles</i><br/>', 1);
                 addTimelineItem('<b>Test</b><br/><i>Interview</i><br/>', 1);
                 addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/Mirtual.pdf')
+                addDownloadableItem('assets/docs/Mirtual_Encrypted.pdf')
                 break;
             case "carelyo":
                 localStorage.setItem( 'projectTitle_storage', 'Carelyo' );
@@ -372,7 +372,7 @@
                 addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
                 addTimelineItem('<b>Test</b><br/><i>A/B Test</i><br/><i>Talk Aloud</i><br/>', 1);
                 addTimelineItem('', 1);
-                addDownloadableItem('assets/docs/Carelyo.pdf')
+                addDownloadableItem('assets/docs/Carelyo_Encrypted.pdf')
                 break;
                 case "myhouse":
                     localStorage.setItem( 'projectTitle_storage', 'My House' );
@@ -396,7 +396,7 @@
                     addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
                     addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Click Test</i><br/>', 2);
                     addTimelineItem('', 2);
-                    addDownloadableItem('assets/docs/MyHouse.pdf')
+                    addDownloadableItem('assets/docs/MyHouse_Encrypted.pdf')
                 break;
                 case "rentestate":
                     localStorage.setItem( 'projectTitle_storage', 'RentEstate' );
@@ -420,7 +420,7 @@
                     addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
                     addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
                     addTimelineItem('', 2);
-                    addDownloadableItem('assets/docs/RentEstate.pdf')
+                    addDownloadableItem('assets/docs/RentEstate_Encrypted.pdf')
                 break;
             default:
                 break;
