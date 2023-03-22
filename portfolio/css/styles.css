@@ -280,7 +280,7 @@ sup {
 }
 
 a {
-	color: #e9dd90;
+	color: #000000;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -9878,7 +9878,7 @@ button.bg-black:focus {
 }
 
 .text-primary {
-	color: #e9dd90 !important;
+	color: #000000 !important;
 }
 
 a.text-primary:hover,
@@ -10687,7 +10687,6 @@ Project card animations
 	position: relative;
 	text-align: center;
 	background-color: #f1efef;
-	border-radius: 5px;
 }
 
 .contact main section .content img {
@@ -10923,6 +10922,7 @@ Project card animations
 	-o-transform: translateY(-10px);
 	transform: translateY(-10px);
 	position: relative;
+	background: #f1efef;
 }
 
 .contact nav a .arrow {
@@ -10937,7 +10937,7 @@ Project card animations
 }
 
 .contact nav a .arrow path {
-	fill: #e6e6e6;
+	fill: #000000;
 }
 
 .contact nav a.gmail .icon svg {
@@ -10985,10 +10985,10 @@ Project card animations
 
 .contact nav a .content h1 {
 	font-size: 20px;
-	font-weight: lighter;
+	font-weight: 500;
 	line-height: 160%;
 	letter-spacing: 0.4px;
-	color: #ffffff;
+	color: #000000;
 }
 
 .contact nav a .content span {
