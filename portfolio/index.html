@@ -55,17 +55,35 @@
 		<video id="background-video" autoplay loop muted>
 			<source src="assets/video/intro2.mp4" type="video/mp4">
 		</video>
+		<div class="row d-none d-sm-block">
 			<div class="mx-auto text-center">
 				<span class="name mb-3"><h1>Jon Olsson</h1></span>
-				<h2 class="mx-auto mt-2 mb-2 typewriter">UX Designer.</h2>
-				<h2 class="mx-auto mt-2 mb-5">Frontend Developer.</h2>
+				<h4 class="mx-auto mt-2 mb-2 typewriter">UX Designer. Developer. Product Owner.</h4>
+				<!--<h2 class="mx-auto mt-2 mb-2">Developer.</h2>
+				<h2 class="mx-auto mt-2 mb-3">Product Owner.</h2>-->
 				<!--<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>-->
-				<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
-				<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>
+				<!--<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
+				<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>-->
 				<br>
 				<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5" href="#projects" id="portfolioButton">Portfolio</a>
 			</div>
 		</div>
+		<div class="row d-block d-sm-none">
+			<div class="mx-auto text-center">
+				<span class="name mb-3"><h1>Jon Olsson</h1></span>
+				<h4 class="mx-auto mt-2 mb-2 typewriter">UX Designer.</h4>
+				<h4 class="mx-auto mt-2 mb-2 typewriter">Developer.	</h4>
+				<h4 class="mx-auto mt-2 mb-2 typewriter">Product Owner.</h4>
+				<!--<h2 class="mx-auto mt-2 mb-2">Developer.</h2>
+				<h2 class="mx-auto mt-2 mb-3">Product Owner.</h2>-->
+				<!--<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>-->
+				<!--<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
+				<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>-->
+				<br>
+				<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5" href="#projects" id="portfolioButton">Portfolio</a>
+			</div>
+		</div>
+	</div>
 	</div>
 	<div class="row ml-5 d-none d-xl-block">
 		<div class="col-xl ml-5">
@@ -172,7 +190,7 @@
 			</div>
 		</div>
 		<!-- Desktop view page 1 -->
-		<div class="row align-items-center group" id="1">
+		<div class="row align-items-center group mb-5" id="1">
 			<div class="col-1">
 				<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
 			</div>
@@ -213,7 +231,7 @@
 			</div>
 		</div>
 			<!-- Desktop view page 2 -->
-			<div class="row align-items-center group" id="2">
+			<div class="row align-items-center group mb-5" id="2">
 				<div class="col-1">
 					<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
 				</div>
@@ -250,6 +268,46 @@
 				<div class="col-1">
 					<a class="nextGroup" onclick="changeGroup(1)">&#10095;</a>
 				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-1"></div>
+				<div class="col-11 mt-5 featured-text text-center text-lg-left">
+					<h4>Highlighted Skills</h4>
+					<p class="text-black-50 mb-0">Role specific. </p>
+				</div>
+				<div class="tabs mt-3">
+  
+					<input type="radio" id="tab1" name="tab-control" checked>
+					<input type="radio" id="tab2" name="tab-control">
+					<input type="radio" id="tab3" name="tab-control">  
+					<input type="radio" id="tab4" name="tab-control">
+					<ul>
+					  <li title="UX Designer"><label for="tab1" role="button"><svg viewBox="0 0 24 24">
+					  </svg><br><span>UX Designer</span></label></li>
+					  <li title="Developer"><label for="tab2" role="button"><svg viewBox="0 0 24 24">
+					  </svg><br><span>Developer</span></label></li>
+					  <li title="Product Owner"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+				 	  </svg><br><span>Product Owner</span></label></li>  
+					 </ul>
+					<div class="slider"><div class="indicator"></div></div>
+					<div class="content">
+						<section>
+							<p>
+								Adobe XD ● Figma ● Figjam ● Prototyping ● Illustrator ● Research ● Ideation Usability testing ● Icon design  ● Taxonomy ● Design principles ● MIRO Information Architecture ● Workshops ● Accessibility ● Visual Hierarchy ● AI
+							</p>
+						</section>
+						<section>
+							<p>
+								Javscript ● HTML ● CSS ● SQL ● Scripting ● JAVA ● C# ● Localization
+							</p>
+						</section>
+						<section>
+							<p>
+							JIRA ● GANT ● Kanban ● SCRUM ● Retrospective
+							</p>
+						</section>
+					 </div>
+				  </div>
 			</div>
 		</div>
 	<!-- Mobile view -->
