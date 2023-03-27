@@ -131,7 +131,7 @@ html {
 	padding: 0.75rem 1rem;
 	font-weight: normal;
 	box-shadow: 0px 1px 3px 1px #00000088 !important;
-	margin-top: 4rem !important;
+	margin-top: 2rem !important;
 	margin-bottom: 1rem !important;
 	background-color: transparent;
     border-block-style: initial;
@@ -10773,8 +10773,8 @@ Project card animations
 
 .contact main .contactMe__btn {
 	position: absolute;
-	top: 350px;
-	right: 50%;
+	bottom: 0;
+	right: 45%;
 	background-color: transparent;
 	border: 0;
 	width: 250px;
@@ -10801,6 +10801,12 @@ Project card animations
 	color: #ffffff;
 	justify-content: center;
 	user-select: none;
+	top: 22em;
+}
+
+.mobile_btn {
+	top: 25em !important;
+	right: 40% !important;
 }
 
 .contact main #contactMe__btn--text {
@@ -12541,6 +12547,7 @@ img.hover-shadow {
 	z-index: 0;
 	padding-top: 2rem;
 	margin-left: 2rem;
+	padding-bottom: 4rem;
 }
 
 #downloadable_project {
