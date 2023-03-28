@@ -6,6 +6,12 @@
         $('nav').toggleClass('active');
     });
 
+    //Redirect to portfolio*
+    function portfolioRedirect(){
+        var url = "#projects";
+        window.location.href = url;
+    };
+
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus');
     });
