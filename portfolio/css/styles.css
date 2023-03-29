@@ -13093,6 +13093,7 @@ i {
   .btn-one span {
 	transition: all 0.3s;
 	color: white;
+	margin-left: 0.8rem;
   }
   .btn-one i {
 	background-color: transparent;
