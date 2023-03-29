@@ -1,5 +1,26 @@
-
-        //Contact me animation*
+    //Text marker*
+    (function (document) {
+        const markers = [...document.querySelectorAll('mark')];
+        
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.intersectionRatio > 0) {
+            entry.target.style.animationPlayState = 'running';
+            observer.unobserve(entry.target);
+            }
+        });
+        }, {
+        threshold: 0.8
+        });
+        
+        markers.forEach(mark => {
+        observer.observe(mark);
+        });
+    })(document);
+     
+     
+     
+     //Contact me animation*
     $('button').click(function(){
         $('button').toggleClass('active');
         $('.title').toggleClass('active');
@@ -33,14 +54,23 @@
         });
       }
 
-    const segments = document.getElementsByClassName('FadeInSegment')
+    const segments2 = document.getElementsByClassName('logo')
     Array.prototype.forEach.call(
-        segments,
+        segments2,
         (segment) => {
             const io = new IntersectionObserver(intersectAnimation);
             io.observe(segment);
         }
       );
+
+      const segments = document.getElementsByClassName('FadeInSegment')
+      Array.prototype.forEach.call(
+          segments,
+          (segment) => {
+              const io = new IntersectionObserver(intersectAnimation);
+              io.observe(segment);
+          }
+        );
 
     //Typewriter animation*
     var TxtType = function(el, toRotate, period) {

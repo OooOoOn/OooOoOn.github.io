@@ -9985,7 +9985,8 @@ a.text-black:focus {
 }
 
 .text-white-50 b {
-	color:#64a19d;
+	color:white;
+	font-weight: 600;
 }
 
 .text-hide {
@@ -12720,30 +12721,6 @@ i {
 	top: -8px;
 }
 
-.FadeInSegment {
-	-webkit-transition: all 0.8s;
-	transition: all 1s;
-	opacity: 0;
-	-webkit-transform: translateY(40px);
-			transform: translateY(40px);
-  }
-  
-.FadeInSegment.inview {
-	opacity: 1;
-	-webkit-transform: none;
-			transform: none;
-	-webkit-transition-delay: 0.3s;
-			transition-delay: 0.3s;
-	margin-bottom: 1rem;
-	padding-top: 1rem;
-  }
-
-  .current-project {
-	padding-top: 45rem;
-}
-
-
-  
 
   
   @keyframes carouselAnim{
@@ -13169,4 +13146,126 @@ i {
   }
   .contact main .contactMe__btn svg:hover path {
 	fill: black;
+  }
+
+  .FadeInSegment {
+	-webkit-transition: all 0.8s;
+	transition: all 1s;
+	opacity: 0;
+	-webkit-transform: translateY(40px);
+			transform: translateY(40px);
+  }
+  
+.FadeInSegment.inview {
+	opacity: 1;
+	-webkit-transform: none;
+			transform: none;
+	-webkit-transition-delay: 0.3s;
+			transition-delay: 0.3s;
+	margin-bottom: 2rem;
+  }
+
+  
+  .logo {
+	font-size: 2em;
+	padding: 0 0.3em;
+	display: block;
+	float: left;
+	opacity: 0;
+  }
+  
+  .firstName {
+	background-color: #83caff;
+	color: #000;
+  }
+  
+  .lastName {
+	background-color: transparent;
+	color: #83caff;
+  }
+  
+  /* Set vendor-specific animation name and duration on .logo class */
+  
+  .logo.inview {
+	opacity: 1;
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 2s;
+	-ms-animation-name: fadein;
+	-ms-animation-duration: 2s;
+	-o-animation-name: fadein;
+	-o-animation-duration: 2s;
+	animation-name: fadein;
+	animation-duration: 2s;
+  }
+  
+  /* Set vendor-specific keyframes for animation on load 
+	 Position and opacity are animated */
+  
+  @-webkit-keyframes fadein {
+	0% { opacity: 0; margin-left: -250px; }
+	100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-moz-keyframes fadein {
+	0% { opacity: 0; margin-left: -250px; }
+	100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-ms-keyframes fadein {
+	0% { opacity: 0; margin-left: -250px; }
+	100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-o-keyframes fadein {
+	0% { opacity: 0; margin-left: -250px; }
+	100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @keyframes fadein {
+	0% { opacity: 0; margin-left: -250px; }
+	100% { opacity: 1; margin-left: 0; }
+  }
+
+  .headline {
+	padding-bottom: 5rem;
+  }
+
+  .current-project {
+	padding-top: 45rem;
+}
+
+
+mark {
+	--color1: #83caff;
+	--color2: #83caff;
+	--bg-height: 10%;
+	
+	all: unset;
+	background-image: linear-gradient(var(--color1), var(--color2));
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0 var(--bg-height);
+	-webkit-animation: highlight 2000ms 1 ease-in-out;
+	animation: highlight 2000ms 1 ease-in-out;
+	animation-delay: 1500ms;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+			animation-play-state: paused;
+  }
+  
+  
+  @-webkit-keyframes highlight {
+	to {
+	  background-size: 100% var(--bg-height);
+	}
+  }
+  
+  
+  @keyframes highlight {
+	to {
+	  background-size: 100% var(--bg-height);
+	}
   }
