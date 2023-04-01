@@ -8,8 +8,8 @@
 <meta content="UX design, UX designer, Website design, Website creation, Coding, Development, Jon Olsson, UX" name="keywords">
 <title>Jon Olsson - UX Designer</title>
 <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
-<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js">
-</script>
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 <!-- Google fonts-->
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"><!-- Core theme CSS (includes Bootstrap)-->
@@ -55,216 +55,560 @@
 	<div class="container d-flex h-100 align-items-center">
 		<div class="row">
 			<div class="col-xl mr-5">
-		<video id="background-video" autoplay loop muted>
-			<source src="assets/video/intro2.mp4" type="video/mp4">
-		</video>
-		<div class="row d-none d-sm-block">
-			<div class="mx-auto text-center">
-				<span class="name mb-3"><h1>Jon Olsson</h1></span>
-				<h4 class="mx-auto mt-2 mb-2 typewriter FadeInSegment">UX Designer. Developer. Product Owner.</h4>
-				<!--<h2 class="mx-auto mt-2 mb-2">Developer.</h2>
-				<h2 class="mx-auto mt-2 mb-3">Product Owner.</h2>-->
-				<!--<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>-->
-				<!--<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
-				<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>-->
-				<br>
-				<div class="btn-animated btn-one mb-5 mt-5" onclick="portfolioRedirect()">
-					<!--<a >PORTFOLIO <i class="fa-solid fa-arrow-right"></i> </a>-->
-					<span>PORTFOLIO <i class="fa-solid fa-arrow-right"></i></span>
+				<video id="background-video" autoplay loop muted>
+					<source src="assets/video/intro2.mp4" type="video/mp4">
+				</video>
+				<div class="row d-none d-sm-block">
+					<div class="mx-auto text-center">
+						<span class="name mb-3"><h1>Jon Olsson</h1></span>
+						<h4 class="mx-auto mt-2 mb-2 typewriter FadeInSegment">UX Designer. Developer. Product Owner.</h4>
+						<!--<h2 class="mx-auto mt-2 mb-2">Developer.</h2>
+						<h2 class="mx-auto mt-2 mb-3">Product Owner.</h2>-->
+						<!--<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>-->
+						<!--<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
+						<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>-->
+						<br>
+						<div class="btn-animated btn-one mb-5 mt-5" onclick="portfolioRedirect()">
+							<!--<a >PORTFOLIO <i class="fa-solid fa-arrow-right"></i> </a>-->
+							<span>PORTFOLIO <i class="fa-solid fa-arrow-right"></i></span>
+						</div>
+						<!--<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5 pl-5" href="#projects" id="portfolioButton">Portfolio</a>-->
+					</div>
 				</div>
-				<!--<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5 pl-5" href="#projects" id="portfolioButton">Portfolio</a>-->
-			</div>
-		</div>
-		<div class="row d-block d-sm-none">
-			<div class="mx-auto text-center">
-				<span class="name mb-3"><h1>Jon Olsson</h1></span>
-				<h4 class="mx-auto mt-2 mb-2 typewriter">UX Designer.</h4>
-				<h4 class="mx-auto mt-2 mb-2 typewriter">Developer.	</h4>
-				<h4 class="mx-auto mt-2 mb-2 typewriter">Product Owner.</h4>
-				<!--<h2 class="mx-auto mt-2 mb-2">Developer.</h2>
-				<h2 class="mx-auto mt-2 mb-3">Product Owner.</h2>-->
-				<!--<h3 class="mx-auto mt-2 mb-4 typewriter">1+ years experience. </h3>-->
-				<!--<h6 class="mx-auto mt-5 mb-1 typewriter">Highlighted skills</h6>
-				<a href="" class="typewrite" data-period="1000" data-type='[ "Figma & Adobe XD.", "CSS & HTML.", "Javascript.", "MIRO & Figjam.", "JIRA & Scrum.", "Adobe Illustrator." ]'><span class="wrap"></span></a>-->
-				<br>
-				<div class="btn-animated btn-one mb-5 mt-5">
-					<a href="#projects">PORTFOLIO <i class="fa-solid fa-arrow-right"></i> </a>
+				<div class="row d-block d-sm-none">
+					<div class="mx-auto text-center">
+						<span class="name mb-3"><h1>Jon Olsson</h1></span>
+						<h4 class="mx-auto mt-2 mb-2 typewriter">UX Designer.</h4>
+						<h4 class="mx-auto mt-2 mb-2 typewriter">Developer.	</h4>
+						<h4 class="mx-auto mt-2 mb-2 typewriter">Product Owner.</h4>
+						<br>
+						<div class="btn-animated btn-one mb-5 mt-5">
+							<a href="#projects">PORTFOLIO <i class="fa-solid fa-arrow-right"></i> </a>
+						</div>
+						<!--<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5" href="#projects" id="portfolioButton">Portfolio</a>-->
+					</div>
 				</div>
-				<!--<a class="btn btn-primary js-scroll-trigger button mb-5 mt-5" href="#projects" id="portfolioButton">Portfolio</a>-->
+			</div>
+		</div>
+		<div class="row ml-5 d-none d-xl-block">
+			<div class="col-xl ml-5">
+				<div class="mx-auto text-center">
+					<h4 class="mx-auto mt-2 mb-1 typewriter"></h4>
+				</div>
+			</div>
+		</div>
+		<div class="row ml-5 d-none d-md-block current-project">
+			<div class="col-sm ml-5 current-project-label">
+				<div class="mx-auto text-center">
+					<a href="" class="mx-auto mt-2 mb-1 ml-1 typewrite">Current project</a>
+				</div>
+				<div class="mx-auto text-center">
+					<h5 class="mx-auto mt-2 mb-1 typewriter">Online retailer for clinical products.</h5>
+				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	<div class="row ml-5 d-none d-xl-block">
-		<div class="col-xl ml-5">
-			<div class="mx-auto text-center">
-				<h4 class="mx-auto mt-2 mb-1 typewriter"></h4>
-			</div>
-		</div>
-	</div>
-	<div class="row ml-5 d-none d-md-block current-project">
-		<div class="col-sm ml-5 current-project-label">
-			<div class="mx-auto text-center">
-				<a href="" class="mx-auto mt-2 mb-1 ml-1 typewrite">Current project</a>
-			</div>
-			<div class="mx-auto text-center">
-				<h5 class="mx-auto mt-2 mb-1 typewriter">Online retailer for clinical products.</h5>
-			</div>
-		</div>
-	</div>
-	<!--<div class="row d-none d-md-block">
-		<div class="">
-			<div class="text-center">
-				<img alt="" background-size="cover" width="100rem" src="assets/img/arrow_white.png" id="hint-arrow"/>
-			</div>
-		</div>
-	</div>-->
-</div>
 </header>
+
 <!-- About-->
 <section class="about-section text-center" id="about">
 	<div class="container">
+		<div class="row d-none d-sm-block">
+			<div class="col-5 mx-auto">
+				<div class="headline">
+					<span class="logo firstName">The</span>
+					<span class="logo lastName">Journey</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">My professional <a class="links" href="https://www.linkedin.com/in/jon-aadrian-olsson-b306a338">journey</a> has been a wonderful adventure so far, giving me the opportunity to work in places like London, Barcelona, Malmö and Copenhagen. I harness my creative energy into design, coding and usability, drawing upon my <a a class="links" href="https://ecutbildning.se/utbildningar/ux-designer/?location=1986">education</a> and previous experience.</p>
+				<p class="text-white-50 FadeInSegment">I have a <mark>broad background</mark> ranging from information technology, banking, customer service to hospitality, making me well versed in communicating with a variety of users and stakeholders. In addition, I have significant experience in <mark>presenting collaborative work and hosting client meetings.</mark></p>	
+			</div>
 
-	<div class="row d-none d-sm-block">
-		<div class="col-5 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">Recent</span>
-				<span class="logo lastName">Experience</span>
+			<div class="col-5 mx-auto">
+				<div class="headline">
+					<span class="logo firstName">Why</span>
+					<span class="logo lastName">Design?</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I felt that <mark>UX/UI</mark> would be a desirable skill to have in addition to development. It would also allow me to take on more challenging and diverse roles.</p>	
+				<div class="headline mt-5">
+					<span class="logo firstName">Why</span>
+					<span class="logo lastName">Development?</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I have been coding and scripting since I was a teenager and find it creative and inspiring, especially when I get to work with <mark>frontend languages such as Javascript, HTML and CSS</mark>.</p>
+				<p class="text-white-50 FadeInSegment">I also create mods for my favourite games, including logic, narrative and localizaton.</p>
 			</div>
-			<!--<h2 class="text-white mb-4">Recent Experience</h2>-->
-			<p class="text-white-50 FadeInSegment">I have spent most of 2022 working as a consultant for Adesso Denmark. My role was demanding and fun and I get to work on <mark>serveral projects simultaneously</mark> as <b>Designer</b>, <b>Product Owner</b> and <b>Developer</b>.</p>
-			<p class="text-white-50 FadeInSegment">I am currently working on a m-commerce solution for the beauty and health industry. I will be designing the website as well as the mobile application.</p>
-			<p class="text-white-50 FadeInSegment">I am also taking a course in React.js.</p>
-		</div>
-		<!--<div class="col-2 col-lg-9 cv mx-auto">
-			<div class="folder mr-2"></div>
-			<img alt="" class="pl-5" background-size="cover" width="500rem" src="assets/docs/CV.png" id="cv_image"/>
-			<a href="assets/docs/Jon_Olsson_-_UX_Designer.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="downloadCV">
-				<i class="fas fa-search"></i>			
-			</a>
-		</div>-->
 
-		<div class="col-5 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">Why</span>
-				<span class="logo lastName">Design?</span>
+			<div class="col-5 mx-auto mt-5">
+				<div class="headline">
+					<span class="logo firstName">Recent</span>
+					<span class="logo lastName">Experience</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I have spent most of 2022 working as a consultant for Adesso Denmark. My role was demanding and fun and I get to work on <mark>serveral projects simultaneously</mark> as <b>Designer</b>, <b>Product Owner</b> and <b>Developer</b>.</p>
+				<p class="text-white-50 FadeInSegment">I am currently working on a m-commerce solution for the beauty and health industry. I will be designing the website as well as the mobile application.</p>
 			</div>
-			<!--<h2 class="text-white mb-4">Why UX Design?</h2>-->
-			<p class="text-white-50 FadeInSegment">I felt that <mark>UX/UI</mark> would be a desirable skill to have in addition to development. It would also allow me to take on more challenging and diverse roles.</p>	
-			<div class="headline">
-				<span class="logo firstName">Why</span>
-				<span class="logo lastName">Development?</span>
+			<div class="col-5 mx-auto mt-5">
+				<div class="headline">
+					<span class="logo firstName">Personal</span>
+					<span class="logo lastName">Life</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I am rather fond of urban farming.</p>
+					<svg class="svg-bee" xmlns="http://www.w3.org/2000/svg" viewBox="-25 0 150 100" width="150" height="100">
+						<defs>
+						  <mask id="mask-petals">
+							<rect width="100" height="100" fill="hsl(0, 0%, 100%)" />
+							<g transform="translate(50 40)">
+							  <g class="petals">
+								<circle r="11" fill="hsl(0, 0%, 0%)" />
+							  </g>
+							</g>
+						  </mask>
+						</defs>
+						<g transform="translate(50 98)">
+						  <g class="stem" transform="scale(1 1)">
+							<g fill="currentColor">
+							  <g class="leaf" transform="rotate(45)">
+								<path d="M 0 0 c 20 -8 15 -32 0 -42 -15 10 -20 34 0 42" />
+							  </g>
+							  <g transform="scale(-1 1)">
+								<g class="leaf" transform="rotate(45)">
+								  <path d="M 0 0 c 20 -8 15 -32 0 -42 -15 10 -20 34 0 42" />
+								</g>
+							  </g>
+							</g>
+						  </g>
+						</g>
+					  
+						<g mask="url(#mask-petals)">
+						  <g transform="translate(50 40)">
+							<g fill="currentColor">
+							  <g class="petals">
+								<circle transform="translate(0 -14)" r="11" />
+								<circle transform="rotate(72) translate(0 -14)" r="11" />
+								<circle transform="rotate(144) translate(0 -14)" r="11" />
+								<circle transform="rotate(216) translate(0 -14)" r="11" />
+								<circle transform="rotate(288) translate(0 -14)" r="11" />
+							  </g>
+							</g>
+						  </g>
+						</g>
+					  
+						<!-- still unclear about the path accepted by anime.js -->
+						<path id="path" stroke="none" fill="none" d="M -25 -20 a 30 30 0 0 0 60 0 30 30 0 0 0 -60 0 30 30 0 0 1 -60 0 30 30 0 0 1 60 0" />
+					</svg>
+					  
+					  <svg id="bee" viewBox="-10.5 -10.5 21 21" style="width: 50px; height: auto;">
+						<g transform="rotate(90) translate(0 -4)">
+						  <g stroke="currentColor">
+							<circle fill="currentColor" r="4" stroke-width="2.5" />
+							<g fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+							  <path transform="rotate(45) translate(0 -4)" d="M 0 0 v -3" />
+							  <path transform="rotate(-45) translate(0 -4)" d="M 0 0 v -3" />
+							  <g fill="hsl(200, 80%, 90%)">
+								<path transform="rotate(15)" d="M 0 0 h 7 a 3 3 0 0 1 0 6 q -4 0 -7 -6" />
+								<path transform="scale(-1 1) rotate(15)" d="M 0 0 h 7 a 3 3 0 0 1 0 6 q -4 0 -7 -6" />
+							  </g>
+							  <g fill="hsl(50, 80%, 50%)">
+								<path d="M 0 0 c 2 6 8 10 0 12 -8 -2 -2 -6 0 -12" />
+							  </g>
+							</g>
+						  </g>
+						</g>
+					  </svg>
 			</div>
-			<!--<h2 class="text-white mb-4">Why Development?</h2>-->
-			<p class="text-white-50">I have been coding and scripting since I was a teenager and find it creative and inspiring, especially when I get to work with <mark>frontend languages such as Javascript, HTML and CSS.</mark> I also create mods for my favourite games.</p>
-	
-	</div>
-		<div class="col-5 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">The</span>
-				<span class="logo lastName">Journey</span>
-			</div>
-			<!--<h2 class="text-white mb-4">The journey</h2>-->
-			<p class="text-white-50 FadeInSegment">My professional <a class="links" href="https://www.linkedin.com/in/jon-aadrian-olsson-b306a338">journey</a> has been a wonderful adventure so far, giving me the opportunity to work in places like London, Barcelona, Malmö and Copenhagen. I harness my creative energy into design, coding and usability, drawing upon my <a a class="links" href="https://ecutbildning.se/utbildningar/ux-designer/?location=1986">education</a> and previous experience.</p>
-			<p class="text-white-50 FadeInSegment">With a <mark>broad background ranging from information technology, banking, customer service to hospitality</mark>, I am well versed in communicating with a variety of users and stakeholders. In addition, I have significant experience in presenting collaborative work and hosting client meetings.</p>	
-		</div>
-		<div class="col-5 mx-auto">
+			<div class="col-5 mx-auto mt-5">
 			<a href="assets/docs/Jon_Olsson_-_UX_Designer.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="btn btn-primary js-scroll-trigger button mb-5 mt-4" href="#projects" id="portfolioButtonHollow">Download CV</a>	
 			<a href="https://steamcommunity.com/id/OooOoOn/myworkshopfiles/" rel="noreferrer" target="_blank" class="btn btn-primary js-scroll-trigger button mb-5 mt-4" id="portfolioButtonHollow">View Mods</a>
-			<img alt="" background-size="cover" width="160rem" src="assets/img/page_1.png" id="cv_image"/>
-			<img alt="" background-size="cover" width="200rem" src="assets/img/mods.png" id="cv_image"/>
 		</div>
-	</div>
-
-	<div class="row d-block d-sm-none">
-		<div class="col-lg-9 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">Recent</span>
-				<span class="logo lastName">Experience</span>
-			</div>
-			<!--<h2 class="text-white mb-4">Recent Experience</h2>-->
-			<p class="text-white-50 FadeInSegment">I have spent most of 2022 working as a consultant for Adesso Denmark. My role was versatile and I got to work on <mark>serveral projects simultaneously</mark> as <b>Designer</b>, <b>Product Owner</b> and <b>Developer</b>.</p>
-			<p class="text-white-50 FadeInSegment">I am currently working on a m-commerce solution for the beauty and health industry. I will be designing the website as well as the mobile application.</p>
-			<p class="text-white-50 FadeInSegment">I am also taking a course in React.js.</p>
 		</div>
 
-		<div class="col-lg-9 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">Why</span>
-				<span class="logo lastName">Design?</span>
+		<div class="row d-block d-sm-none">
+			<div class="col-lg-9 mx-auto">
+				<div class="headline">
+					<span class="logo firstName">Recent</span>
+					<span class="logo lastName">Experience</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I have spent most of 2022 working as a consultant for Adesso Denmark. My role was versatile and I got to work on <mark>serveral projects simultaneously</mark> as <b>Designer</b>, <b>Product Owner</b> and <b>Developer</b>.</p>
+				<p class="text-white-50 FadeInSegment">I am currently working on a m-commerce solution for the beauty and health industry. I will be designing the website as well as the mobile application.</p>
+				<p class="text-white-50 FadeInSegment">I am also taking a course in React.js.</p>
 			</div>
-			<!--<h2 class="text-white mb-4">Why UX Design?</h2>-->
-			<p class="text-white-50 FadeInSegment">I felt that <mark>UX/UI</mark> would be a desirable skill to have in addition to development. It would also allow me to take on more challenging and diverse roles.</p>
-		</div>
-		<div class="col-lg-9 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">Why</span>
-				<span class="logo lastName">Development?</span>
+
+			<div class="col-lg-9 mx-auto">
+				<div class="headline">
+					<span class="logo firstName">Why</span>
+					<span class="logo lastName">Design?</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I felt that <mark>UX/UI</mark> would be a desirable skill to have in addition to development. It would also allow me to take on more challenging and diverse roles.</p>
 			</div>
-			<!--<h2 class="text-white mb-4">Why Development?</h2>-->
-			<p class="text-white-50 FadeInSegment">I have been coding and scripting since I was a teenager and find it creative and inspiring, especially when I get to work with <mark>frontend languages such as Javascript, HTML and CSS</mark>. I also create mods for my favourite games.</p>
-		</div>
-		<div class="col-lg-9 mx-auto">
-			<div class="headline">
-				<span class="logo firstName">The</span>
-				<span class="logo lastName">Journey</span>
+			<div class="col-lg-9 mx-auto">
+				<div class="headline">
+					<span class="logo firstName">Why</span>
+					<span class="logo lastName">Development?</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">I have been coding and scripting since I was a teenager and find it creative and inspiring, especially when I get to work with <mark>frontend languages such as Javascript, HTML and CSS</mark>.</p>
+				<p class="text-white-50 FadeInSegment">I also create mods for my favourite games, including logic, narrative and localizaton.</p>
 			</div>
-			<!--<h2 class="text-white mb-4">The journey</h2>-->
-			<p class="text-white-50 FadeInSegment">My professional <a class="links" href="https://www.linkedin.com/in/jon-aadrian-olsson-b306a338">journey</a> has been a wonderful adventure so far, giving me the opportunity to work in places like London, Barcelona, Malmö and Copenhagen. I harness my creative energy into design, coding and usability, drawing upon my <a a class="links" href="https://ecutbildning.se/utbildningar/ux-designer/?location=1986">education</a> and previous experience.</p>
-			<p class="text-white-50 FadeInSegment">With a <mark>broad background ranging from information technology, banking, customer service to hospitality</mark>, I am well versed in communicating with a variety of users and stakeholders. In addition, I have significant experience in presenting collaborative work and hosting client meetings.</p>	
+			<div class="col-lg-9 mx-auto">
+				<div class="headline">
+					<span class="logo firstName">The</span>
+					<span class="logo lastName">Journey</span>
+				</div>
+				<p class="text-white-50 FadeInSegment">My professional <a class="links" href="https://www.linkedin.com/in/jon-aadrian-olsson-b306a338">journey</a> has been a wonderful adventure so far, giving me the opportunity to work in places like London, Barcelona, Malmö and Copenhagen. I harness my creative energy into design, coding and usability, drawing upon my <a a class="links" href="https://ecutbildning.se/utbildningar/ux-designer/?location=1986">education</a> and previous experience.</p>
+				<p class="text-white-50 FadeInSegment">I have a <mark>broad background</mark> ranging from information technology, banking, customer service to hospitality, making me well versed in communicating with a variety of users and stakeholders. In addition, I have significant experience in <mark>presenting collaborative work and hosting client meetings.</mark></p>	
+				</div>
+			<div class="col-lg-9 mx-auto">
+				<a href="assets/docs/Jon_Olsson_-_UX_Designer.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="btn btn-primary js-scroll-trigger button mb-5 mt-4" href="#projects" id="portfolioButtonHollow">Download CV</a>
+				<a href="https://steamcommunity.com/id/OooOoOn/myworkshopfiles/" rel="noreferrer" target="_blank" class="btn btn-primary js-scroll-trigger button mb-5 mt-4" id="portfolioButtonHollow">View Mods</a>
 			</div>
-		<div class="col-lg-9 mx-auto">
-			<a href="assets/docs/Jon_Olsson_-_UX_Designer.pdf" download="Jon_Olsson_CV.pdf" rel="noreferrer" target="_blank" class="btn btn-primary js-scroll-trigger button mb-5 mt-4" href="#projects" id="portfolioButtonHollow">Download CV</a>
-			<img alt="" background-size="cover" width="100rem" src="assets/img/page_1.png" id="cv_image"/>
-			<a href="https://steamcommunity.com/id/OooOoOn/myworkshopfiles/" rel="noreferrer" target="_blank" class="btn btn-primary js-scroll-trigger button mb-5 mt-4" id="portfolioButtonHollow">View Mods</a>
-			<img alt="" background-size="cover" width="200rem" src="assets/img/mods.png" id="cv_image"/>
 		</div>
 	</div>
-</div>
 </section>
-<section class="projects-section bg-light" id="projects">
+<!-- Skillset -->
+<section class="skills-section bg-light">
 	<div class="container" id="desktop">
 		<div class="row align-items-center">
 			<div class="col-1"></div>
-			<div class="col-11 featured-text text-center text-lg-left">
-				<h4>Portfolio</h4>
-				<p class="text-black-50 mb-0">Showcasing some of my recent work.</p>
+			<!--<div class="col-11 mt-5 featured-text text-center text-lg-left">-->
+			<div class="col-11 mt-5 text-center text-lg-left">
+				<div class="headline">
+					<span class="logo firstName">Highlighted</span>
+					<span class="logo lastName">Skills</span>
+				</div>
+			</div>
+				<!--<h4>Highlighted Skills</h4>
+				<p class="text-black-50 mb-0">Role specific. </p>-->
+			</div>
+			<div class="tabs mt-3">
+				<input type="radio" id="tab1" name="tab-control" checked>
+				<input type="radio" id="tab2" name="tab-control">
+				<input type="radio" id="tab3" name="tab-control">  
+				<input type="radio" id="tab4" name="tab-control">
+				<ul>
+				<li title="UX Designer"><label for="tab1" role="button"><svg viewBox="0 0 24 24">
+				</svg><br><span>UX Designer</span></label></li>
+				<li title="Developer"><label for="tab2" role="button"><svg viewBox="0 0 24 24">
+				</svg><br><span>Developer</span></label></li>
+				<li title="Product Owner"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+				</svg><br><span>Product Owner</span></label></li>  
+				</ul>
+				<div class="slider-skillset"><div class="indicator"></div></div>
+				<div class="content">
+				<section>
+					<p>
+						Adobe XD ● Figma ● Figjam ● Prototyping ● Illustrator ● Research  ● Usability testing  ● MIRO Icon design  ● Taxonomy ● Design principles ● Ideation ● Information Architecture Accessibility ● Workshops  ● Visual Hierarchy ● ChatGPT ● Notion AI ● DALL-E ● Interviews
+					</p>
+				</section>
+				<section>
+					<p>
+						Javscript ● HTML ● CSS ● SQL ● Scripting ● JAVA ● C# ● Localization
+					</p>
+				</section>
+				<section>
+					<p>
+					JIRA ● GANT ● Kanban ● SCRUM ● Retrospective
+					</p>
+				</section>
+			 </div>
+		  </div>
+		</div>
+</section>
+
+<!-- Projects and skillset -->
+<section class="projects-section bg-black" id="projects">
+	<div class="container" id="desktop">
+		<div class="row align-items-center">
+			<div class="col-1"></div>
+			<div class="col-11 text-center text-lg-left">
+			<!--<div class="col-11 mt-5 featured-text text-center text-lg-left">-->
+				<div class="col-11 mt-5 text-center text-lg-left"></div>
+				<div class="headline pb-0">
+					<span class="logo firstName">The</span>
+					<span class="logo lastName">Portfolio</span>
+				</div>
+				<!--<h4>Portfolio</h4>
+				<p class="text-black-50 mb-0">Showcasing some of my recent work.</p>-->
 			</div>
 		</div>
-		<!-- Desktop view page 1 -->
-		<div class="row align-items-center group mb-5" id="1">
+		<div class="slider">
+			<div class="nav">
+			<div class="next"></div>
+			<div class="prev"></div>
+			<div class="explore-btn" data-target="#galleryModal" data-toggle="modal" onclick='projectGallery()'>View Case</div>
+			</div>
+			<div class="item is-active">
+				<div class="content">
+					<div class="wrap project-title">MyHouse</div>
+				</div>
+				<div class="content">
+				<div class="test">AR shopping application for doors and windows.</div>
+				</div>
+				<div class="imgs">
+					<div class="grid">
+							<div class="img img-1"><img src="assets/img/MyHouse_Mockup_sketch-1.png"/></div>
+							<div class="img img-2"><img src="assets/img/MyHouse_2.jpg"/></div>
+							<div class="img img-3"><img src="assets/img/MyHouse_3.jpg"/></div>
+							<div class="img img-4"><img src="assets/img/MyHouse_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="content">
+					<div class="wrap project-title">RentEstate</div>
+				</div>
+				<div class="content">
+					<div class="test">User management application for commercial tenants.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+						<div class="img img-1"><img src="assets/img/RentEstate_1.jpg"/></div>
+						<div class="img img-2"><img src="assets/img/RentEstate_2.jpg"/></div>
+						<div class="img img-3"><img src="assets/img/RentEstate_3.jpg"/></div>
+						<div class="img img-4"><img src="assets/img/RentEstate_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="content">
+				<div class="wrap project-title">Kangerluk</div>
+				</div>
+				<div class="content">
+					<div class="test">AR educational tool for the Greenlandic flora and fauna.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+						<div class="img img-1"><img src="assets/img/Kangerluk_1.jpg"/></div>
+						<div class="img img-2"><img src="assets/img/kangerluk_2.jpg"/></div>
+						<div class="img img-3"><img src="assets/img/kangerluk_3.jpg"/></div>
+						<div class="img img-4"><img src="assets/img/kangerluk_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="content">
+				<div class="wrap project-title">Luminaires localizator</div>
+				</div>
+				<div class="content">
+					<div class="test pt-5">3D scan and mapping software to manage tunnel lighting systems.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+						<div class="img img-1"><img src="assets/img/signify_1.jpg"/></div>
+						<div class="img img-2"><img src="assets/img/signify_2.jpg"/></div>
+						<div class="img img-3"><img src="assets/img/signify_3.jpg"/></div>
+						<div class="img img-4"><img src="assets/img/signify_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="content">
+				<div class="wrap project-title">Carelyo</div>
+				</div>
+				<div class="content">
+					<div class="test pt-5">Healthcare application intended for Sub-Saharan Africa.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+						<div class="img img-1"><img src="assets/img/carelyo_1.jpg"/></div>
+						<div class="img img-2"><img src="assets/img/carelyo_2.jpg"/></div>
+						<div class="img img-3"><img src="assets/img/carelyo_3.jpg"/></div>
+						<div class="img img-4"><img src="assets/img/carelyo_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="mobile">
+		<div class="row align-items-center">
+			<div class="col-1"></div>
+			<div class="col-11 text-center text-lg-left">
+				<div class="col-11 mt-5 text-center text-lg-left"></div>
+				<div class="headline">
+					<span class="logo firstName">The</span>
+					<span class="logo lastName">Portfolio</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="slider">
+			<div class="nav">
+			<div class="explore-btn" data-target="#galleryModal" data-toggle="modal" onclick='projectGallery("myhouse")'>View Case</div>
+			</div>
+			<div class="item is-active">
+				<div class="content">
+					<div class="wrap project-title">MyHouse</div>
+				</div>
+				<div class="content">
+				<div class="test">AR shopping application for doors and windows.</div>
+				</div>
+				<div class="imgs">
+					<div class="grid">
+						<div class="img img-1"><img src="assets/img/MyHouse_Mockup_sketch-1.png"/></div>
+						<div class="img img-2"><img src="assets/img/MyHouse_2.jpg"/></div>
+						<div class="img img-3"><img src="assets/img/MyHouse_3.jpg"/></div>
+						<div class="img img-4"><img src="assets/img/MyHouse_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="nav">
+				<div class="explore-btn" data-target="#galleryModal" data-toggle="modal" onclick='projectGallery("rentestate")'>View Case</div>
+			</div>
+			<div class="item is-active">
+				<div class="content">
+					<div class="wrap project-title">RentEstate</div>
+				</div>
+				<div class="content">
+					<div class="test">User management application for commercial tenants.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+					<div class="img img-1"><img src="assets/img/RentEstate_1.jpg"/></div>
+					<div class="img img-2"><img src="assets/img/RentEstate_2.jpg"/></div>
+					<div class="img img-3"><img src="assets/img/RentEstate_3.jpg"/></div>
+					<div class="img img-4"><img src="assets/img/RentEstate_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="nav">
+				<div class="explore-btn" data-target="#galleryModal" data-toggle="modal" onclick='projectGallery("kangerluk")'>View Case</div>
+			</div>
+			<div class="item is-active">
+				<div class="content">
+				<div class="wrap project-title">Kangerluk</div>
+				</div>
+				<div class="content">
+					<div class="test">AR educational tool for the Greenlandic flora and fauna.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+					<div class="img img-1"><img src="assets/img/Kangerluk_1.jpg"/></div>
+					<div class="img img-2"><img src="assets/img/kangerluk_2.jpg"/></div>
+					<div class="img img-3"><img src="assets/img/kangerluk_3.jpg"/></div>
+					<div class="img img-4"><img src="assets/img/kangerluk_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="nav">
+				<div class="explore-btn" data-target="#galleryModal" data-toggle="modal" onclick='projectGallery("luminaireslocalizator")'>View Case</div>
+			</div>
+			<div class="item is-active">
+				<div class="content">
+				<div class="wrap project-title">Luminaires localizator</div>
+				</div>
+				<div class="content">
+					<div class="test mt-5">3D scan and mapping software to manage tunnel lighting systems.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+					<div class="img img-1"><img src="assets/img/signify_1.jpg"/></div>
+					<div class="img img-2"><img src="assets/img/signify_2.jpg"/></div>
+					<div class="img img-3"><img src="assets/img/signify_3.jpg"/></div>
+					<div class="img img-4"><img src="assets/img/signify_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="nav">
+				<div class="explore-btn" data-target="#galleryModal" data-toggle="modal" onclick='projectGallery("carelyo")'>View Case</div>
+			</div>
+			<div class="item is-active">
+				<div class="content">
+				<div class="wrap project-title">Carelyo</div>
+				</div>
+				<div class="content">
+					<div class="test">Healthcare application intended for Sub-Saharan Africa.</div>
+					</div>
+				<div class="imgs">
+					<div class="grid">
+					<div class="img img-1"><img src="assets/img/carelyo_1.jpg"/></div>
+					<div class="img img-2"><img src="assets/img/carelyo_2.jpg"/></div>
+					<div class="img img-3"><img src="assets/img/carelyo_3.jpg"/></div>
+					<div class="img img-4"><img src="assets/img/carelyo_4.jpg"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Projects -->
+<!--<section class="projects-section bg-light" id="projects">
+	<div class="row align-items-center group mb-5" id="1">
+		<div class="col-1">
+			<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
+		</div>
+		<div class="col-5">
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/MyHouse_Mockup_sketch-1.png">
+				<div class="mask">
+					<h2>MyHouse</h2>
+					<p>AR shopping application for doors and windows.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("myhouse")'>SEE THE CASE</a>
+				</div>
+			</div>
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/rentestate_1.jpg">
+				<div class="mask">
+					<h2>RentEstate</h2>
+					<p>User management application for commercial tenants.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("rentestate")'>SEE THE CASE</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-5">
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/kangerluk_1.jpg">
+				<div class="mask">
+					<h2>Kangerluk</h2>
+					<p>AR educational tool for the Greenlandic flora and fauna.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("kangerluk")'>SEE THE CASE</a>
+				</div>
+			</div>	
+			<div class="view view-sixth">
+				<img class="img-fluid mb-3 mb-lg-0" src="assets/img/signify_1.jpg">
+				<div class="mask">
+					<h2>Luminaires localizator</h2>
+					<p>3D scan mapping software to manage tunnel lighting systems.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("luminaireslocalizator")'>SEE THE CASE</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-1">
+			<a class="nextGroup" onclick="changeGroup(1)">&#10095;</a>
+		</div>
+	</div>
+		<div class="row align-items-center group mb-5" id="2">
 			<div class="col-1">
 				<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
 			</div>
 			<div class="col-5">
 				<div class="view view-sixth">
-					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/MyHouse_Mockup_sketch-1.png">
+					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_12.jpg">
 					<div class="mask">
-						<h2>MyHouse</h2>
-						<p>AR shopping application for doors and windows.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("myhouse")'>SEE THE CASE</a>
+						<h2>Carelyo</h2>
+						<p>Healthcare application intended for Sub-Saharan Africa.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("carelyo")'>SEE THE CASE</a>
 					</div>
 				</div>
 				<div class="view view-sixth">
-					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/rentestate_1.jpg">
+					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_11.jpg">
 					<div class="mask">
-						<h2>RentEstate</h2>
-						<p>User management application for commercial tenants.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("rentestate")'>SEE THE CASE</a>
+						<h2>Mirtual</h2>
+						<p>A virtual fitting room for fashion retailers.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("mirtual")'>SEE THE CASE</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-5">
 				<div class="view view-sixth">
-					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/kangerluk_1.jpg">
+					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/emptyproject.jpg">
 					<div class="mask">
-						<h2>Kangerluk</h2>
-						<p>AR educational tool for the Greenlandic flora and fauna.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("kangerluk")'>SEE THE CASE</a>
+						<h2>MORE PROJECTS COMING SOON!</h2>
 					</div>
-				</div>	
+				</div>
 				<div class="view view-sixth">
-					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/signify_1.jpg">
+					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/emptyproject.jpg">
 					<div class="mask">
-						<h2>Luminaires localizator</h2>
-						<p>3D scan mapping software to manage tunnel lighting systems.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("luminaireslocalizator")'>SEE THE CASE</a>
+						<h2>MORE PROJECTS COMING SOON!</h2>
 					</div>
 				</div>
 			</div>
@@ -272,87 +616,14 @@
 				<a class="nextGroup" onclick="changeGroup(1)">&#10095;</a>
 			</div>
 		</div>
-			<!-- Desktop view page 2 -->
-			<div class="row align-items-center group mb-5" id="2">
-				<div class="col-1">
-					<a class="previousGroup" onclick="changeGroup(-1)">&#10094;</a>
-				</div>
-				<div class="col-5">
-					<div class="view view-sixth">
-						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_12.jpg">
-						<div class="mask">
-							<h2>Carelyo</h2>
-							<p>Healthcare application intended for Sub-Saharan Africa.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("carelyo")'>SEE THE CASE</a>
-						</div>
-					</div>
-					<div class="view view-sixth">
-						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects_11.jpg">
-						<div class="mask">
-							<h2>Mirtual</h2>
-							<p>A virtual fitting room for fashion retailers.</p><a class="info" data-target="#galleryModal" data-toggle="modal" id="myBtn" onclick='projectGallery("mirtual")'>SEE THE CASE</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-5">
-					<div class="view view-sixth">
-						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/emptyproject.jpg">
-						<div class="mask">
-							<h2>MORE PROJECTS COMING SOON!</h2>
-						</div>
-					</div>
-					<div class="view view-sixth">
-						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/emptyproject.jpg">
-						<div class="mask">
-							<h2>MORE PROJECTS COMING SOON!</h2>
-						</div>
-					</div>
-				</div>
-				<div class="col-1">
-					<a class="nextGroup" onclick="changeGroup(1)">&#10095;</a>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-1"></div>
-				<div class="col-11 mt-5 featured-text text-center text-lg-left">
-					<h4>Highlighted Skills</h4>
-					<p class="text-black-50 mb-0">Role specific. </p>
-				</div>
-				<div class="tabs mt-3">
-  
-					<input type="radio" id="tab1" name="tab-control" checked>
-					<input type="radio" id="tab2" name="tab-control">
-					<input type="radio" id="tab3" name="tab-control">  
-					<input type="radio" id="tab4" name="tab-control">
-					<ul>
-					  <li title="UX Designer"><label for="tab1" role="button"><svg viewBox="0 0 24 24">
-					  </svg><br><span>UX Designer</span></label></li>
-					  <li title="Developer"><label for="tab2" role="button"><svg viewBox="0 0 24 24">
-					  </svg><br><span>Developer</span></label></li>
-					  <li title="Product Owner"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
-				 	  </svg><br><span>Product Owner</span></label></li>  
-					 </ul>
-					<div class="slider"><div class="indicator"></div></div>
-					<div class="content">
-						<section>
-							<p>
-								Adobe XD ● Figma ● Figjam ● Prototyping ● Illustrator ● Research  ● Usability testing  ● MIRO Icon design  ● Taxonomy ● Design principles ● Ideation ● Information Architecture Accessibility ● Workshops  ● Visual Hierarchy ● ChatGPT ● Notion AI ● DALL-E ● Interviews
-							</p>
-						</section>
-						<section>
-							<p>
-								Javscript ● HTML ● CSS ● SQL ● Scripting ● JAVA ● C# ● Localization
-							</p>
-						</section>
-						<section>
-							<p>
-							JIRA ● GANT ● Kanban ● SCRUM ● Retrospective
-							</p>
-						</section>
-					 </div>
-				  </div>
+		<div class="row align-items-center">
+			<div class="col-1"></div>
+			<div class="col-11 mt-5 featured-text text-center text-lg-left">
+				<h4>Highlighted Skills</h4>
+				<p class="text-black-50 mb-0">Role specific. </p>
 			</div>
 		</div>
-	<!-- Mobile view -->
+	</div>
 	<div class="container" id="mobile">
 		<div class="row align-items-center">
 			<div class="featured-text text-center text-lg-left ml-4">
@@ -409,7 +680,8 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
+
 <!-- Project overview -->
 <div aria-hidden="true" aria-labelledby="galleryModalLabel" class="modal fade" id="galleryModal" role="dialog" tabindex="-1">
 	<div class="modal-dialog modal-xl" role="document">
@@ -417,7 +689,7 @@
 			<div class="modal-body">
 				<span class="close pointer" onclick="closeLightbox()">&times;</span>
 				<div class="modal-content">
-					<div class="row m-1"><a class="next" onclick="changeSlide(1)">&#10095;</a>
+					<div class="row m-1"><a class="nextPage" onclick="changeSlide(1)">&#10095;</a>
 						<div class="slide"><img alt="Img1" class="image-slide" id="introduction"></div>
 						<div class="slide"><img alt="Img2" class="image-slide" id="projectImage_1"></div>
 						<div class="slide"><img alt="Img3." class="image-slide" id="projectImage_2"></div>
@@ -426,7 +698,7 @@
 						<div class="slide"><img alt="Img6" class="image-slide" id="projectImage_5"></div>
 						<div class="slide"><img alt="Img6" class="image-slide" id="projectImage_6"></div>
 						<div class="slide"><img alt="Img6" class="image-slide" id="projectImage_7"></div>
-						<a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+						<a class="previousPage" onclick="changeSlide(-1)">&#10094;</a>
 					</div>
 					<div class="row m-1">
 						<div class="description">

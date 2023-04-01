@@ -1,3 +1,261 @@
+    //Animated bee
+
+    const path = anime.path('#path');
+
+    const timeline = anime.timeline({
+    easing: 'easeInOutExpo',
+    duration: 1000,
+    complete: () => {
+        anime({
+        targets: '.leaf',
+        rotate: 40,
+        duration: 3000,
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInOutQuad'
+        });
+        anime({
+        targets: '.petals',
+        scale: 1.05,
+        duration: 6000,
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInOutQuad'
+        });
+    }
+    });
+
+    timeline.add({
+    targets: '.stem',
+    scale: [0, 1],
+    })
+
+    timeline.add({
+    targets: '.leaf',
+    rotate: [0, 45],
+    })
+    timeline.add({
+    targets: '.petals',
+    scale: [0, 1],
+    }, '-=1000');
+
+    timeline.add({
+    targets: '#bee',
+    opacity: [0, 1],
+    }, '-=750');
+
+
+    anime({
+    targets: '#bee',
+    translateX: path('x'),
+    translateY: path('y'),
+    rotate: path('angle'),
+    loop: true,
+    duration: 6500,
+    easing: 'linear'
+    });
+    
+    //Portfolio*
+    
+    function init() {
+        const slider = document.querySelector(".slider");
+        const nextBtn = slider.querySelector(".slider .nav .next");
+        const prevBtn = slider.querySelector(".slider .nav .prev");
+        const items = slider.querySelectorAll(".slider .item");
+    
+        let current = 0;
+    
+        items.forEach((item) => {
+        const textWrapper = item.querySelector(".wrap");
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\S/g,
+            "<span class='letter'>$&</span>"
+        );
+        });
+    
+        function anim(current, next, callback) {
+        const currentImgs = current.querySelectorAll(".img");
+        const currentText = current.querySelectorAll(".content .letter");
+        const nextImgs = next.querySelectorAll(".img");
+        const nextText = next.querySelectorAll(".content .letter");
+    
+        const t = 400;
+        const offset = "-=" + t*.4;
+        const imgOffset = t*.8;
+    
+        const tl = anime.timeline({
+            easing: "easeInOutQuint",
+            duration: t,
+            complete: callback
+        });
+    
+        // Add children
+        tl.add({
+            targets: currentText,
+            translateY: [0, '-.75em'],
+            /*clipPath: ['polygon(0 0, 100% 0, 100% 100%, 0% 100%)', 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'],*/
+            opacity: [1, 0],
+            easing: "easeInQuint",
+            duration: t,
+            delay: (el, i) => 10 * (i + 1)
+        })
+            .add(
+            {
+                targets: currentImgs[0],
+                translateY: -600,
+                translateZ: 0,
+                rotate: [0, '-15deg'],
+                opacity: [1, 0],
+                easing: "easeInCubic"
+            },
+            offset
+            )
+            .add(
+            {
+                targets: currentImgs[1],
+                translateY: -600,
+                translateZ: 0,
+                rotate: [0, '15deg'],
+                opacity: [1, 0],
+                easing: "easeInCubic"
+            },
+            "-=" + imgOffset
+            )
+            .add(
+            {
+                targets: currentImgs[2],
+                translateY: -600,
+                translateZ: 0,
+                rotate: [0, '-15deg'],
+                opacity: [1, 0],
+                easing: "easeInCubic"
+            },
+            "-=" + imgOffset
+            )
+            .add(
+            {
+                targets: currentImgs[3],
+                translateY: -600,
+                translateZ: 0,
+                rotate: [0, '15deg'],
+                opacity: [1, 0],
+                easing: "easeInCubic"
+            },
+            "-=" + imgOffset
+            )
+            .add({
+            targets: current,
+            opacity: 0,
+            visibility: 'hidden',
+            duration: 10,
+            easing: "easeInCubic"
+            })
+            .add(
+            {
+                targets: next,
+                opacity: 1,
+                visibility: 'visible',
+                duration: 10
+            },
+            offset
+            )
+            .add(
+            {
+                targets: nextImgs[0],
+                translateY: [600, 0],
+                translateZ: 0,
+                rotate: ['15deg', 0],
+                opacity: [0, 1],
+                easing: "easeOutCubic"
+            },
+            offset
+            )
+            .add(
+            {
+                targets: nextImgs[1],
+                translateY: [600, 0],
+                translateZ: 0,
+                rotate: ['-15deg', 0],
+                opacity: [0, 1],
+                easing: "easeOutCubic"
+            },
+            "-=" + imgOffset
+            )
+            .add(
+            {
+                targets: nextImgs[2],
+                translateY: [600, 0],
+                translateZ: 0,
+                rotate: ['15deg', 0],
+                opacity: [0, 1],
+                easing: "easeOutCubic"
+            },
+            "-=" + imgOffset
+            )
+            .add(
+            {
+                targets: nextImgs[3],
+                translateY: [600, 0],
+                translateZ: 0,
+                rotate: ['-15deg', 0],
+                opacity: [0, 1],
+                easing: "easeOutCubic"
+            },
+            "-=" + imgOffset
+            )
+            .add(
+            {
+                targets: nextText,
+                translateY: ['.75em', 0],
+                translateZ: 0,
+                /*clipPath: ['polygon(0 0, 100% 0, 100% 0, 0 0)','polygon(0 0, 100% 0, 100% 100%, 0% 100%)'],*/
+                opacity: [0, 1],
+                easing: "easeOutQuint",
+                duration: t*1.5,
+                delay: (el, i) => 10 * (i + 1)
+            },
+            offset
+            );
+        }
+    
+        let isPlaying = false;
+    
+        function updateSlider(newIndex) {
+        const currentItem = items[current];
+        const newItem = items[newIndex];
+    
+        function callback() {
+            currentItem.classList.remove("is-active");
+            newItem.classList.add("is-active");
+            current = newIndex;
+            isPlaying = false;
+        }
+    
+        anim(currentItem, newItem, callback);
+        }
+    
+        function next() {
+        if (isPlaying) return;
+        isPlaying = true;
+        const newIndex = current === items.length - 1 ? 0 : current + 1;
+        updateSlider(newIndex);
+        }
+    
+        function prev() {
+        if (isPlaying) return;
+        isPlaying = true;
+        const newIndex = current === 0 ? items.length - 1 : current - 1;
+        updateSlider(newIndex);
+        }
+    
+        nextBtn.onclick = next;
+        prevBtn.onclick = prev;
+    }
+    
+    document.addEventListener("DOMContentLoaded", init);
+  
+    
+    
     //Text marker*
     (function (document) {
         const markers = [...document.querySelectorAll('mark')];
@@ -72,63 +330,6 @@
           }
         );
 
-    //Typewriter animation*
-    var TxtType = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">'+this.txt+'</i>';
-
-            var that = this;
-            var delta = 175 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-            }
-
-            setTimeout(function() {
-            that.tick();
-            }, delta);
-        };
-
-        window.onload = function() {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i=0; i<elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
 
     items.forEach(item => item.addEventListener('click', toggleAccordion));
     
@@ -301,8 +502,14 @@
         localStorage.removeItem('secondIteration');
         document.getElementsByClassName('timeline__items1')[0].innerHTML = ''
         document.getElementsByClassName('timeline__items2')[0].innerHTML = ''
+
+        var regexPattern = /[^A-Za-z0-9]/g;
         
-        switch (project) {
+        
+        console.log(project);
+        console.log(document.getElementsByClassName('is-active')[0].childNodes[1].textContent.toString().replace(regexPattern, "").toLowerCase());
+
+        switch (project ? project : document.getElementsByClassName('is-active')[0].childNodes[1].textContent.toString().replace(regexPattern, "").toLowerCase()) {
             case "gotohub":
                 localStorage.setItem( 'projectTitle_storage', 'Goto Hub' );
                 localStorage.setItem( 'introduction_storage', 'assets/img/introduction_gotohub.jpg' );
@@ -410,7 +617,7 @@
                 addTimelineItem('', 1);
                 addDownloadableItem('assets/docs/Carelyo.pdf')
                 break;
-                case "myhouse":
+            case "myhouse":
                     localStorage.setItem( 'projectTitle_storage', 'My House' );
                     localStorage.setItem( 'introduction_storage', 'assets/img/MyHouse_Mockup_sketch-1.png' );
                     localStorage.setItem( 'projectImage_1_storage', 'assets/img/myhouse_2.jpg' );
