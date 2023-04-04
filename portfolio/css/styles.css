@@ -11087,6 +11087,10 @@ Project card animations
 
 @media (max-width: 576px) {
 
+	.masthead h1 {
+		line-height: 3rem;
+	}
+
 	#cv_image {
 		width: 100%;
 		margin-left: 0rem !important
@@ -12942,7 +12946,7 @@ i {
 
   }
   .tabs input[name=tab-control]:nth-of-type(1):checked ~ .slider-skillset {
-	transform: translateX(25%);
+	transform: translateX(15%);
   }
   .tabs input[name=tab-control]:nth-of-type(1):checked ~ .content > section:nth-child(1) {
 	display: block;
@@ -12960,7 +12964,7 @@ i {
 	}
   }
   .tabs input[name=tab-control]:nth-of-type(2):checked ~ .slider-skillset {
-	transform: translateX(158%);
+	transform: translateX(148%);
   }
   .tabs input[name=tab-control]:nth-of-type(2):checked ~ .content > section:nth-child(2) {
 	display: block;
@@ -12978,7 +12982,7 @@ i {
 	}
   }
   .tabs input[name=tab-control]:nth-of-type(3):checked ~ .slider-skillset {
-	transform: translateX(292%);
+	transform: translateX(285%);
   }
   .tabs input[name=tab-control]:nth-of-type(3):checked ~ .content > section:nth-child(3) {
 	display: block;
@@ -13450,7 +13454,7 @@ mark {
   .slider .nav .explore-btn {
 	z-index: 4;
 	position: absolute;
-	bottom: 18rem;
+	bottom: 17rem;
 	left: calc(50% - 4rem);
 	width: 8em;
 	text-align: center;
