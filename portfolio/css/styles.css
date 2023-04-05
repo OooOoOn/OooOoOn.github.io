@@ -13544,7 +13544,7 @@ mark {
 	font-weight: 500;
 }
 
-svg {
+#my-section svg {
   display: block;
   width: 100%;
   height: 100vh;
