@@ -582,7 +582,7 @@ btnClose.addEventListener('click', () => {
                 addDownloadableItem('assets/docs/gotohub.pdf')
                 break;
             case "luminaireslocalizator":
-                localStorage.setItem( 'projectTitle_storage', 'Signify Luminaires Localizator' );
+                localStorage.setItem( 'projectTitle_storage', 'Luminaires Localizator' );
                 localStorage.setItem( 'introduction_storage', 'assets/img/signify_1.jpg' );
                 localStorage.setItem( 'projectImage_1_storage', 'assets/img/signify_2.jpg' );
                 localStorage.setItem( 'projectImage_2_storage', 'assets/img/signify_3.jpg' );
@@ -715,6 +715,26 @@ btnClose.addEventListener('click', () => {
                     addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
                     addTimelineItem('', 2);
                     addDownloadableItem('assets/docs/RentEstate.pdf')
+                break;
+                case "femaleinvest":
+                    localStorage.setItem( 'projectTitle_storage', 'Female Invest' );
+                    localStorage.setItem( 'introduction_storage', 'assets/img/female_invest_1.jpg' );
+                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/female_invest_2.jpg' );
+                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/female_invest_3.jpg' );
+                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/female_invest_4.jpg' );
+                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/female_invest_5.png' );
+                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/female_invest_6.png' );
+                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/female_invest_7.png' );
+                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/female_invest_8.png' );
+                    localStorage.setItem( 'secondIteration_storage', '' );
+    
+                    addTimelineItem('<b>Empathize</b><br/><i>Design Evaluation</i><br/><i>Research</i><br/>', 1);
+                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/>', 1);
+                    addTimelineItem('<b>Ideate</b><br/><i>User Story</i><br/>', 1);
+                    addTimelineItem('<b>Prototype</b><br/><i>High-Fi</i><br/>', 1);
+                    addTimelineItem('', 1);
+                    
+                    addDownloadableItem('assets/docs/FemaleInvest.pdf')
                 break;
             default:
                 break;

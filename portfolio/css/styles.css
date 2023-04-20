@@ -10693,7 +10693,7 @@ Project card animations
 .contact main section .content {
 	float: left;
 	width: 100%;
-	padding: 20px 30px 30px 30px;
+	padding: 20px 30px 100px 30px;
 	position: relative;
 	text-align: center;
 }
@@ -10781,8 +10781,8 @@ Project card animations
 
 .contact main .contactMe__btn {
 	position: absolute;
-	bottom: 0;
-	right: 45%;
+	bottom: 20%;
+	right: 27%;
 	background-color: transparent;
 	border: 0;
 	width: 250px;
@@ -12556,16 +12556,6 @@ img.hover-shadow {
 	padding-bottom: 4rem;
 }
 
-#downloadable_project {
-	font-weight:600;
-	padding-top: 0.75rem;
-	padding-bottom: 0.5rem;
-	padding-left: 1.5rem;
-	padding-right:1.5rem;
-	box-shadow: 0px 1px 4px 2px #00000088 !important;
-}
-
-
 .downloadCV,
 .downloadProject {
 	all: unset;
@@ -12626,7 +12616,7 @@ img.hover-shadow {
 }
 
 .description__column--header {
-	border-left: 8px solid #64a19d;
+	border-left: 8px solid #B66C8D;
 	padding-left: 1rem;
 }
 
@@ -12688,6 +12678,16 @@ img.hover-shadow {
 	text-transform: uppercase;
 }
 
+.timeline__items--item i {
+	background: rgba(182, 108, 141, .9);
+	color: white;
+	font-weight:300;
+	border-radius: 5px;
+	padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+	margin: 0.1rem 0.1rem 0.4rem 0.1rem;
+	display: inline-block;
+}
+
 i {
 	background-color: #fcdd958c;
 	font-weight:600;
@@ -12710,8 +12710,7 @@ i {
 	content: '';
 	height: 15px;
 	width: 15px;
-	background-color: #FCDD95;
-
+	background-color: #B66C8D;
 	position: absolute;
 	top: -8px;
 }
@@ -13980,6 +13979,20 @@ svg .polymorph {
   }
   
   @media (max-width: 600px) {
+
+	.contact main section .content {
+		padding: 50px 30px 30px 30px;
+	}
+
+	.contact main .contactMe__btn {
+		bottom: 0;
+		right: 27%;
+	}
+
+	#wrap-cta3 {
+		top: 1% !important;
+	  }
+
 	#form-container.expand {
 	  height: 100%;
 	  width: 100%;
@@ -14049,6 +14062,7 @@ svg .polymorph {
 	left: 50%;
 	transform: translate(0, -50%);
 	opacity: 0;
+	margin-top: 5rem;
   }
   #wrap-cta2.active {
 	z-index: 2;
@@ -14074,7 +14088,35 @@ svg .polymorph {
   }
 
 
-  
+  #wrap-cta3 {
+	position: relative;
+	top: 3%;
+	left: 35%;
+	transform: translate(0, -50%);
+	opacity: 0;
+  }
+  #wrap-cta3.active {
+	z-index: 2;
+	transform: translate(-50%, -50%);
+	transition: transform 0.6s, opacity 0.6s;
+	opacity: 1;
+  }
+  #wrap-cta3 .cta3 {
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	border: solid 2px black;
+	cursor: pointer;
+	outline: none;
+	background: transparent;
+	color: black;
+	transition: background-color 0.3s;
+	cursor: pointer;
+  }
+  #wrap-cta3 .cta3:hover {
+	  color: #B66C8D;
+	  background: black;
+	  font-weight: 500;
+  }
 
   
   
