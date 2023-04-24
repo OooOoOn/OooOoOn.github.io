@@ -694,14 +694,14 @@ btnClose.addEventListener('click', () => {
                 break;
                 case "rentestate":
                     localStorage.setItem( 'projectTitle_storage', 'RentEstate' );
-                    localStorage.setItem( 'introduction_storage', 'assets/img/rentestate_1.jpg' );
-                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/rentestate_2.jpg' );
-                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/rentestate_3.jpg' );
-                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/rentestate_4.jpg' );
-                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/rentestate_5.jpg' );
-                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/rentestate_6.jpg' );
-                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/rentestate_7.jpg' );
-                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/rentestate_8.jpg' );
+                    localStorage.setItem( 'introduction_storage', 'assets/img/rent_estate_1.jpg' );
+                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/rent_estate_2.jpg' );
+                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/rent_estate_3.jpg' );
+                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/rent_estate_4.jpg' );
+                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/rent_estate_5.jpg' );
+                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/rent_estate_6.jpg' );
+                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/rent_estate_7.jpg' );
+                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/rent_estate_8.jpg' );
                     localStorage.setItem( 'secondIteration_storage', '' );
     
                     addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
