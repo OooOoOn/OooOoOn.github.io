@@ -718,10 +718,10 @@ btnClose.addEventListener('click', () => {
                 break;
                 case "femaleinvest":
                     localStorage.setItem( 'projectTitle_storage', 'Female Invest' );
-                    localStorage.setItem( 'introduction_storage', 'assets/img/female_invest_1.jpg' );
-                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/female_invest_2.jpg' );
-                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/female_invest_3.jpg' );
-                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/female_invest_4.jpg' );
+                    localStorage.setItem( 'introduction_storage', 'assets/img/female_invest_1.png' );
+                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/female_invest_2.png' );
+                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/female_invest_3.png' );
+                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/female_invest_4.png' );
                     localStorage.setItem( 'projectImage_4_storage', 'assets/img/female_invest_5.png' );
                     localStorage.setItem( 'projectImage_5_storage', 'assets/img/female_invest_6.png' );
                     localStorage.setItem( 'projectImage_6_storage', 'assets/img/female_invest_7.png' );
