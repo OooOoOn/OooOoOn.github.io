@@ -635,6 +635,7 @@ const common = {
 
     /* Project overview */
     function projectGallery(project) {
+        // Clear localStorage
         localStorage.removeItem('projectTitle');
         localStorage.removeItem('projectProblem');
         localStorage.removeItem('projectSolution');
@@ -645,23 +646,49 @@ const common = {
         localStorage.removeItem('designprocess_5');
         localStorage.removeItem('designprocess_6');
         localStorage.removeItem('designprocess_7');
-
-        /*localStorage.removeItem('secondIteration');
-        document.getElementsByClassName('timeline__items1')[0].innerHTML = ''
-        document.getElementsByClassName('timeline__items2')[0].innerHTML = ''*/
-
+    
         var regexPattern = /[^A-Za-z0-9]/g;
         
-        
-        console.log(project);
-        console.log(document.getElementsByClassName('is-active')[0].childNodes[1].textContent.toString().replace(regexPattern, "").toLowerCase());
-
-        switch (project ? project : document.getElementsByClassName('is-active')[0].childNodes[1].textContent.toString().replace(regexPattern, "").toLowerCase()) {
+        // Get project key from argument or from active slider
+        var projectKey = project ? project : document.getElementsByClassName('is-active')[0].childNodes[1].textContent.toString().replace(regexPattern, "").toLowerCase();
+    
+        // List of projects where DETAILS button should be hidden
+        var hideDetailsFor = ["stellaris"]; // Add other project keys if needed
+    
+        // Show/hide DETAILS button
+        var desktopBtn = document.getElementById("downloadable_project");
+        var mobileBtn = document.getElementById("downloadable_project_mobile");
+    
+        if (hideDetailsFor.includes(projectKey)) {
+            desktopBtn.style.display = "none";
+            mobileBtn.style.display = "none";
+        } else {
+            desktopBtn.style.display = "inline-block";
+            mobileBtn.style.display = "inline-block";
+        }
+    
+        // Set project data based on projectKey
+        switch (projectKey) {
+            case "stellaris":
+                localStorage.setItem('projectTitle_storage', 'Stellaris');
+                localStorage.setItem('projectDescription_storage', 'UX for complex interstellar strategy game.');
+                localStorage.setItem('projectProblem_storage', 'Gameplay mechanics were difficult for new and existing users, with more being added.');
+                localStorage.setItem('projectSolution_storage', 'Reworked tutorial and overall onboarding experience. Reduced visual clutter and game flow.');
+                document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/stellaris_6.png')";
+                break;
+    
             case "luminaireslocalizator":
-                localStorage.setItem( 'projectTitle_storage', 'Luminaires Localizator' );
-                localStorage.setItem( 'projectDescription_storage', '3D scan and mapping software to manage tunnel lighting systems.' );
-                localStorage.setItem( 'projectProblem_storage', 'The current process of assembling or adjusting a light system was a manual and time-consuming process with having to move each light around. It was also reliant on machinery and several engineers.' );
-                localStorage.setItem( 'projectSolution_storage', 'An AR application tailored to engineers that scans, maps and configures the light system. Digital ID tag was added to each unit that in turn syncs with the application.' );
+                localStorage.setItem('projectTitle_storage', 'Luminaires Localizator');
+                localStorage.setItem('projectDescription_storage', '3D scan and mapping software to manage tunnel lighting systems.');
+                localStorage.setItem('projectProblem_storage', 'The current process of assembling or adjusting a light system was a manual and time-consuming process with having to move each light around. It was also reliant on machinery and several engineers.');
+                localStorage.setItem('projectSolution_storage', 'An AR application tailored to engineers that scans, maps and configures the light system. Digital ID tag was added to each unit that in turn syncs with the application.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/signify_1.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/signify_2.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/signify_3.jpg')";
@@ -670,35 +697,14 @@ const common = {
                 document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/signify_6.jpg')";
                 document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/signify_7.jpg')";
                 document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/signify_8.jpg')";
-                
-                /*localStorage.setItem( 'introduction_storage', 'assets/img/signify_1.jpg' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/signify_2.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/signify_3.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/signify_4.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/signify_5.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/signify_6.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/signify_7.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/signify_8.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
-                
-                addTimelineItem('<b>Empathize</b><br/><i>Goal</i><br/><i>Stakeholders</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>Task Flow</i><br/><i>Features</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Mid-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Unmoderated</i><br/>', 1);
-                addTimelineItem('', 1);
-
-                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                addTimelineItem('<b>Test</b><br/><i>Lab Test</i><br/><i>Moderated</i><br/>', 2);
-                addTimelineItem('', 2);*/
-
-                addDownloadableItem('assets/docs/Signify.pdf')
+                addDownloadableItem('assets/docs/Signify.pdf');
                 break;
+    
             case "kangerluk":
-                localStorage.setItem( 'projectTitle_storage', 'Kangerluk' );
-                localStorage.setItem( 'projectDescription_storage', 'AR educational tool for the Greenlandic flora and fauna.' );
-                localStorage.setItem( 'projectProblem_storage', 'There was little interest amongst students for the topic. The information used for teaching was scattered and unformatted. There were no interactive teaching elements.' );
-                localStorage.setItem( 'projectSolution_storage', 'Standardised data structure using a set of pre-defined tasks. AR application with gaming elements. Progressive leveling system. Interactive indoor and outdoor assignments.' );
+                localStorage.setItem('projectTitle_storage', 'Kangerluk');
+                localStorage.setItem('projectDescription_storage', 'AR educational tool for the Greenlandic flora and fauna.');
+                localStorage.setItem('projectProblem_storage', 'There was little interest amongst students for the topic. The information used for teaching was scattered and unformatted. There were no interactive teaching elements.');
+                localStorage.setItem('projectSolution_storage', 'Standardised data structure using a set of pre-defined tasks. AR application with gaming elements. Progressive leveling system. Interactive indoor and outdoor assignments.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/kangerluk_8.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/kangerluk_1.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/kangerluk_2.jpg')";
@@ -707,35 +713,14 @@ const common = {
                 document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/kangerluk_5.jpg')";
                 document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/kangerluk_6.jpg')";
                 document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/kangerluk_7.jpg')";
-                
-                /*localStorage.setItem( 'introduction_storage', 'assets/img/kangerluk_8.jpg' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/kangerluk_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/kangerluk_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/kangerluk_10.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/kangerluk_4.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/kangerluk_5.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/kangerluk_6.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/kangerluk_7.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
-
-                addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Persona</i><br/>', 1);
-                addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mood Board</i><br/><i>Features</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>Explorative</i><br/><i>Talk Aloud</i><br/><i>Click Test</i><br/><i>Heuristic</i><br/>', 1);
-                addTimelineItem('', 1);
-            
-                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
-                addTimelineItem('', 2);*/
-
-                addDownloadableItem('assets/docs/Kangerluk.pdf')
+                addDownloadableItem('assets/docs/Kangerluk.pdf');
                 break;
+    
             case "carelyo":
-                localStorage.setItem( 'projectTitle_storage', 'Carelyo' );
-                localStorage.setItem( 'projectDescription_storage', 'Healthcare application intended for Sub-Saharan Africa.' );
-                localStorage.setItem( 'projectProblem_storage', 'The current design lacked coherency and structure and was based on the vision of the company founder, not the requirements of the end user. Lastly, only older phones were utilized.' );
-                localStorage.setItem( 'projectSolution_storage', 'Revamped user-friendly design with focus on removing pain points and misconceptions. Standardised design system. Modular design approach to suit older phone models.' );
+                localStorage.setItem('projectTitle_storage', 'Carelyo');
+                localStorage.setItem('projectDescription_storage', 'Healthcare application intended for Sub-Saharan Africa.');
+                localStorage.setItem('projectProblem_storage', 'The current design lacked coherency and structure and was based on the vision of the company founder, not the requirements of the end user. Lastly, only older phones were utilized.');
+                localStorage.setItem('projectSolution_storage', 'Revamped user-friendly design with focus on removing pain points and misconceptions. Standardised design system. Modular design approach to suit older phone models.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/carelyo_8.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/carelyo_1.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/carelyo_2.jpg')";
@@ -744,149 +729,68 @@ const common = {
                 document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/carelyo_4.jpg')";
                 document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/carelyo_6.jpg')";
                 document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/carelyo_9.jpg')";
-                
-                /*localStorage.setItem( 'introduction_storage', 'assets/img/carelyo_8.jpg' );
-                localStorage.setItem( 'projectImage_1_storage', 'assets/img/carelyo_1.jpg' );
-                localStorage.setItem( 'projectImage_2_storage', 'assets/img/carelyo_2.jpg' );
-                localStorage.setItem( 'projectImage_3_storage', 'assets/img/carelyo_3.jpg' );
-                localStorage.setItem( 'projectImage_4_storage', 'assets/img/projects_12.jpg' );
-                localStorage.setItem( 'projectImage_5_storage', 'assets/img/carelyo_4.jpg' );
-                localStorage.setItem( 'projectImage_6_storage', 'assets/img/carelyo_6.jpg' );
-                localStorage.setItem( 'projectImage_7_storage', 'assets/img/carelyo_9.jpg' );
-                localStorage.setItem( 'secondIteration_storage', '' );
-                
-                addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Competitors</i><br/><i>User Story</i><br/><i>Focus Group</i><br/>', 1);
-                addTimelineItem('<b>Define</b><br/><i>Requirements</i><br/><i>Design System</i><br/>', 1);
-                addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 1);
-                addTimelineItem('<b>Test</b><br/><i>A/B Test</i><br/><i>Talk Aloud</i><br/>', 1);
-                addTimelineItem('', 1);*/
-
-                addDownloadableItem('assets/docs/Carelyo.pdf')
+                addDownloadableItem('assets/docs/Carelyo.pdf');
                 break;
+    
             case "myhouse":
-                    localStorage.setItem( 'projectTitle_storage', 'My House' );
-                    localStorage.setItem( 'projectDescription_storage', 'AR shopping application for doors and windows.' );
-                    localStorage.setItem( 'projectProblem_storage', 'The customer was struggling to increase its market share and did not have a strong digital presence. They were looking for an cutting-edge immersive experience constrained by a small budget.' );
-                    localStorage.setItem( 'projectSolution_storage', 'An easy-to-use AR application with focus on features requested by the users. Lead generation and brand awareness weaved into the design with ties to existing website.' );
-                    document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/MyHouse_Mockup_sketch-1.png')";
-                    document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/myhouse_2.jpg')";
-                    document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/myhouse_3.jpg')";
-                    document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/myhouse_4.jpg')";
-                    document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/myhouse_5.jpg')";
-                    document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/myhouse_6.jpg')";
-                    document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/myhouse_7.jpg')";
-                    document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/myhouse_8.jpg')";
-
-                    /*localStorage.setItem( 'introduction_storage', 'assets/img/MyHouse_Mockup_sketch-1.png' );
-                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/myhouse_2.jpg' );
-                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/myhouse_3.jpg' );
-                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/myhouse_4.jpg' );
-                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/myhouse_5.jpg' );
-                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/myhouse_6.jpg' );
-                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/myhouse_7.jpg' );
-                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/myhouse_8.jpg' );
-                    localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
-    
-                    addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
-                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/>', 1);
-                    addTimelineItem('<b>Ideate</b><br/><i>Sketch</i><br/><i>Mindmap</i><br/><i>Features</i><br/><i>Sitemap</i><br/>', 1);
-                    addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Heuristic</i><br/><i>Interview</i><br/><i>Talk Aloud</i><br/>', 1);
-                    addTimelineItem('', 1);
-                    
-                    addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                    addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Click Test</i><br/>', 2);
-                    addTimelineItem('', 2);*/
-
-                    addDownloadableItem('assets/docs/MyHouse.pdf')
+                localStorage.setItem('projectTitle_storage', 'My House');
+                localStorage.setItem('projectDescription_storage', 'AR shopping application for doors and windows.');
+                localStorage.setItem('projectProblem_storage', 'The customer was struggling to increase its market share and did not have a strong digital presence. They were looking for a cutting-edge immersive experience constrained by a small budget.');
+                localStorage.setItem('projectSolution_storage', 'An easy-to-use AR application with focus on features requested by the users. Lead generation and brand awareness weaved into the design with ties to existing website.');
+                document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/MyHouse_Mockup_sketch-1.png')";
+                document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/myhouse_2.jpg')";
+                document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/myhouse_3.jpg')";
+                document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/myhouse_4.jpg')";
+                document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/myhouse_5.jpg')";
+                document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/myhouse_6.jpg')";
+                document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/myhouse_7.jpg')";
+                document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/myhouse_8.jpg')";
+                addDownloadableItem('assets/docs/MyHouse.pdf');
                 break;
-                case "rentestate":
-                    localStorage.setItem( 'projectTitle_storage', 'RentEstate' );
-                    localStorage.setItem( 'projectDescription_storage', 'User management application for commercial tenants.' );
-                    localStorage.setItem( 'projectProblem_storage', 'Call volumes were increasing and the current manual process was time consuming and slow. There was also a dependence on several external systems with different logins.' );
-                    localStorage.setItem( 'projectSolution_storage', 'Current process was digitalized, merged and streamlined. Self-service was introduced and encouraged with a tenancy user-management system to regulate access level.' );
-                    document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/rent_estate_1.jpg')";
-                    document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/rent_estate_2.jpg')";
-                    document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/rent_estate_3.jpg')";
-                    document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/rent_estate_4.jpg')";
-                    document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/rent_estate_5.jpg')";
-                    document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/rent_estate_6.jpg')";
-                    document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/rent_estate_7.jpg')";
-                    document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/rent_estate_8.jpg')";
-
-                    /*localStorage.setItem( 'introduction_storage', 'assets/img/rent_estate_1.jpg' );
-                    localStorage.setItem( 'projectImage_1_storage', 'assets/img/rent_estate_2.jpg' );
-                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/rent_estate_3.jpg' );
-                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/rent_estate_4.jpg' );
-                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/rent_estate_5.jpg' );
-                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/rent_estate_6.jpg' );
-                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/rent_estate_7.jpg' );
-                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/rent_estate_8.jpg' );
-
-                    localStorage.setItem( 'secondIteration_storage', '2nd Iteration.' );
     
-                    addTimelineItem('<b>Empathize</b><br/><i>Stakeholders</i><br/><i>Research</i><br/><i>Goal</i><br/>', 1);
-                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/><i>Key</i><br/><i>User Story</i><br/>', 1);
-                    addTimelineItem('<b>Ideate</b><br/><i>Wireframe</i><br/><i>Sitemap</i><br/><i>Features</i><br/><i>Task Flow</i><br/>', 1);
-                    addTimelineItem('<b>Prototype</b><br/><i>Low-Fi</i><br/>', 1);
-                    addTimelineItem('<b>Test</b><br/><i>Tree Test</i><br/><i>Interview</i><br/><i>Moderated</i><br/>', 1);
-                    addTimelineItem('', 1);
-
-                    addTimelineItem('<b>Prototype</b><br/><i>Hi-Fi</i><br/>', 2);
-                    addTimelineItem('<b>Test</b><br/><i>Interview</i><br/><i>Moderated</i><br/>', 2);
-                    addTimelineItem('', 2);*/
-
-                    addDownloadableItem('assets/docs/RentEstate.pdf')
+            case "rentestate":
+                localStorage.setItem('projectTitle_storage', 'RentEstate');
+                localStorage.setItem('projectDescription_storage', 'User management application for commercial tenants.');
+                localStorage.setItem('projectProblem_storage', 'Call volumes were increasing and the current manual process was time consuming and slow. There was also a dependence on several external systems with different logins.');
+                localStorage.setItem('projectSolution_storage', 'Current process was digitalized, merged and streamlined. Self-service was introduced and encouraged with a tenancy user-management system to regulate access level.');
+                document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/rent_estate_1.jpg')";
+                document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/rent_estate_2.jpg')";
+                document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/rent_estate_3.jpg')";
+                document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/rent_estate_4.jpg')";
+                document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/rent_estate_5.jpg')";
+                document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/rent_estate_6.jpg')";
+                document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/rent_estate_7.jpg')";
+                document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/rent_estate_8.jpg')";
+                addDownloadableItem('assets/docs/RentEstate.pdf');
                 break;
-                case "femaleinvest":
-                    localStorage.setItem( 'projectTitle_storage', 'Female Invest' );
-                    localStorage.setItem( 'projectDescription_storage', 'Financial learning community for female investors.' );
-                    localStorage.setItem( 'projectProblem_storage', 'Users were struggling to find the correct information. The community page design was also not coherent with the rest of the application. Few users completed their profiles.' );
-                    localStorage.setItem( 'projectSolution_storage', 'Current process was digitalized, merged and streamlined. Self-service was introduced and encouraged with a tenancy user-management system to regulate access level.' );
-                    document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/female_invest_1.png')";
-                    document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/female_invest_2.png')";
-                    document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/female_invest_3.png')";
-                    document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/female_invest_4.png')";
-                    document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/female_invest_5.png')";
-                    document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/female_invest_6.png')";
-                    document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/female_invest_7.png')";
-                    document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/female_invest_8.png')";
-
-                    /*localStorage.setItem( 'projectImage_1_storage', 'assets/img/female_invest_2.png' );
-                    localStorage.setItem( 'projectImage_2_storage', 'assets/img/female_invest_3.png' );
-                    localStorage.setItem( 'projectImage_3_storage', 'assets/img/female_invest_4.png' );
-                    localStorage.setItem( 'projectImage_4_storage', 'assets/img/female_invest_5.png' );
-                    localStorage.setItem( 'projectImage_5_storage', 'assets/img/female_invest_6.png' );
-                    localStorage.setItem( 'projectImage_6_storage', 'assets/img/female_invest_7.png' );
-                    localStorage.setItem( 'projectImage_7_storage', 'assets/img/female_invest_8.png' );
-                    localStorage.setItem( 'secondIteration_storage', '' );
     
-                    addTimelineItem('<b>Empathize</b><br/><i>Design Evaluation</i><br/><i>Research</i><br/>', 1);
-                    addTimelineItem('<b>Define</b><br/><i>Problem</i><br/><i>Requirements</i><br/>', 1);
-                    addTimelineItem('<b>Ideate</b><br/><i>User Story</i><br/>', 1);
-                    addTimelineItem('<b>Prototype</b><br/><i>High-Fi</i><br/>', 1);
-                    addTimelineItem('', 1);*/
-                    
-                    addDownloadableItem('assets/docs/FemaleInvest.pdf')
+            case "femaleinvest":
+                localStorage.setItem('projectTitle_storage', 'Female Invest');
+                localStorage.setItem('projectDescription_storage', 'Financial learning community for female investors.');
+                localStorage.setItem('projectProblem_storage', 'Users were struggling to find the correct information. The community page design was also not coherent with the rest of the application. Few users completed their profiles.');
+                localStorage.setItem('projectSolution_storage', 'Current process was digitalized, merged and streamlined. Self-service was introduced and encouraged with a tenancy user-management system to regulate access level.');
+                document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/female_invest_1.png')";
+                document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/female_invest_2.png')";
+                document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/female_invest_3.png')";
+                document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/female_invest_4.png')";
+                document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/female_invest_5.png')";
+                document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/female_invest_6.png')";
+                document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/female_invest_7.png')";
+                document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/female_invest_8.png')";
+                addDownloadableItem('assets/docs/FemaleInvest.pdf');
                 break;
+    
             default:
                 break;
         }
+    
+        // Update modal content
         document.getElementById("projectTitle").innerHTML = localStorage.getItem('projectTitle_storage');
         document.getElementById("projectDescription").innerHTML = localStorage.getItem('projectDescription_storage');
         document.getElementById("projectProblem").innerHTML = localStorage.getItem('projectProblem_storage');
         document.getElementById("projectSolution").innerHTML = localStorage.getItem('projectSolution_storage');
-        /*document.getElementById("introduction").src = localStorage.getItem('introduction_storage');
-        document.getElementById("projectImage_1").src = localStorage.getItem('projectImage_1_storage');
-        document.getElementById("projectImage_2").src = localStorage.getItem('projectImage_2_storage');
-        document.getElementById("projectImage_3").src = localStorage.getItem('projectImage_3_storage');
-        document.getElementById("projectImage_4").src = localStorage.getItem('projectImage_4_storage');
-        document.getElementById("projectImage_5").src = localStorage.getItem('projectImage_5_storage');
-        document.getElementById("projectImage_6").src = localStorage.getItem('projectImage_6_storage');
-        document.getElementById("projectImage_7").src = localStorage.getItem('projectImage_7_storage');
-        document.getElementById("secondIteration").innerHTML = localStorage.getItem('secondIteration_storage');*/
-
     }
+    
 
     
         
