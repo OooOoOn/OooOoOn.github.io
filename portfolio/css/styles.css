@@ -10257,9 +10257,9 @@ body {
 	margin-bottom: 3rem;
 }
 
-.skills-section {
+/* .skills-section {
 	padding: 0rem 0 0rem 0;
-}
+} */
 
 .projects-section {
 	padding: 5rem 0 5rem 0;
@@ -10693,16 +10693,25 @@ Project card animations
 .contact main section .content {
 	float: left;
 	width: 100%;
-	padding: 20px 30px 100px 30px;
+	padding: 20px 30px 30px 30px;
 	position: relative;
 	text-align: center;
 }
 
 .contact main section .content img {
-	display: inline-block;
-	width: 140px;
-	border-radius: 50%;
+    display: inline-block;
+    width: 140px;           /* keeps your size */
+    border-radius: 12px;    /* soft rounded corners instead of circle */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* subtle shadow for depth */
+    object-fit: cover;      /* ensures it fills nicely */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.contact main section .content img:hover {
+    transform: scale(1.05); /* subtle zoom on hover */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* stronger shadow on hover */
+}
+
 
 .contact main section .content aside {
 	float: left;
@@ -10781,7 +10790,7 @@ Project card animations
 
 .contact main .contactMe__btn {
 	position: absolute;
-	bottom: 20%;
+	bottom: 30%;
 	right: 27%;
 	background-color: transparent;
 	border: 0;
@@ -13460,7 +13469,7 @@ mark {
   .slider .nav .explore-btn {
 	z-index: 4;
 	position: absolute;
-	bottom: 17rem;
+	bottom: 13rem;
 	left: calc(50% - 4rem);
 	width: 8em;
 	text-align: center;
@@ -14094,7 +14103,7 @@ svg .polymorph {
   #wrap-cta3 {
 	position: relative;
 	top: 3%;
-	left: 35%;
+	left: 65%;
 	transform: translate(0, -50%);
 	opacity: 0;
   }
@@ -14176,7 +14185,7 @@ svg .polymorph {
 .slider2 {
 	float: right;
 	position: relative;
-	width: 50%;
+	width: 45%;
 	height: 100%;
 }
 .slider2 li {
@@ -14340,22 +14349,28 @@ li.prev2 {
 
 
   .about-section {
-	background: linear-gradient(-45deg, #120b0e, #392840, #11556e, #0c5c49);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    /* Gradient colors */
+    background: linear-gradient(-45deg, #120b0e, #223c3a, #120b0e, #223c3a);
+    
+    /* Make the gradient much larger for a smoother, more noticeable shift */
+    background-size: 600% 600%;
+    
+    /* Animate the gradient */
+    animation: gradient 35s ease-in-out infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
+
 
 .col-5 h5 {
 	color: white;
@@ -14366,3 +14381,10 @@ li.prev2 {
 	color: white;
 	margin-bottom: 0rem !important;
 }
+
+.img video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* or 'contain' if you want the whole video visible */
+	display: block;
+  }
