@@ -10230,12 +10230,12 @@ body {
 		padding: 0;
 	}
 
-	.masthead .col-xl {
+	/* .masthead .col-xl {
 		height: 100vh;                 /* take full screen height */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;       /* vertical centering */
-	}
+	} */
 	
 
 	.masthead .name {
