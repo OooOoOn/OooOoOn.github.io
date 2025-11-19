@@ -653,7 +653,7 @@ const common = {
         var projectKey = project ? project : document.getElementsByClassName('is-active')[0].childNodes[1].textContent.toString().replace(regexPattern, "").toLowerCase();
     
         // List of projects where DETAILS button should be hidden
-        var hideDetailsFor = ["stellaris"]; // Add other project keys if needed
+        var hideDetailsFor = ["stellaris", "europauniversalisv"];
     
         // Show/hide DETAILS button
         var desktopBtn = document.getElementById("downloadable_project");
@@ -671,9 +671,9 @@ const common = {
         switch (projectKey) {
             case "stellaris":
                 localStorage.setItem('projectTitle_storage', 'Stellaris');
-                localStorage.setItem('projectDescription_storage', 'UX for complex interstellar strategy game.');
-                localStorage.setItem('projectProblem_storage', 'Gameplay mechanics were difficult for new and existing users, with more being added.');
-                localStorage.setItem('projectSolution_storage', 'Reworked tutorial and overall onboarding experience. Reduced visual clutter and game flow.');
+                localStorage.setItem('projectDescription_storage', 'UX for fast-paced interstellar strategy.');
+                localStorage.setItem('projectProblem_storage', 'Game had grown content-heavy, bombarding the player with information. Gameplay mechanics were difficult to learn for new players, with more being added.');
+                localStorage.setItem('projectSolution_storage', 'Reworked tutorial and overall early game flow. Redesigned several UI components. Reduced visual clutter and information overload. Refined spacing, readability, and visual consistency across existing interface. Designed two new features: Databank and Colonization');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/stellaris_6.png')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/stellaris_6.png')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/stellaris_6.png')";
@@ -683,12 +683,27 @@ const common = {
                 document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/stellaris_6.png')";
                 document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/stellaris_6.png')";
                 break;
+
+            case "europauniversalisv":
+                localStorage.setItem('projectTitle_storage', 'Europa Universalis V');
+                localStorage.setItem('projectDescription_storage', 'UX for complex grand strategy.');
+                localStorage.setItem('projectProblem_storage', 'The interface struggled with low readability, cluttered UI, and inconsistent visual hierarchy, making navigation and interactions frustrating.');
+                localStorage.setItem('projectSolution_storage', 'Redesigned and implemented several UI components. Reworked visual hierarchy to improve readability. Streamlined navigation for usability and flow. Optimized layouts by refining spacing and grouping content clearly.');
+                document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_4").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_5").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_6").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_7").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                document.getElementById("project_image_8").style.backgroundImage = "url('assets/img/eu5_placeholder.png')";
+                break;                
     
             case "luminaireslocalizator":
                 localStorage.setItem('projectTitle_storage', 'Luminaires Localizator');
                 localStorage.setItem('projectDescription_storage', '3D scan and mapping software to manage tunnel lighting systems.');
-                localStorage.setItem('projectProblem_storage', 'The current process of assembling or adjusting a light system was a manual and time-consuming process with having to move each light around. It was also reliant on machinery and several engineers.');
-                localStorage.setItem('projectSolution_storage', 'An AR application tailored to engineers that scans, maps and configures the light system. Digital ID tag was added to each unit that in turn syncs with the application.');
+                localStorage.setItem('projectProblem_storage', 'The process of assembling or adjusting tunnel lighting systems was manual, time-consuming, and relied heavily on machinery and multiple engineers.');
+                localStorage.setItem('projectSolution_storage', 'Developed an AR application for engineers to scan, map, and configure tunnel lighting systems. Added digital ID tags to each unit to sync with the app.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/signify_1.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/signify_2.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/signify_3.jpg')";
@@ -703,8 +718,8 @@ const common = {
             case "kangerluk":
                 localStorage.setItem('projectTitle_storage', 'Kangerluk');
                 localStorage.setItem('projectDescription_storage', 'AR educational tool for the Greenlandic flora and fauna.');
-                localStorage.setItem('projectProblem_storage', 'There was little interest amongst students for the topic. The information used for teaching was scattered and unformatted. There were no interactive teaching elements.');
-                localStorage.setItem('projectSolution_storage', 'Standardised data structure using a set of pre-defined tasks. AR application with gaming elements. Progressive leveling system. Interactive indoor and outdoor assignments.');
+                localStorage.setItem('projectProblem_storage', 'Students showed low engagement due to scattered, unformatted information and a lack of interactive teaching elements.');
+                localStorage.setItem('projectSolution_storage', 'Standardized educational content and structured tasks. Built an AR application with gaming elements, progressive leveling, and interactive indoor and outdoor assignments.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/kangerluk_8.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/kangerluk_1.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/kangerluk_2.jpg')";
@@ -719,8 +734,8 @@ const common = {
             case "carelyo":
                 localStorage.setItem('projectTitle_storage', 'Carelyo');
                 localStorage.setItem('projectDescription_storage', 'Healthcare application intended for Sub-Saharan Africa.');
-                localStorage.setItem('projectProblem_storage', 'The current design lacked coherency and structure and was based on the vision of the company founder, not the requirements of the end user. Lastly, only older phones were utilized.');
-                localStorage.setItem('projectSolution_storage', 'Revamped user-friendly design with focus on removing pain points and misconceptions. Standardised design system. Modular design approach to suit older phone models.');
+                localStorage.setItem('projectProblem_storage', 'The interface lacked coherence and structure, reflecting company vision rather than user needs, and was constrained by older phone models.');
+                localStorage.setItem('projectSolution_storage', 'Revamped the interface to improve coherence and usability. Implemented a standardized, modular design system tailored to older phone models and user needs.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/carelyo_8.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/carelyo_1.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/carelyo_2.jpg')";
@@ -735,8 +750,8 @@ const common = {
             case "myhouse":
                 localStorage.setItem('projectTitle_storage', 'My House');
                 localStorage.setItem('projectDescription_storage', 'AR shopping application for doors and windows.');
-                localStorage.setItem('projectProblem_storage', 'The customer was struggling to increase its market share and did not have a strong digital presence. They were looking for a cutting-edge immersive experience constrained by a small budget.');
-                localStorage.setItem('projectSolution_storage', 'An easy-to-use AR application with focus on features requested by the users. Lead generation and brand awareness weaved into the design with ties to existing website.');
+                localStorage.setItem('projectProblem_storage', 'The client struggled to grow market share and lacked a strong digital presence, while needing an immersive AR experience on a limited budget.');
+                localStorage.setItem('projectSolution_storage', 'Created an easy-to-use AR application focused on user-requested features. Integrated lead generation and brand awareness while connecting to the existing website.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/MyHouse_Mockup_sketch-1.png')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/myhouse_2.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/myhouse_3.jpg')";
@@ -751,8 +766,8 @@ const common = {
             case "rentestate":
                 localStorage.setItem('projectTitle_storage', 'RentEstate');
                 localStorage.setItem('projectDescription_storage', 'User management application for commercial tenants.');
-                localStorage.setItem('projectProblem_storage', 'Call volumes were increasing and the current manual process was time consuming and slow. There was also a dependence on several external systems with different logins.');
-                localStorage.setItem('projectSolution_storage', 'Current process was digitalized, merged and streamlined. Self-service was introduced and encouraged with a tenancy user-management system to regulate access level.');
+                localStorage.setItem('projectProblem_storage', 'Managing commercial tenants was time-consuming and slow, with high call volumes and dependence on multiple external systems with different logins.');
+                localStorage.setItem('projectSolution_storage', 'Designed a user management application to digitize, merge, and streamline tenant processes. Introduced self-service tools and a user-management system to regulate access levels.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/rent_estate_1.jpg')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/rent_estate_2.jpg')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/rent_estate_3.jpg')";
@@ -767,8 +782,8 @@ const common = {
             case "femaleinvest":
                 localStorage.setItem('projectTitle_storage', 'Female Invest');
                 localStorage.setItem('projectDescription_storage', 'Financial learning community for female investors.');
-                localStorage.setItem('projectProblem_storage', 'Users were struggling to find the correct information. The community page design was also not coherent with the rest of the application. Few users completed their profiles.');
-                localStorage.setItem('projectSolution_storage', 'Current process was digitalized, merged and streamlined. Self-service was introduced and encouraged with a tenancy user-management system to regulate access level.');
+                localStorage.setItem('projectProblem_storage', 'Users had difficulty finding relevant information, the community page design lacked coherence with the app, and few users completed their profiles.');
+                localStorage.setItem('projectSolution_storage', 'Redesigned the app for clearer information access. Aligned community page design with the app, encouraging profile completion and engagement.');
                 document.getElementById("project_image_1").style.backgroundImage = "url('assets/img/female_invest_1.png')";
                 document.getElementById("project_image_2").style.backgroundImage = "url('assets/img/female_invest_2.png')";
                 document.getElementById("project_image_3").style.backgroundImage = "url('assets/img/female_invest_3.png')";
@@ -788,7 +803,8 @@ const common = {
         document.getElementById("projectTitle").innerHTML = localStorage.getItem('projectTitle_storage');
         document.getElementById("projectDescription").innerHTML = localStorage.getItem('projectDescription_storage');
         document.getElementById("projectProblem").innerHTML = localStorage.getItem('projectProblem_storage');
-        document.getElementById("projectSolution").innerHTML = localStorage.getItem('projectSolution_storage');
+        // document.getElementById("projectSolution").innerHTML = localStorage.getItem('projectSolution_storage');
+        document.getElementById("projectSolution").innerHTML = '<ul>' + localStorage.getItem('projectSolution_storage').split('.').filter(x=>x.trim()).map(x=>`<li>${x.trim()}</li>`).join('') + '</ul>';
     }
     
 

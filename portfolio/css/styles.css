@@ -10230,12 +10230,7 @@ body {
 		padding: 0;
 	}
 
-	/* .masthead .col-xl {
-		height: 100vh;                 /* take full screen height */
-		display: flex;
-		flex-direction: column;
-		justify-content: center;       /* vertical centering */
-	} */
+
 	
 
 	.masthead .name {
@@ -14170,8 +14165,8 @@ svg .polymorph {
 }
 
 .modal-body h2 {
-	font-size: 6rem;
-	margin-bottom: 3rem;
+	font-size: 3rem;
+	/* margin-bottom: 3rem; */
 }
 
 .modal-body h1 {
@@ -14181,8 +14176,8 @@ svg .polymorph {
 
 .description {
 	color: #949494;
-	font-size: 1.6rem;
-	margin-bottom: 4rem;
+	font-size: 1.1rem;
+	/* margin-bottom: 4rem; */
 	text-align: justify;
   }
 .modal-body p + a {
