@@ -155,19 +155,18 @@ html {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-	filter:opacity(80%);
+	filter:opacity(70%);
+	z-index: -2;
   }
 
- /* #background-video {
-	width: 75vw;
-	height: 100vh;
-	object-fit: cover;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: -1;
-  }*/
+.video-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);  /* adjust darkness: 0.2–0.7 */
+    z-index: -1;
+}
 
 .masthead {
 	position: relative;
@@ -10230,6 +10229,14 @@ body {
 		height: 100vh;
 		padding: 0;
 	}
+
+	.masthead .col-xl {
+		height: 100vh;                 /* take full screen height */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;       /* vertical centering */
+	}
+	
 
 	.masthead .name {
 		/* padding: 0.75rem 0.5rem 0.5rem 1.25rem; */
